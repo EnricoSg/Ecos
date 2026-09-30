@@ -6,61 +6,68 @@ SET search_path TO public;
 
 -- -----------------------------------------------------
 -- COLABORADORES
+-- Identificadores anonimizados utilizados pelo sistema
 -- -----------------------------------------------------
 
 INSERT INTO colaborador (codigo_anonimo, setor)
 VALUES
-    ('USR-A7F92C', 'Tecnologia da Informação'),
-    ('USR-B4K81M', 'Financeiro'),
-    ('USR-C9P23X', 'Recursos Humanos');
+    ('a2a0159acf6ac55f05c0c4d4bdc54004', 'Tecnologia da Informação'),
+    ('b4b1260bdf7bd66f16d1d5e5cef65115', 'Financeiro'),
+    ('c5c2371cef8ce77f27e2e6f6dfa76226', 'Recursos Humanos');
 
 
 -- -----------------------------------------------------
 -- TELEMETRIAS
--- Dados comportamentais utilizados para testes
+-- dwell_time e flight_time em milissegundos
+-- mouse_speed representa a velocidade do cursor
+-- Nenhum conteúdo digitado é armazenado
 -- -----------------------------------------------------
 
 -- Colaborador 1 - Tecnologia da Informação
 
 INSERT INTO telemetria
-    (colaborador_id, velocidade_digitacao, tempo_medio_pausa, velocidade_mouse)
+    (colaborador_id, dwell_time, flight_time, mouse_speed, data_coleta)
 VALUES
-    (1, 62.50, 1.20, 450.30),
-    (1, 60.80, 1.35, 440.10),
-    (1, 61.90, 1.25, 455.70);
+    (1, 103, 68, 476, '2026-09-30 08:00:00-03'),
+    (1, 101, 145, 384, '2026-09-30 08:00:01-03'),
+    (1, 65, 148, 694, '2026-09-30 08:00:02-03');
 
 
 -- Colaborador 2 - Financeiro
 
 INSERT INTO telemetria
-    (colaborador_id, velocidade_digitacao, tempo_medio_pausa, velocidade_mouse)
+    (colaborador_id, dwell_time, flight_time, mouse_speed, data_coleta)
 VALUES
-    (2, 55.20, 1.50, 390.40),
-    (2, 56.10, 1.45, 395.20),
-    (2, 54.80, 1.55, 388.70);
+    (2, 92, 130, 410, '2026-09-30 08:05:00-03'),
+    (2, 97, 125, 425, '2026-09-30 08:05:01-03'),
+    (2, 95, 135, 400, '2026-09-30 08:05:02-03');
 
 
 -- Colaborador 3 - Recursos Humanos
 
 INSERT INTO telemetria
-    (colaborador_id, velocidade_digitacao, tempo_medio_pausa, velocidade_mouse)
+    (colaborador_id, dwell_time, flight_time, mouse_speed, data_coleta)
 VALUES
-    (3, 68.30, 1.05, 480.20),
-    (3, 67.80, 1.10, 475.60),
-    (3, 69.10, 1.00, 485.30);
-    -- -----------------------------------------------------
+    (3, 110, 100, 520, '2026-09-30 08:10:00-03'),
+    (3, 105, 105, 510, '2026-09-30 08:10:01-03'),
+    (3, 115, 95, 530, '2026-09-30 08:10:02-03');
+
+
+-- -----------------------------------------------------
 -- BASELINES
 -- Padrão comportamental inicial de cada colaborador
 -- calculado a partir das telemetrias normais
 -- -----------------------------------------------------
 
 INSERT INTO baseline
-    (colaborador_id, media_velocidade_digitacao, media_tempo_pausa, media_velocidade_mouse)
+    (colaborador_id, media_dwell_time, media_flight_time, media_mouse_speed)
 VALUES
-    (1, 61.73, 1.27, 448.70),
-    (2, 55.37, 1.50, 391.43),
-    (3, 68.40, 1.05, 480.37);
-    -- -----------------------------------------------------
+    (1, 89.67, 120.33, 518.00),
+    (2, 94.67, 130.00, 411.67),
+    (3, 110.00, 100.00, 520.00);
+
+
+-- -----------------------------------------------------
 -- TELEMETRIAS ANÔMALAS
 -- Dados simulados com alteração significativa em
 -- relação ao padrão comportamental do colaborador
@@ -69,25 +76,27 @@ VALUES
 -- Colaborador 1 - Tecnologia da Informação
 
 INSERT INTO telemetria
-    (colaborador_id, velocidade_digitacao, tempo_medio_pausa, velocidade_mouse)
+    (colaborador_id, dwell_time, flight_time, mouse_speed, data_coleta)
 VALUES
-    (1, 35.00, 4.80, 250.00);
+    (1, 280, 520, 180, '2026-09-30 09:00:00-03');
 
 
 -- Colaborador 3 - Recursos Humanos
 
 INSERT INTO telemetria
-    (colaborador_id, velocidade_digitacao, tempo_medio_pausa, velocidade_mouse)
+    (colaborador_id, dwell_time, flight_time, mouse_speed, data_coleta)
 VALUES
-    (3, 39.50, 4.20, 270.00);
+    (3, 310, 490, 190, '2026-09-30 09:05:00-03');
 
-    -- -----------------------------------------------------
+
+-- -----------------------------------------------------
 -- ANOMALIAS
 -- Registros associados às telemetrias que apresentaram
 -- desvio significativo em relação ao baseline
 -- -----------------------------------------------------
 
 -- Anomalia do Colaborador 1
+
 INSERT INTO anomalia
     (colaborador_id, telemetria_id, baseline_id, nivel)
 VALUES
@@ -95,10 +104,13 @@ VALUES
 
 
 -- Anomalia do Colaborador 3
+
 INSERT INTO anomalia
     (colaborador_id, telemetria_id, baseline_id, nivel)
 VALUES
     (3, 11, 3, 'ALTO');
+
+
 -- -----------------------------------------------------
 -- ALERTAS
 -- Alertas gerados a partir das anomalias detectadas
@@ -107,9 +119,13 @@ VALUES
 INSERT INTO alerta
     (anomalia_id, status, mensagem)
 VALUES
-    (1, 'PENDENTE',
-     'Desvio significativo detectado no padrão comportamental do colaborador.'),
-    (2, 'PENDENTE',
-     'Desvio significativo detectado no padrão comportamental do colaborador.');
-    
-    -- -----------------------------------------------------
+    (
+        1,
+        'PENDENTE',
+        'Desvio significativo detectado no padrão comportamental do colaborador.'
+    ),
+    (
+        2,
+        'PENDENTE',
+        'Desvio significativo detectado no padrão comportamental do colaborador.'
+    );

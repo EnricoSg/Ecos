@@ -18,27 +18,39 @@ O banco de dados é composto pelas seguintes tabelas:
 
 Representa os colaboradores monitorados pelo sistema utilizando identificadores anônimos.
 
-Exemplos de informações armazenadas:
+Principais informações armazenadas:
 
 - Código anônimo
 - Setor
+- Data de cadastro
+- Status do colaborador
+
+O campo `codigo_anonimo` é utilizado para relacionar o identificador anônimo recebido pelo sistema com o identificador interno do colaborador no banco.
 
 ### `telemetria`
 
 Armazena as métricas comportamentais coletadas durante a utilização do computador.
 
-Entre as métricas utilizadas estão:
+As métricas armazenadas são:
 
-- Velocidade de digitação
-- Tempo médio de pausa
-- Velocidade do mouse
-- Data da coleta
+- `dwell_time` — tempo que uma tecla permanece pressionada, em milissegundos
+- `flight_time` — intervalo entre eventos de digitação, em milissegundos
+- `mouse_speed` — velocidade do movimento do cursor
+- `data_coleta` — data e horário em que a telemetria foi coletada
 
-O sistema não armazena o conteúdo digitado pelo colaborador.
+Cada telemetria é associada a um colaborador por meio de uma chave estrangeira (`colaborador_id`).
+
+O sistema não armazena qual tecla foi pressionada nem o conteúdo digitado pelo colaborador.
 
 ### `baseline`
 
 Armazena o padrão comportamental de referência de cada colaborador.
+
+Atualmente são armazenadas as médias das seguintes métricas:
+
+- `media_dwell_time`
+- `media_flight_time`
+- `media_mouse_speed`
 
 Esse padrão pode ser utilizado para comparar novas telemetrias e identificar alterações significativas no comportamento.
 
@@ -55,11 +67,69 @@ A anomalia relaciona:
 - Pontuação do desvio
 - Data da detecção
 
+Os níveis atualmente previstos são:
+
+- `BAIXO`
+- `MEDIO`
+- `ALTO`
+
 ### `alerta`
 
 Armazena os alertas gerados a partir das anomalias detectadas.
 
-Os alertas podem ser utilizados posteriormente pelo sistema e pelo dashboard destinado aos profissionais responsáveis pelo acompanhamento.
+Cada alerta está associado a uma anomalia e pode possuir os estados:
+
+- `PENDENTE`
+- `RESOLVIDO`
+
+Os alertas poderão ser utilizados pelo sistema e pelo dashboard destinado aos profissionais responsáveis pelo acompanhamento.
+
+## Integração com a Telemetria
+
+Os dados coletados pelo módulo de telemetria chegam no seguinte formato:
+
+```json
+{
+  "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+  "timestamp": 1790723199823,
+  "dwellTime": 103,
+  "flightTime": 68,
+  "mouseSpeed": 476
+}
+```
+
+A correspondência entre os dados recebidos e o banco é:
+
+| Telemetria recebida | Banco de dados |
+|---|---|
+| `userId` | `colaborador.codigo_anonimo` |
+| `timestamp` | `telemetria.data_coleta` |
+| `dwellTime` | `telemetria.dwell_time` |
+| `flightTime` | `telemetria.flight_time` |
+| `mouseSpeed` | `telemetria.mouse_speed` |
+
+O `userId` não é repetido diretamente na tabela `telemetria`. O sistema utiliza o identificador anônimo para localizar o colaborador e relaciona a telemetria através de `colaborador_id`.
+
+O `timestamp` recebido pelo coletor utiliza Unix timestamp em milissegundos e deve ser convertido para `TIMESTAMPTZ` antes ou durante a persistência no PostgreSQL.
+
+## Relacionamentos
+
+Os principais relacionamentos do banco são:
+
+```text
+colaborador
+    │
+    ├── 1:N ── telemetria
+    │
+    └─────── baseline
+                 │
+telemetria ──────┼── anomalia
+colaborador ─────┘       │
+                         │
+                         └── alerta
+```
+
+As chaves estrangeiras garantem a integridade dos relacionamentos entre as tabelas.
 
 ## Arquivos
 
@@ -71,14 +141,14 @@ Contém a estrutura do banco de dados, incluindo:
 - Chaves primárias
 - Chaves estrangeiras
 - Constraints
-- Sequências
+- Índices
 - Relacionamentos
 
 Este arquivo deve ser executado primeiro.
 
 ### `seed.sql`
 
-Contém dados fictícios utilizados para testes e desenvolvimento.
+Contém dados utilizados para testes e desenvolvimento.
 
 O arquivo inclui exemplos de:
 
@@ -89,7 +159,7 @@ O arquivo inclui exemplos de:
 - Anomalias
 - Alertas
 
-Nenhum dos dados presentes neste arquivo representa colaboradores reais.
+Os registros adicionais presentes no arquivo são dados simulados utilizados para desenvolvimento e validação do banco.
 
 ## Como configurar o banco
 
@@ -123,7 +193,7 @@ Após a criação da estrutura, execute:
 database/seed.sql
 ```
 
-O script adicionará os dados fictícios utilizados nos testes.
+O script adicionará os dados utilizados nos testes.
 
 A ordem de execução deve ser:
 
@@ -171,6 +241,22 @@ UNION ALL
 SELECT 'alerta', COUNT(*) FROM alerta;
 ```
 
+Para validar as telemetrias e seus respectivos colaboradores:
+
+```sql
+SELECT
+    t.id,
+    c.codigo_anonimo,
+    t.dwell_time,
+    t.flight_time,
+    t.mouse_speed,
+    t.data_coleta
+FROM telemetria t
+JOIN colaborador c
+    ON c.id = t.colaborador_id
+ORDER BY t.id;
+```
+
 ## Privacidade e Segurança
 
 O projeto foi estruturado para trabalhar com dados comportamentais anonimizados.
@@ -178,9 +264,12 @@ O projeto foi estruturado para trabalhar com dados comportamentais anonimizados.
 O banco não deve armazenar:
 
 - Conteúdo digitado pelo colaborador
+- Teclas pressionadas
 - Senhas digitadas
 - Mensagens
 - Documentos acessados
 - Conteúdo da tela
 
-O objetivo é trabalhar somente com métricas comportamentais necessárias ao funcionamento do sistema, como ritmo de digitação, pausas e movimentação do mouse.
+O objetivo é trabalhar somente com métricas comportamentais necessárias ao funcionamento do sistema, como tempo de pressionamento das teclas, intervalos entre eventos de digitação e movimentação do mouse.
+
+A identificação utilizada na telemetria é anônima e não deve expor diretamente a identidade do colaborador.
