@@ -1,0 +1,35 @@
+{
+  "name": "ecos",
+  "version": "1.0.0",
+  "description": "Ecos - Assinatura Digital Comportamental Corporativa: deteção precoce de fadiga, stress e burnout a partir de metadados de interação.",
+  "main": "src/validador.js",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnricoSg/Ecos.git"
+  },
+  "keywords": [
+    "telemetria",
+    "lgpd",
+    "burnout",
+    "saude-ocupacional",
+    "esg"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnricoSg/Ecos/issues"
+  },
+  "homepage": "https://github.com/EnricoSg/Ecos#readme",
+  "jest": {
+    "testPathIgnorePatterns": ["/node_modules/", "/frontend/"]
+  },
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}
