@@ -1,0 +1,8402 @@
+[
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723199823,
+    "dwellTime": 103,
+    "flightTime": 68,
+    "mouseSpeed": 476
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723199994,
+    "dwellTime": 101,
+    "flightTime": 145,
+    "mouseSpeed": 384
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723200240,
+    "dwellTime": 65,
+    "flightTime": 148,
+    "mouseSpeed": 694
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723200453,
+    "dwellTime": 133,
+    "flightTime": 63,
+    "mouseSpeed": 411
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723200649,
+    "dwellTime": 125,
+    "flightTime": 93,
+    "mouseSpeed": 584
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723200867,
+    "dwellTime": 146,
+    "flightTime": 61,
+    "mouseSpeed": 322
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723201074,
+    "dwellTime": 104,
+    "flightTime": 143,
+    "mouseSpeed": 607
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723201321,
+    "dwellTime": 115,
+    "flightTime": 71,
+    "mouseSpeed": 238
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723201507,
+    "dwellTime": 105,
+    "flightTime": 161,
+    "mouseSpeed": 417
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723201773,
+    "dwellTime": 127,
+    "flightTime": 227,
+    "mouseSpeed": 412
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723202127,
+    "dwellTime": 92,
+    "flightTime": 244,
+    "mouseSpeed": 208
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723202463,
+    "dwellTime": 125,
+    "flightTime": 133,
+    "mouseSpeed": 220
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723202721,
+    "dwellTime": 118,
+    "flightTime": 167,
+    "mouseSpeed": 380
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723203006,
+    "dwellTime": 84,
+    "flightTime": 165,
+    "mouseSpeed": 453
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723203255,
+    "dwellTime": 82,
+    "flightTime": 175,
+    "mouseSpeed": 291
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723203512,
+    "dwellTime": 83,
+    "flightTime": 87,
+    "mouseSpeed": 249
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723203682,
+    "dwellTime": 111,
+    "flightTime": 181,
+    "mouseSpeed": 501
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723203974,
+    "dwellTime": 101,
+    "flightTime": 150,
+    "mouseSpeed": 687
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723204225,
+    "dwellTime": 59,
+    "flightTime": 119,
+    "mouseSpeed": 265
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723204403,
+    "dwellTime": 60,
+    "flightTime": 225,
+    "mouseSpeed": 589
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723204688,
+    "dwellTime": 62,
+    "flightTime": 212,
+    "mouseSpeed": 417
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723204962,
+    "dwellTime": 127,
+    "flightTime": 203,
+    "mouseSpeed": 557
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723205292,
+    "dwellTime": 124,
+    "flightTime": 92,
+    "mouseSpeed": 588
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723205508,
+    "dwellTime": 77,
+    "flightTime": 61,
+    "mouseSpeed": 394
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723205646,
+    "dwellTime": 128,
+    "flightTime": 223,
+    "mouseSpeed": 302
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723205997,
+    "dwellTime": 120,
+    "flightTime": 150,
+    "mouseSpeed": 231
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723206267,
+    "dwellTime": 80,
+    "flightTime": 85,
+    "mouseSpeed": 666
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723206432,
+    "dwellTime": 62,
+    "flightTime": 244,
+    "mouseSpeed": 319
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723206738,
+    "dwellTime": 126,
+    "flightTime": 187,
+    "mouseSpeed": 443
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723207051,
+    "dwellTime": 70,
+    "flightTime": 225,
+    "mouseSpeed": 486
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723207346,
+    "dwellTime": 104,
+    "flightTime": 236,
+    "mouseSpeed": 400
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723207686,
+    "dwellTime": 99,
+    "flightTime": 98,
+    "mouseSpeed": 610
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723207883,
+    "dwellTime": 127,
+    "flightTime": 159,
+    "mouseSpeed": 569
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723208169,
+    "dwellTime": 73,
+    "flightTime": 151,
+    "mouseSpeed": 240
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723208393,
+    "dwellTime": 126,
+    "flightTime": 161,
+    "mouseSpeed": 312
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723208680,
+    "dwellTime": 122,
+    "flightTime": 78,
+    "mouseSpeed": 470
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723208880,
+    "dwellTime": 86,
+    "flightTime": 123,
+    "mouseSpeed": 390
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723209089,
+    "dwellTime": 142,
+    "flightTime": 65,
+    "mouseSpeed": 233
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723209296,
+    "dwellTime": 120,
+    "flightTime": 167,
+    "mouseSpeed": 663
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723209583,
+    "dwellTime": 61,
+    "flightTime": 83,
+    "mouseSpeed": 377
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723209727,
+    "dwellTime": 104,
+    "flightTime": 169,
+    "mouseSpeed": 337
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723210000,
+    "dwellTime": 127,
+    "flightTime": 173,
+    "mouseSpeed": 602
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723210300,
+    "dwellTime": 57,
+    "flightTime": 100,
+    "mouseSpeed": 455
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723210457,
+    "dwellTime": 113,
+    "flightTime": 91,
+    "mouseSpeed": 373
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723210661,
+    "dwellTime": 68,
+    "flightTime": 100,
+    "mouseSpeed": 432
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723210829,
+    "dwellTime": 75,
+    "flightTime": 145,
+    "mouseSpeed": 623
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723211049,
+    "dwellTime": 121,
+    "flightTime": 63,
+    "mouseSpeed": 453
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723211233,
+    "dwellTime": 92,
+    "flightTime": 238,
+    "mouseSpeed": 361
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723211563,
+    "dwellTime": 134,
+    "flightTime": 56,
+    "mouseSpeed": 586
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723211753,
+    "dwellTime": 137,
+    "flightTime": 136,
+    "mouseSpeed": 654
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723212026,
+    "dwellTime": 100,
+    "flightTime": 128,
+    "mouseSpeed": 579
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723212254,
+    "dwellTime": 137,
+    "flightTime": 58,
+    "mouseSpeed": 417
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723212449,
+    "dwellTime": 55,
+    "flightTime": 197,
+    "mouseSpeed": 504
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723212701,
+    "dwellTime": 73,
+    "flightTime": 62,
+    "mouseSpeed": 326
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723212836,
+    "dwellTime": 113,
+    "flightTime": 239,
+    "mouseSpeed": 424
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723213188,
+    "dwellTime": 111,
+    "flightTime": 122,
+    "mouseSpeed": 230
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723213421,
+    "dwellTime": 97,
+    "flightTime": 122,
+    "mouseSpeed": 642
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723213640,
+    "dwellTime": 58,
+    "flightTime": 121,
+    "mouseSpeed": 443
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723213819,
+    "dwellTime": 140,
+    "flightTime": 242,
+    "mouseSpeed": 536
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723214201,
+    "dwellTime": 54,
+    "flightTime": 85,
+    "mouseSpeed": 455
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723214340,
+    "dwellTime": 107,
+    "flightTime": 160,
+    "mouseSpeed": 368
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723214607,
+    "dwellTime": 117,
+    "flightTime": 228,
+    "mouseSpeed": 638
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723214952,
+    "dwellTime": 105,
+    "flightTime": 203,
+    "mouseSpeed": 697
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723215260,
+    "dwellTime": 53,
+    "flightTime": 131,
+    "mouseSpeed": 236
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723215444,
+    "dwellTime": 63,
+    "flightTime": 191,
+    "mouseSpeed": 582
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723215698,
+    "dwellTime": 85,
+    "flightTime": 241,
+    "mouseSpeed": 603
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723216024,
+    "dwellTime": 80,
+    "flightTime": 214,
+    "mouseSpeed": 666
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723216318,
+    "dwellTime": 121,
+    "flightTime": 161,
+    "mouseSpeed": 378
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723216600,
+    "dwellTime": 63,
+    "flightTime": 184,
+    "mouseSpeed": 410
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723216847,
+    "dwellTime": 85,
+    "flightTime": 143,
+    "mouseSpeed": 203
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723217075,
+    "dwellTime": 73,
+    "flightTime": 227,
+    "mouseSpeed": 400
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723217375,
+    "dwellTime": 55,
+    "flightTime": 206,
+    "mouseSpeed": 659
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723217636,
+    "dwellTime": 96,
+    "flightTime": 156,
+    "mouseSpeed": 401
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723217888,
+    "dwellTime": 110,
+    "flightTime": 69,
+    "mouseSpeed": 589
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723218067,
+    "dwellTime": 58,
+    "flightTime": 159,
+    "mouseSpeed": 533
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723218284,
+    "dwellTime": 120,
+    "flightTime": 220,
+    "mouseSpeed": 594
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723218624,
+    "dwellTime": 130,
+    "flightTime": 99,
+    "mouseSpeed": 595
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723218853,
+    "dwellTime": 65,
+    "flightTime": 203,
+    "mouseSpeed": 682
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723219121,
+    "dwellTime": 118,
+    "flightTime": 56,
+    "mouseSpeed": 574
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723219295,
+    "dwellTime": 121,
+    "flightTime": 89,
+    "mouseSpeed": 564
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723219505,
+    "dwellTime": 94,
+    "flightTime": 133,
+    "mouseSpeed": 342
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723219732,
+    "dwellTime": 63,
+    "flightTime": 63,
+    "mouseSpeed": 356
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723219858,
+    "dwellTime": 102,
+    "flightTime": 215,
+    "mouseSpeed": 371
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723220175,
+    "dwellTime": 50,
+    "flightTime": 78,
+    "mouseSpeed": 409
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723220303,
+    "dwellTime": 105,
+    "flightTime": 213,
+    "mouseSpeed": 280
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723220621,
+    "dwellTime": 74,
+    "flightTime": 76,
+    "mouseSpeed": 625
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723220771,
+    "dwellTime": 84,
+    "flightTime": 98,
+    "mouseSpeed": 581
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723220953,
+    "dwellTime": 143,
+    "flightTime": 200,
+    "mouseSpeed": 212
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723221296,
+    "dwellTime": 147,
+    "flightTime": 70,
+    "mouseSpeed": 341
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723221513,
+    "dwellTime": 99,
+    "flightTime": 199,
+    "mouseSpeed": 341
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723221811,
+    "dwellTime": 141,
+    "flightTime": 101,
+    "mouseSpeed": 656
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723222053,
+    "dwellTime": 98,
+    "flightTime": 190,
+    "mouseSpeed": 657
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723222341,
+    "dwellTime": 146,
+    "flightTime": 90,
+    "mouseSpeed": 298
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723222577,
+    "dwellTime": 77,
+    "flightTime": 96,
+    "mouseSpeed": 330
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723222750,
+    "dwellTime": 60,
+    "flightTime": 88,
+    "mouseSpeed": 296
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723222898,
+    "dwellTime": 96,
+    "flightTime": 98,
+    "mouseSpeed": 324
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723223092,
+    "dwellTime": 104,
+    "flightTime": 228,
+    "mouseSpeed": 684
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723223424,
+    "dwellTime": 135,
+    "flightTime": 213,
+    "mouseSpeed": 574
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723223772,
+    "dwellTime": 56,
+    "flightTime": 106,
+    "mouseSpeed": 528
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723223934,
+    "dwellTime": 78,
+    "flightTime": 105,
+    "mouseSpeed": 660
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723224117,
+    "dwellTime": 119,
+    "flightTime": 224,
+    "mouseSpeed": 260
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723224460,
+    "dwellTime": 147,
+    "flightTime": 120,
+    "mouseSpeed": 594
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723224727,
+    "dwellTime": 73,
+    "flightTime": 82,
+    "mouseSpeed": 240
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723224882,
+    "dwellTime": 50,
+    "flightTime": 172,
+    "mouseSpeed": 647
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723225104,
+    "dwellTime": 55,
+    "flightTime": 109,
+    "mouseSpeed": 307
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723225268,
+    "dwellTime": 71,
+    "flightTime": 173,
+    "mouseSpeed": 415
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723225512,
+    "dwellTime": 95,
+    "flightTime": 87,
+    "mouseSpeed": 219
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723225694,
+    "dwellTime": 71,
+    "flightTime": 214,
+    "mouseSpeed": 327
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723225979,
+    "dwellTime": 86,
+    "flightTime": 181,
+    "mouseSpeed": 540
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723226246,
+    "dwellTime": 91,
+    "flightTime": 232,
+    "mouseSpeed": 424
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723226569,
+    "dwellTime": 72,
+    "flightTime": 111,
+    "mouseSpeed": 402
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723226752,
+    "dwellTime": 120,
+    "flightTime": 91,
+    "mouseSpeed": 364
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723226963,
+    "dwellTime": 57,
+    "flightTime": 183,
+    "mouseSpeed": 349
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723227203,
+    "dwellTime": 91,
+    "flightTime": 118,
+    "mouseSpeed": 675
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723227412,
+    "dwellTime": 89,
+    "flightTime": 225,
+    "mouseSpeed": 678
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723227726,
+    "dwellTime": 94,
+    "flightTime": 144,
+    "mouseSpeed": 593
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723227964,
+    "dwellTime": 64,
+    "flightTime": 244,
+    "mouseSpeed": 443
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723228272,
+    "dwellTime": 140,
+    "flightTime": 204,
+    "mouseSpeed": 273
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723228616,
+    "dwellTime": 134,
+    "flightTime": 230,
+    "mouseSpeed": 394
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723228980,
+    "dwellTime": 85,
+    "flightTime": 112,
+    "mouseSpeed": 398
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723229177,
+    "dwellTime": 83,
+    "flightTime": 52,
+    "mouseSpeed": 261
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723229312,
+    "dwellTime": 101,
+    "flightTime": 170,
+    "mouseSpeed": 550
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723229583,
+    "dwellTime": 53,
+    "flightTime": 216,
+    "mouseSpeed": 216
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723229852,
+    "dwellTime": 129,
+    "flightTime": 110,
+    "mouseSpeed": 685
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723230091,
+    "dwellTime": 119,
+    "flightTime": 118,
+    "mouseSpeed": 555
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723230328,
+    "dwellTime": 141,
+    "flightTime": 138,
+    "mouseSpeed": 651
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723230607,
+    "dwellTime": 128,
+    "flightTime": 62,
+    "mouseSpeed": 219
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723230797,
+    "dwellTime": 149,
+    "flightTime": 233,
+    "mouseSpeed": 694
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723231179,
+    "dwellTime": 120,
+    "flightTime": 57,
+    "mouseSpeed": 232
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723231356,
+    "dwellTime": 64,
+    "flightTime": 156,
+    "mouseSpeed": 588
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723231576,
+    "dwellTime": 123,
+    "flightTime": 159,
+    "mouseSpeed": 620
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723231858,
+    "dwellTime": 146,
+    "flightTime": 229,
+    "mouseSpeed": 406
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723232233,
+    "dwellTime": 73,
+    "flightTime": 242,
+    "mouseSpeed": 283
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723232548,
+    "dwellTime": 79,
+    "flightTime": 184,
+    "mouseSpeed": 201
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723232811,
+    "dwellTime": 111,
+    "flightTime": 189,
+    "mouseSpeed": 320
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723233111,
+    "dwellTime": 90,
+    "flightTime": 150,
+    "mouseSpeed": 280
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723233351,
+    "dwellTime": 101,
+    "flightTime": 97,
+    "mouseSpeed": 476
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723233549,
+    "dwellTime": 59,
+    "flightTime": 217,
+    "mouseSpeed": 360
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723233825,
+    "dwellTime": 136,
+    "flightTime": 188,
+    "mouseSpeed": 206
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723234149,
+    "dwellTime": 53,
+    "flightTime": 69,
+    "mouseSpeed": 437
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723234271,
+    "dwellTime": 129,
+    "flightTime": 91,
+    "mouseSpeed": 352
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723234491,
+    "dwellTime": 147,
+    "flightTime": 105,
+    "mouseSpeed": 339
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723234743,
+    "dwellTime": 127,
+    "flightTime": 179,
+    "mouseSpeed": 579
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723235049,
+    "dwellTime": 56,
+    "flightTime": 112,
+    "mouseSpeed": 611
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723235217,
+    "dwellTime": 142,
+    "flightTime": 177,
+    "mouseSpeed": 548
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723235536,
+    "dwellTime": 62,
+    "flightTime": 181,
+    "mouseSpeed": 689
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723235779,
+    "dwellTime": 146,
+    "flightTime": 160,
+    "mouseSpeed": 354
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723236085,
+    "dwellTime": 124,
+    "flightTime": 210,
+    "mouseSpeed": 575
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723236419,
+    "dwellTime": 77,
+    "flightTime": 129,
+    "mouseSpeed": 391
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723236625,
+    "dwellTime": 129,
+    "flightTime": 142,
+    "mouseSpeed": 294
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723236896,
+    "dwellTime": 125,
+    "flightTime": 97,
+    "mouseSpeed": 206
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723237118,
+    "dwellTime": 69,
+    "flightTime": 52,
+    "mouseSpeed": 237
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723237239,
+    "dwellTime": 99,
+    "flightTime": 197,
+    "mouseSpeed": 373
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723237535,
+    "dwellTime": 95,
+    "flightTime": 101,
+    "mouseSpeed": 464
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723237731,
+    "dwellTime": 97,
+    "flightTime": 127,
+    "mouseSpeed": 396
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723237955,
+    "dwellTime": 73,
+    "flightTime": 65,
+    "mouseSpeed": 613
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723238093,
+    "dwellTime": 141,
+    "flightTime": 110,
+    "mouseSpeed": 500
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723238344,
+    "dwellTime": 66,
+    "flightTime": 99,
+    "mouseSpeed": 326
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723238509,
+    "dwellTime": 112,
+    "flightTime": 63,
+    "mouseSpeed": 250
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723238684,
+    "dwellTime": 118,
+    "flightTime": 207,
+    "mouseSpeed": 337
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723239009,
+    "dwellTime": 64,
+    "flightTime": 84,
+    "mouseSpeed": 663
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723239157,
+    "dwellTime": 94,
+    "flightTime": 166,
+    "mouseSpeed": 524
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723239417,
+    "dwellTime": 51,
+    "flightTime": 189,
+    "mouseSpeed": 332
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723239657,
+    "dwellTime": 126,
+    "flightTime": 225,
+    "mouseSpeed": 363
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723240008,
+    "dwellTime": 76,
+    "flightTime": 116,
+    "mouseSpeed": 257
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723240200,
+    "dwellTime": 101,
+    "flightTime": 179,
+    "mouseSpeed": 587
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723240480,
+    "dwellTime": 69,
+    "flightTime": 187,
+    "mouseSpeed": 369
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723240736,
+    "dwellTime": 75,
+    "flightTime": 235,
+    "mouseSpeed": 633
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723241046,
+    "dwellTime": 117,
+    "flightTime": 158,
+    "mouseSpeed": 430
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723241321,
+    "dwellTime": 113,
+    "flightTime": 209,
+    "mouseSpeed": 635
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723241643,
+    "dwellTime": 136,
+    "flightTime": 124,
+    "mouseSpeed": 267
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723241903,
+    "dwellTime": 146,
+    "flightTime": 74,
+    "mouseSpeed": 368
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723242123,
+    "dwellTime": 137,
+    "flightTime": 216,
+    "mouseSpeed": 469
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723242476,
+    "dwellTime": 55,
+    "flightTime": 243,
+    "mouseSpeed": 207
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723242774,
+    "dwellTime": 146,
+    "flightTime": 130,
+    "mouseSpeed": 312
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723243050,
+    "dwellTime": 137,
+    "flightTime": 130,
+    "mouseSpeed": 462
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723243317,
+    "dwellTime": 103,
+    "flightTime": 194,
+    "mouseSpeed": 558
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723243614,
+    "dwellTime": 148,
+    "flightTime": 247,
+    "mouseSpeed": 222
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723244009,
+    "dwellTime": 51,
+    "flightTime": 230,
+    "mouseSpeed": 531
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723244290,
+    "dwellTime": 79,
+    "flightTime": 229,
+    "mouseSpeed": 315
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723244598,
+    "dwellTime": 112,
+    "flightTime": 187,
+    "mouseSpeed": 348
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723244897,
+    "dwellTime": 114,
+    "flightTime": 233,
+    "mouseSpeed": 216
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723245244,
+    "dwellTime": 87,
+    "flightTime": 75,
+    "mouseSpeed": 553
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723245406,
+    "dwellTime": 122,
+    "flightTime": 226,
+    "mouseSpeed": 582
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723245754,
+    "dwellTime": 76,
+    "flightTime": 191,
+    "mouseSpeed": 450
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723246021,
+    "dwellTime": 86,
+    "flightTime": 200,
+    "mouseSpeed": 239
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723246307,
+    "dwellTime": 125,
+    "flightTime": 187,
+    "mouseSpeed": 235
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723246619,
+    "dwellTime": 141,
+    "flightTime": 215,
+    "mouseSpeed": 446
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723246975,
+    "dwellTime": 87,
+    "flightTime": 101,
+    "mouseSpeed": 588
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723247163,
+    "dwellTime": 104,
+    "flightTime": 105,
+    "mouseSpeed": 606
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723247372,
+    "dwellTime": 149,
+    "flightTime": 241,
+    "mouseSpeed": 421
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723247762,
+    "dwellTime": 138,
+    "flightTime": 215,
+    "mouseSpeed": 208
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723248115,
+    "dwellTime": 91,
+    "flightTime": 121,
+    "mouseSpeed": 556
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723248327,
+    "dwellTime": 51,
+    "flightTime": 83,
+    "mouseSpeed": 288
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723248461,
+    "dwellTime": 97,
+    "flightTime": 68,
+    "mouseSpeed": 316
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723248626,
+    "dwellTime": 56,
+    "flightTime": 82,
+    "mouseSpeed": 689
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723248764,
+    "dwellTime": 71,
+    "flightTime": 66,
+    "mouseSpeed": 672
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723248901,
+    "dwellTime": 127,
+    "flightTime": 158,
+    "mouseSpeed": 442
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723249186,
+    "dwellTime": 101,
+    "flightTime": 76,
+    "mouseSpeed": 425
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723249363,
+    "dwellTime": 80,
+    "flightTime": 51,
+    "mouseSpeed": 245
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723249494,
+    "dwellTime": 58,
+    "flightTime": 179,
+    "mouseSpeed": 220
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723249731,
+    "dwellTime": 127,
+    "flightTime": 199,
+    "mouseSpeed": 490
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723250057,
+    "dwellTime": 97,
+    "flightTime": 58,
+    "mouseSpeed": 406
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723250212,
+    "dwellTime": 130,
+    "flightTime": 212,
+    "mouseSpeed": 609
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723250554,
+    "dwellTime": 89,
+    "flightTime": 134,
+    "mouseSpeed": 621
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723250777,
+    "dwellTime": 96,
+    "flightTime": 119,
+    "mouseSpeed": 678
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723250992,
+    "dwellTime": 58,
+    "flightTime": 168,
+    "mouseSpeed": 475
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723251218,
+    "dwellTime": 67,
+    "flightTime": 153,
+    "mouseSpeed": 572
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723251438,
+    "dwellTime": 147,
+    "flightTime": 74,
+    "mouseSpeed": 569
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723251659,
+    "dwellTime": 87,
+    "flightTime": 192,
+    "mouseSpeed": 325
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723251938,
+    "dwellTime": 87,
+    "flightTime": 63,
+    "mouseSpeed": 439
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723252088,
+    "dwellTime": 124,
+    "flightTime": 147,
+    "mouseSpeed": 655
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723252359,
+    "dwellTime": 95,
+    "flightTime": 95,
+    "mouseSpeed": 212
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723252549,
+    "dwellTime": 135,
+    "flightTime": 163,
+    "mouseSpeed": 407
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723252847,
+    "dwellTime": 118,
+    "flightTime": 99,
+    "mouseSpeed": 403
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723253064,
+    "dwellTime": 120,
+    "flightTime": 161,
+    "mouseSpeed": 496
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723253345,
+    "dwellTime": 117,
+    "flightTime": 88,
+    "mouseSpeed": 631
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723253550,
+    "dwellTime": 51,
+    "flightTime": 75,
+    "mouseSpeed": 273
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723253676,
+    "dwellTime": 121,
+    "flightTime": 82,
+    "mouseSpeed": 346
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723253879,
+    "dwellTime": 134,
+    "flightTime": 61,
+    "mouseSpeed": 248
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723254074,
+    "dwellTime": 144,
+    "flightTime": 68,
+    "mouseSpeed": 419
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723254286,
+    "dwellTime": 102,
+    "flightTime": 92,
+    "mouseSpeed": 364
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723254480,
+    "dwellTime": 73,
+    "flightTime": 247,
+    "mouseSpeed": 245
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723254800,
+    "dwellTime": 103,
+    "flightTime": 233,
+    "mouseSpeed": 540
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723255136,
+    "dwellTime": 95,
+    "flightTime": 193,
+    "mouseSpeed": 262
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723255424,
+    "dwellTime": 107,
+    "flightTime": 184,
+    "mouseSpeed": 450
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723255715,
+    "dwellTime": 149,
+    "flightTime": 128,
+    "mouseSpeed": 667
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723255992,
+    "dwellTime": 112,
+    "flightTime": 139,
+    "mouseSpeed": 660
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723256243,
+    "dwellTime": 136,
+    "flightTime": 168,
+    "mouseSpeed": 583
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723256547,
+    "dwellTime": 58,
+    "flightTime": 117,
+    "mouseSpeed": 623
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723256722,
+    "dwellTime": 54,
+    "flightTime": 242,
+    "mouseSpeed": 453
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723257018,
+    "dwellTime": 147,
+    "flightTime": 59,
+    "mouseSpeed": 334
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723257224,
+    "dwellTime": 77,
+    "flightTime": 233,
+    "mouseSpeed": 355
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723257534,
+    "dwellTime": 92,
+    "flightTime": 186,
+    "mouseSpeed": 388
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723257812,
+    "dwellTime": 87,
+    "flightTime": 227,
+    "mouseSpeed": 295
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723258126,
+    "dwellTime": 91,
+    "flightTime": 242,
+    "mouseSpeed": 519
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723258459,
+    "dwellTime": 115,
+    "flightTime": 76,
+    "mouseSpeed": 509
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723258650,
+    "dwellTime": 91,
+    "flightTime": 109,
+    "mouseSpeed": 698
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723258850,
+    "dwellTime": 76,
+    "flightTime": 198,
+    "mouseSpeed": 459
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723259124,
+    "dwellTime": 109,
+    "flightTime": 97,
+    "mouseSpeed": 539
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723259330,
+    "dwellTime": 143,
+    "flightTime": 202,
+    "mouseSpeed": 205
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723259675,
+    "dwellTime": 65,
+    "flightTime": 233,
+    "mouseSpeed": 654
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723259973,
+    "dwellTime": 73,
+    "flightTime": 68,
+    "mouseSpeed": 617
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723260114,
+    "dwellTime": 52,
+    "flightTime": 186,
+    "mouseSpeed": 263
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723260352,
+    "dwellTime": 63,
+    "flightTime": 208,
+    "mouseSpeed": 294
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723260623,
+    "dwellTime": 112,
+    "flightTime": 64,
+    "mouseSpeed": 611
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723260799,
+    "dwellTime": 81,
+    "flightTime": 176,
+    "mouseSpeed": 396
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723261056,
+    "dwellTime": 65,
+    "flightTime": 193,
+    "mouseSpeed": 338
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723261314,
+    "dwellTime": 94,
+    "flightTime": 221,
+    "mouseSpeed": 207
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723261629,
+    "dwellTime": 132,
+    "flightTime": 221,
+    "mouseSpeed": 409
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723261982,
+    "dwellTime": 101,
+    "flightTime": 140,
+    "mouseSpeed": 349
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723262223,
+    "dwellTime": 106,
+    "flightTime": 209,
+    "mouseSpeed": 336
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723262538,
+    "dwellTime": 117,
+    "flightTime": 88,
+    "mouseSpeed": 299
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723262743,
+    "dwellTime": 52,
+    "flightTime": 75,
+    "mouseSpeed": 499
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723262870,
+    "dwellTime": 74,
+    "flightTime": 145,
+    "mouseSpeed": 325
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723263089,
+    "dwellTime": 149,
+    "flightTime": 218,
+    "mouseSpeed": 256
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723263456,
+    "dwellTime": 90,
+    "flightTime": 226,
+    "mouseSpeed": 365
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723263772,
+    "dwellTime": 98,
+    "flightTime": 71,
+    "mouseSpeed": 669
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723263941,
+    "dwellTime": 50,
+    "flightTime": 191,
+    "mouseSpeed": 576
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723264182,
+    "dwellTime": 58,
+    "flightTime": 133,
+    "mouseSpeed": 605
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723264373,
+    "dwellTime": 97,
+    "flightTime": 229,
+    "mouseSpeed": 570
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723264699,
+    "dwellTime": 116,
+    "flightTime": 200,
+    "mouseSpeed": 338
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723265015,
+    "dwellTime": 83,
+    "flightTime": 193,
+    "mouseSpeed": 455
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723265291,
+    "dwellTime": 101,
+    "flightTime": 230,
+    "mouseSpeed": 320
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723265622,
+    "dwellTime": 86,
+    "flightTime": 179,
+    "mouseSpeed": 338
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723265887,
+    "dwellTime": 100,
+    "flightTime": 233,
+    "mouseSpeed": 231
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723266220,
+    "dwellTime": 66,
+    "flightTime": 160,
+    "mouseSpeed": 420
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723266446,
+    "dwellTime": 64,
+    "flightTime": 120,
+    "mouseSpeed": 293
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723266630,
+    "dwellTime": 91,
+    "flightTime": 142,
+    "mouseSpeed": 524
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723266863,
+    "dwellTime": 100,
+    "flightTime": 153,
+    "mouseSpeed": 434
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723267116,
+    "dwellTime": 68,
+    "flightTime": 183,
+    "mouseSpeed": 200
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723267367,
+    "dwellTime": 88,
+    "flightTime": 198,
+    "mouseSpeed": 419
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723267653,
+    "dwellTime": 63,
+    "flightTime": 167,
+    "mouseSpeed": 622
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723267883,
+    "dwellTime": 98,
+    "flightTime": 230,
+    "mouseSpeed": 484
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723268211,
+    "dwellTime": 59,
+    "flightTime": 132,
+    "mouseSpeed": 300
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723268402,
+    "dwellTime": 95,
+    "flightTime": 204,
+    "mouseSpeed": 604
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723268701,
+    "dwellTime": 121,
+    "flightTime": 146,
+    "mouseSpeed": 221
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723268968,
+    "dwellTime": 137,
+    "flightTime": 176,
+    "mouseSpeed": 288
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723269281,
+    "dwellTime": 117,
+    "flightTime": 75,
+    "mouseSpeed": 334
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723269473,
+    "dwellTime": 83,
+    "flightTime": 74,
+    "mouseSpeed": 336
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723269630,
+    "dwellTime": 93,
+    "flightTime": 134,
+    "mouseSpeed": 381
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723269857,
+    "dwellTime": 80,
+    "flightTime": 156,
+    "mouseSpeed": 256
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723270093,
+    "dwellTime": 51,
+    "flightTime": 204,
+    "mouseSpeed": 636
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723270348,
+    "dwellTime": 125,
+    "flightTime": 73,
+    "mouseSpeed": 360
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723270546,
+    "dwellTime": 99,
+    "flightTime": 235,
+    "mouseSpeed": 638
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723270880,
+    "dwellTime": 112,
+    "flightTime": 113,
+    "mouseSpeed": 387
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723271105,
+    "dwellTime": 50,
+    "flightTime": 126,
+    "mouseSpeed": 538
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723271281,
+    "dwellTime": 107,
+    "flightTime": 214,
+    "mouseSpeed": 503
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723271602,
+    "dwellTime": 97,
+    "flightTime": 134,
+    "mouseSpeed": 668
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723271833,
+    "dwellTime": 88,
+    "flightTime": 144,
+    "mouseSpeed": 403
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723272065,
+    "dwellTime": 116,
+    "flightTime": 174,
+    "mouseSpeed": 632
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723272355,
+    "dwellTime": 56,
+    "flightTime": 142,
+    "mouseSpeed": 546
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723272553,
+    "dwellTime": 121,
+    "flightTime": 167,
+    "mouseSpeed": 647
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723272841,
+    "dwellTime": 142,
+    "flightTime": 81,
+    "mouseSpeed": 553
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723273064,
+    "dwellTime": 99,
+    "flightTime": 219,
+    "mouseSpeed": 674
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723273382,
+    "dwellTime": 97,
+    "flightTime": 201,
+    "mouseSpeed": 211
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723273680,
+    "dwellTime": 54,
+    "flightTime": 120,
+    "mouseSpeed": 450
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723273854,
+    "dwellTime": 109,
+    "flightTime": 169,
+    "mouseSpeed": 269
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723274132,
+    "dwellTime": 115,
+    "flightTime": 190,
+    "mouseSpeed": 308
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723274437,
+    "dwellTime": 84,
+    "flightTime": 64,
+    "mouseSpeed": 552
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723274585,
+    "dwellTime": 99,
+    "flightTime": 68,
+    "mouseSpeed": 265
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723274752,
+    "dwellTime": 69,
+    "flightTime": 163,
+    "mouseSpeed": 575
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723274984,
+    "dwellTime": 149,
+    "flightTime": 179,
+    "mouseSpeed": 661
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723275312,
+    "dwellTime": 91,
+    "flightTime": 220,
+    "mouseSpeed": 273
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723275623,
+    "dwellTime": 56,
+    "flightTime": 127,
+    "mouseSpeed": 534
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723275806,
+    "dwellTime": 129,
+    "flightTime": 87,
+    "mouseSpeed": 249
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723276022,
+    "dwellTime": 101,
+    "flightTime": 229,
+    "mouseSpeed": 508
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723276352,
+    "dwellTime": 108,
+    "flightTime": 101,
+    "mouseSpeed": 255
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723276561,
+    "dwellTime": 98,
+    "flightTime": 156,
+    "mouseSpeed": 605
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723276815,
+    "dwellTime": 91,
+    "flightTime": 105,
+    "mouseSpeed": 277
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723277011,
+    "dwellTime": 93,
+    "flightTime": 100,
+    "mouseSpeed": 636
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723277204,
+    "dwellTime": 111,
+    "flightTime": 169,
+    "mouseSpeed": 329
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723277484,
+    "dwellTime": 91,
+    "flightTime": 198,
+    "mouseSpeed": 397
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723277773,
+    "dwellTime": 59,
+    "flightTime": 116,
+    "mouseSpeed": 332
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723277948,
+    "dwellTime": 62,
+    "flightTime": 144,
+    "mouseSpeed": 697
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723278154,
+    "dwellTime": 78,
+    "flightTime": 170,
+    "mouseSpeed": 662
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723278402,
+    "dwellTime": 71,
+    "flightTime": 179,
+    "mouseSpeed": 334
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723278652,
+    "dwellTime": 112,
+    "flightTime": 86,
+    "mouseSpeed": 552
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723278850,
+    "dwellTime": 70,
+    "flightTime": 101,
+    "mouseSpeed": 304
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723279021,
+    "dwellTime": 149,
+    "flightTime": 99,
+    "mouseSpeed": 291
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723279269,
+    "dwellTime": 78,
+    "flightTime": 211,
+    "mouseSpeed": 353
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723279558,
+    "dwellTime": 111,
+    "flightTime": 170,
+    "mouseSpeed": 437
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723279839,
+    "dwellTime": 84,
+    "flightTime": 248,
+    "mouseSpeed": 459
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723280171,
+    "dwellTime": 102,
+    "flightTime": 130,
+    "mouseSpeed": 543
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723280403,
+    "dwellTime": 76,
+    "flightTime": 63,
+    "mouseSpeed": 698
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723280542,
+    "dwellTime": 119,
+    "flightTime": 85,
+    "mouseSpeed": 214
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723280746,
+    "dwellTime": 128,
+    "flightTime": 236,
+    "mouseSpeed": 655
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723281110,
+    "dwellTime": 115,
+    "flightTime": 129,
+    "mouseSpeed": 488
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723281354,
+    "dwellTime": 84,
+    "flightTime": 237,
+    "mouseSpeed": 617
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723281675,
+    "dwellTime": 62,
+    "flightTime": 157,
+    "mouseSpeed": 643
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723281894,
+    "dwellTime": 125,
+    "flightTime": 62,
+    "mouseSpeed": 482
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723282081,
+    "dwellTime": 84,
+    "flightTime": 241,
+    "mouseSpeed": 265
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723282406,
+    "dwellTime": 128,
+    "flightTime": 57,
+    "mouseSpeed": 643
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723282591,
+    "dwellTime": 60,
+    "flightTime": 246,
+    "mouseSpeed": 532
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723282897,
+    "dwellTime": 66,
+    "flightTime": 226,
+    "mouseSpeed": 405
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723283189,
+    "dwellTime": 137,
+    "flightTime": 88,
+    "mouseSpeed": 330
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723283414,
+    "dwellTime": 114,
+    "flightTime": 95,
+    "mouseSpeed": 366
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723283623,
+    "dwellTime": 74,
+    "flightTime": 105,
+    "mouseSpeed": 516
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723283802,
+    "dwellTime": 65,
+    "flightTime": 67,
+    "mouseSpeed": 247
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723283934,
+    "dwellTime": 116,
+    "flightTime": 128,
+    "mouseSpeed": 332
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723284178,
+    "dwellTime": 117,
+    "flightTime": 235,
+    "mouseSpeed": 534
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723284530,
+    "dwellTime": 75,
+    "flightTime": 62,
+    "mouseSpeed": 516
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723284667,
+    "dwellTime": 129,
+    "flightTime": 199,
+    "mouseSpeed": 240
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723284995,
+    "dwellTime": 93,
+    "flightTime": 157,
+    "mouseSpeed": 443
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723285245,
+    "dwellTime": 123,
+    "flightTime": 133,
+    "mouseSpeed": 235
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723285501,
+    "dwellTime": 54,
+    "flightTime": 101,
+    "mouseSpeed": 320
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723285656,
+    "dwellTime": 94,
+    "flightTime": 242,
+    "mouseSpeed": 498
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723285992,
+    "dwellTime": 61,
+    "flightTime": 140,
+    "mouseSpeed": 406
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723286193,
+    "dwellTime": 53,
+    "flightTime": 183,
+    "mouseSpeed": 503
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723286429,
+    "dwellTime": 85,
+    "flightTime": 173,
+    "mouseSpeed": 496
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723286687,
+    "dwellTime": 119,
+    "flightTime": 148,
+    "mouseSpeed": 203
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723286954,
+    "dwellTime": 51,
+    "flightTime": 207,
+    "mouseSpeed": 625
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723287212,
+    "dwellTime": 138,
+    "flightTime": 219,
+    "mouseSpeed": 653
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723287569,
+    "dwellTime": 91,
+    "flightTime": 60,
+    "mouseSpeed": 522
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723287720,
+    "dwellTime": 137,
+    "flightTime": 137,
+    "mouseSpeed": 584
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723287994,
+    "dwellTime": 126,
+    "flightTime": 136,
+    "mouseSpeed": 306
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723288256,
+    "dwellTime": 104,
+    "flightTime": 55,
+    "mouseSpeed": 217
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723288415,
+    "dwellTime": 53,
+    "flightTime": 100,
+    "mouseSpeed": 679
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723288568,
+    "dwellTime": 134,
+    "flightTime": 184,
+    "mouseSpeed": 562
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723288886,
+    "dwellTime": 115,
+    "flightTime": 204,
+    "mouseSpeed": 594
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723289205,
+    "dwellTime": 147,
+    "flightTime": 167,
+    "mouseSpeed": 402
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723289519,
+    "dwellTime": 62,
+    "flightTime": 187,
+    "mouseSpeed": 540
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723289768,
+    "dwellTime": 107,
+    "flightTime": 88,
+    "mouseSpeed": 525
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723289963,
+    "dwellTime": 101,
+    "flightTime": 59,
+    "mouseSpeed": 387
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723290123,
+    "dwellTime": 52,
+    "flightTime": 181,
+    "mouseSpeed": 392
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723290356,
+    "dwellTime": 71,
+    "flightTime": 134,
+    "mouseSpeed": 350
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723290561,
+    "dwellTime": 111,
+    "flightTime": 106,
+    "mouseSpeed": 619
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723290778,
+    "dwellTime": 129,
+    "flightTime": 192,
+    "mouseSpeed": 411
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723291099,
+    "dwellTime": 53,
+    "flightTime": 178,
+    "mouseSpeed": 585
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723291330,
+    "dwellTime": 66,
+    "flightTime": 203,
+    "mouseSpeed": 555
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723291599,
+    "dwellTime": 50,
+    "flightTime": 138,
+    "mouseSpeed": 529
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723291787,
+    "dwellTime": 115,
+    "flightTime": 117,
+    "mouseSpeed": 551
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723292019,
+    "dwellTime": 141,
+    "flightTime": 196,
+    "mouseSpeed": 208
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723292356,
+    "dwellTime": 137,
+    "flightTime": 243,
+    "mouseSpeed": 674
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723292736,
+    "dwellTime": 101,
+    "flightTime": 125,
+    "mouseSpeed": 662
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723292962,
+    "dwellTime": 134,
+    "flightTime": 173,
+    "mouseSpeed": 505
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723293269,
+    "dwellTime": 67,
+    "flightTime": 181,
+    "mouseSpeed": 355
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723293517,
+    "dwellTime": 74,
+    "flightTime": 124,
+    "mouseSpeed": 348
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723293715,
+    "dwellTime": 133,
+    "flightTime": 141,
+    "mouseSpeed": 250
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723293989,
+    "dwellTime": 137,
+    "flightTime": 52,
+    "mouseSpeed": 699
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723294178,
+    "dwellTime": 112,
+    "flightTime": 79,
+    "mouseSpeed": 594
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723294369,
+    "dwellTime": 115,
+    "flightTime": 105,
+    "mouseSpeed": 517
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723294589,
+    "dwellTime": 98,
+    "flightTime": 171,
+    "mouseSpeed": 422
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723294858,
+    "dwellTime": 97,
+    "flightTime": 62,
+    "mouseSpeed": 460
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723295017,
+    "dwellTime": 88,
+    "flightTime": 237,
+    "mouseSpeed": 652
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723295342,
+    "dwellTime": 92,
+    "flightTime": 210,
+    "mouseSpeed": 325
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723295644,
+    "dwellTime": 72,
+    "flightTime": 58,
+    "mouseSpeed": 268
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723295774,
+    "dwellTime": 89,
+    "flightTime": 140,
+    "mouseSpeed": 461
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723296003,
+    "dwellTime": 71,
+    "flightTime": 165,
+    "mouseSpeed": 318
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723296239,
+    "dwellTime": 99,
+    "flightTime": 194,
+    "mouseSpeed": 432
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723296532,
+    "dwellTime": 144,
+    "flightTime": 197,
+    "mouseSpeed": 672
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723296873,
+    "dwellTime": 114,
+    "flightTime": 212,
+    "mouseSpeed": 207
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723297199,
+    "dwellTime": 101,
+    "flightTime": 245,
+    "mouseSpeed": 388
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723297545,
+    "dwellTime": 113,
+    "flightTime": 194,
+    "mouseSpeed": 629
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723297852,
+    "dwellTime": 67,
+    "flightTime": 173,
+    "mouseSpeed": 562
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723298092,
+    "dwellTime": 59,
+    "flightTime": 232,
+    "mouseSpeed": 694
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723298383,
+    "dwellTime": 74,
+    "flightTime": 102,
+    "mouseSpeed": 666
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723298559,
+    "dwellTime": 62,
+    "flightTime": 132,
+    "mouseSpeed": 506
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723298753,
+    "dwellTime": 73,
+    "flightTime": 230,
+    "mouseSpeed": 354
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723299056,
+    "dwellTime": 120,
+    "flightTime": 70,
+    "mouseSpeed": 464
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723299246,
+    "dwellTime": 90,
+    "flightTime": 227,
+    "mouseSpeed": 470
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723299563,
+    "dwellTime": 88,
+    "flightTime": 81,
+    "mouseSpeed": 300
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723299732,
+    "dwellTime": 133,
+    "flightTime": 148,
+    "mouseSpeed": 451
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723300013,
+    "dwellTime": 105,
+    "flightTime": 221,
+    "mouseSpeed": 431
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723300339,
+    "dwellTime": 102,
+    "flightTime": 111,
+    "mouseSpeed": 443
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723300552,
+    "dwellTime": 140,
+    "flightTime": 111,
+    "mouseSpeed": 237
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723300803,
+    "dwellTime": 102,
+    "flightTime": 244,
+    "mouseSpeed": 667
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723301149,
+    "dwellTime": 76,
+    "flightTime": 177,
+    "mouseSpeed": 415
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723301402,
+    "dwellTime": 63,
+    "flightTime": 94,
+    "mouseSpeed": 499
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723301559,
+    "dwellTime": 139,
+    "flightTime": 94,
+    "mouseSpeed": 633
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723301792,
+    "dwellTime": 98,
+    "flightTime": 213,
+    "mouseSpeed": 566
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723302103,
+    "dwellTime": 118,
+    "flightTime": 88,
+    "mouseSpeed": 536
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723302309,
+    "dwellTime": 103,
+    "flightTime": 106,
+    "mouseSpeed": 543
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723302518,
+    "dwellTime": 66,
+    "flightTime": 248,
+    "mouseSpeed": 351
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723302832,
+    "dwellTime": 59,
+    "flightTime": 134,
+    "mouseSpeed": 571
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723303025,
+    "dwellTime": 127,
+    "flightTime": 151,
+    "mouseSpeed": 409
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723303303,
+    "dwellTime": 149,
+    "flightTime": 248,
+    "mouseSpeed": 636
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723303700,
+    "dwellTime": 128,
+    "flightTime": 233,
+    "mouseSpeed": 520
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723304061,
+    "dwellTime": 82,
+    "flightTime": 144,
+    "mouseSpeed": 474
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723304287,
+    "dwellTime": 135,
+    "flightTime": 240,
+    "mouseSpeed": 676
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723304662,
+    "dwellTime": 56,
+    "flightTime": 208,
+    "mouseSpeed": 421
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723304926,
+    "dwellTime": 139,
+    "flightTime": 119,
+    "mouseSpeed": 539
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723305184,
+    "dwellTime": 115,
+    "flightTime": 125,
+    "mouseSpeed": 384
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723305424,
+    "dwellTime": 118,
+    "flightTime": 133,
+    "mouseSpeed": 533
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723305675,
+    "dwellTime": 105,
+    "flightTime": 240,
+    "mouseSpeed": 228
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723306020,
+    "dwellTime": 85,
+    "flightTime": 174,
+    "mouseSpeed": 656
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723306279,
+    "dwellTime": 117,
+    "flightTime": 69,
+    "mouseSpeed": 327
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723306465,
+    "dwellTime": 109,
+    "flightTime": 72,
+    "mouseSpeed": 374
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723306646,
+    "dwellTime": 124,
+    "flightTime": 212,
+    "mouseSpeed": 200
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723306982,
+    "dwellTime": 144,
+    "flightTime": 163,
+    "mouseSpeed": 683
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723307289,
+    "dwellTime": 87,
+    "flightTime": 107,
+    "mouseSpeed": 329
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723307483,
+    "dwellTime": 104,
+    "flightTime": 247,
+    "mouseSpeed": 380
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723307834,
+    "dwellTime": 149,
+    "flightTime": 234,
+    "mouseSpeed": 638
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723308217,
+    "dwellTime": 71,
+    "flightTime": 107,
+    "mouseSpeed": 621
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723308395,
+    "dwellTime": 130,
+    "flightTime": 117,
+    "mouseSpeed": 600
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723308642,
+    "dwellTime": 81,
+    "flightTime": 163,
+    "mouseSpeed": 344
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723308886,
+    "dwellTime": 135,
+    "flightTime": 217,
+    "mouseSpeed": 214
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723309238,
+    "dwellTime": 137,
+    "flightTime": 59,
+    "mouseSpeed": 691
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723309434,
+    "dwellTime": 122,
+    "flightTime": 201,
+    "mouseSpeed": 648
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723309757,
+    "dwellTime": 66,
+    "flightTime": 176,
+    "mouseSpeed": 659
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723309999,
+    "dwellTime": 117,
+    "flightTime": 209,
+    "mouseSpeed": 302
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723310325,
+    "dwellTime": 136,
+    "flightTime": 203,
+    "mouseSpeed": 621
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723310664,
+    "dwellTime": 117,
+    "flightTime": 96,
+    "mouseSpeed": 445
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723310877,
+    "dwellTime": 132,
+    "flightTime": 68,
+    "mouseSpeed": 456
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723311077,
+    "dwellTime": 68,
+    "flightTime": 94,
+    "mouseSpeed": 348
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723311239,
+    "dwellTime": 139,
+    "flightTime": 191,
+    "mouseSpeed": 223
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723311569,
+    "dwellTime": 127,
+    "flightTime": 101,
+    "mouseSpeed": 454
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723311797,
+    "dwellTime": 126,
+    "flightTime": 99,
+    "mouseSpeed": 562
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723312022,
+    "dwellTime": 105,
+    "flightTime": 193,
+    "mouseSpeed": 377
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723312320,
+    "dwellTime": 140,
+    "flightTime": 101,
+    "mouseSpeed": 602
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723312561,
+    "dwellTime": 61,
+    "flightTime": 211,
+    "mouseSpeed": 624
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723312833,
+    "dwellTime": 88,
+    "flightTime": 155,
+    "mouseSpeed": 414
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723313076,
+    "dwellTime": 84,
+    "flightTime": 88,
+    "mouseSpeed": 282
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723313248,
+    "dwellTime": 75,
+    "flightTime": 248,
+    "mouseSpeed": 469
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723313571,
+    "dwellTime": 138,
+    "flightTime": 228,
+    "mouseSpeed": 592
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723313937,
+    "dwellTime": 87,
+    "flightTime": 139,
+    "mouseSpeed": 200
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723314163,
+    "dwellTime": 94,
+    "flightTime": 96,
+    "mouseSpeed": 242
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723314353,
+    "dwellTime": 134,
+    "flightTime": 57,
+    "mouseSpeed": 461
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723314544,
+    "dwellTime": 73,
+    "flightTime": 179,
+    "mouseSpeed": 236
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723314796,
+    "dwellTime": 97,
+    "flightTime": 223,
+    "mouseSpeed": 204
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723315116,
+    "dwellTime": 63,
+    "flightTime": 227,
+    "mouseSpeed": 397
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723315406,
+    "dwellTime": 84,
+    "flightTime": 223,
+    "mouseSpeed": 360
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723315713,
+    "dwellTime": 75,
+    "flightTime": 92,
+    "mouseSpeed": 342
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723315880,
+    "dwellTime": 146,
+    "flightTime": 54,
+    "mouseSpeed": 642
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723316080,
+    "dwellTime": 104,
+    "flightTime": 74,
+    "mouseSpeed": 313
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723316258,
+    "dwellTime": 123,
+    "flightTime": 157,
+    "mouseSpeed": 579
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723316538,
+    "dwellTime": 127,
+    "flightTime": 90,
+    "mouseSpeed": 367
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723316755,
+    "dwellTime": 130,
+    "flightTime": 210,
+    "mouseSpeed": 362
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723317095,
+    "dwellTime": 83,
+    "flightTime": 103,
+    "mouseSpeed": 400
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723317281,
+    "dwellTime": 106,
+    "flightTime": 143,
+    "mouseSpeed": 450
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723317530,
+    "dwellTime": 131,
+    "flightTime": 136,
+    "mouseSpeed": 285
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723317797,
+    "dwellTime": 55,
+    "flightTime": 184,
+    "mouseSpeed": 401
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723318036,
+    "dwellTime": 121,
+    "flightTime": 162,
+    "mouseSpeed": 460
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723318319,
+    "dwellTime": 129,
+    "flightTime": 87,
+    "mouseSpeed": 324
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723318535,
+    "dwellTime": 133,
+    "flightTime": 92,
+    "mouseSpeed": 617
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723318760,
+    "dwellTime": 139,
+    "flightTime": 62,
+    "mouseSpeed": 448
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723318961,
+    "dwellTime": 98,
+    "flightTime": 241,
+    "mouseSpeed": 639
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723319300,
+    "dwellTime": 55,
+    "flightTime": 230,
+    "mouseSpeed": 630
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723319585,
+    "dwellTime": 89,
+    "flightTime": 145,
+    "mouseSpeed": 567
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723319819,
+    "dwellTime": 143,
+    "flightTime": 74,
+    "mouseSpeed": 237
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723320036,
+    "dwellTime": 138,
+    "flightTime": 84,
+    "mouseSpeed": 698
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723320258,
+    "dwellTime": 99,
+    "flightTime": 133,
+    "mouseSpeed": 366
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723320490,
+    "dwellTime": 80,
+    "flightTime": 112,
+    "mouseSpeed": 567
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723320682,
+    "dwellTime": 103,
+    "flightTime": 178,
+    "mouseSpeed": 558
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723320963,
+    "dwellTime": 148,
+    "flightTime": 105,
+    "mouseSpeed": 639
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723321216,
+    "dwellTime": 97,
+    "flightTime": 143,
+    "mouseSpeed": 334
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723321456,
+    "dwellTime": 100,
+    "flightTime": 180,
+    "mouseSpeed": 635
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723321736,
+    "dwellTime": 63,
+    "flightTime": 196,
+    "mouseSpeed": 542
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723321995,
+    "dwellTime": 130,
+    "flightTime": 88,
+    "mouseSpeed": 400
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723322213,
+    "dwellTime": 95,
+    "flightTime": 117,
+    "mouseSpeed": 515
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723322425,
+    "dwellTime": 145,
+    "flightTime": 197,
+    "mouseSpeed": 394
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723322767,
+    "dwellTime": 68,
+    "flightTime": 154,
+    "mouseSpeed": 576
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723322989,
+    "dwellTime": 106,
+    "flightTime": 213,
+    "mouseSpeed": 331
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723323308,
+    "dwellTime": 100,
+    "flightTime": 143,
+    "mouseSpeed": 243
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723323551,
+    "dwellTime": 131,
+    "flightTime": 80,
+    "mouseSpeed": 646
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723323762,
+    "dwellTime": 132,
+    "flightTime": 171,
+    "mouseSpeed": 495
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723324065,
+    "dwellTime": 67,
+    "flightTime": 76,
+    "mouseSpeed": 328
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723324208,
+    "dwellTime": 109,
+    "flightTime": 105,
+    "mouseSpeed": 421
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723324422,
+    "dwellTime": 83,
+    "flightTime": 183,
+    "mouseSpeed": 666
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723324688,
+    "dwellTime": 117,
+    "flightTime": 127,
+    "mouseSpeed": 501
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723324932,
+    "dwellTime": 135,
+    "flightTime": 179,
+    "mouseSpeed": 329
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723325246,
+    "dwellTime": 50,
+    "flightTime": 91,
+    "mouseSpeed": 353
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723325387,
+    "dwellTime": 107,
+    "flightTime": 210,
+    "mouseSpeed": 365
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723325704,
+    "dwellTime": 143,
+    "flightTime": 240,
+    "mouseSpeed": 541
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723326087,
+    "dwellTime": 87,
+    "flightTime": 123,
+    "mouseSpeed": 266
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723326297,
+    "dwellTime": 72,
+    "flightTime": 174,
+    "mouseSpeed": 553
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723326543,
+    "dwellTime": 121,
+    "flightTime": 98,
+    "mouseSpeed": 520
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723326762,
+    "dwellTime": 66,
+    "flightTime": 84,
+    "mouseSpeed": 565
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723326912,
+    "dwellTime": 59,
+    "flightTime": 192,
+    "mouseSpeed": 694
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723327163,
+    "dwellTime": 143,
+    "flightTime": 245,
+    "mouseSpeed": 239
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723327551,
+    "dwellTime": 65,
+    "flightTime": 143,
+    "mouseSpeed": 355
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723327759,
+    "dwellTime": 115,
+    "flightTime": 135,
+    "mouseSpeed": 687
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723328009,
+    "dwellTime": 147,
+    "flightTime": 89,
+    "mouseSpeed": 575
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723328245,
+    "dwellTime": 92,
+    "flightTime": 229,
+    "mouseSpeed": 371
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723328566,
+    "dwellTime": 98,
+    "flightTime": 160,
+    "mouseSpeed": 487
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723328824,
+    "dwellTime": 118,
+    "flightTime": 139,
+    "mouseSpeed": 690
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723329081,
+    "dwellTime": 73,
+    "flightTime": 89,
+    "mouseSpeed": 496
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723329243,
+    "dwellTime": 125,
+    "flightTime": 200,
+    "mouseSpeed": 606
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723329568,
+    "dwellTime": 67,
+    "flightTime": 236,
+    "mouseSpeed": 461
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723329871,
+    "dwellTime": 77,
+    "flightTime": 229,
+    "mouseSpeed": 450
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723330177,
+    "dwellTime": 52,
+    "flightTime": 224,
+    "mouseSpeed": 559
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723330453,
+    "dwellTime": 104,
+    "flightTime": 61,
+    "mouseSpeed": 245
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723330618,
+    "dwellTime": 119,
+    "flightTime": 202,
+    "mouseSpeed": 474
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723330939,
+    "dwellTime": 103,
+    "flightTime": 208,
+    "mouseSpeed": 246
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723331250,
+    "dwellTime": 97,
+    "flightTime": 106,
+    "mouseSpeed": 316
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723331453,
+    "dwellTime": 99,
+    "flightTime": 80,
+    "mouseSpeed": 482
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723331632,
+    "dwellTime": 92,
+    "flightTime": 121,
+    "mouseSpeed": 361
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723331845,
+    "dwellTime": 102,
+    "flightTime": 226,
+    "mouseSpeed": 290
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723332173,
+    "dwellTime": 67,
+    "flightTime": 147,
+    "mouseSpeed": 680
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723332387,
+    "dwellTime": 135,
+    "flightTime": 177,
+    "mouseSpeed": 350
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723332699,
+    "dwellTime": 119,
+    "flightTime": 214,
+    "mouseSpeed": 606
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723333032,
+    "dwellTime": 85,
+    "flightTime": 165,
+    "mouseSpeed": 447
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723333282,
+    "dwellTime": 68,
+    "flightTime": 180,
+    "mouseSpeed": 575
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723333530,
+    "dwellTime": 119,
+    "flightTime": 124,
+    "mouseSpeed": 348
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723333773,
+    "dwellTime": 56,
+    "flightTime": 117,
+    "mouseSpeed": 368
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723333946,
+    "dwellTime": 128,
+    "flightTime": 227,
+    "mouseSpeed": 210
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723334301,
+    "dwellTime": 79,
+    "flightTime": 120,
+    "mouseSpeed": 481
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723334500,
+    "dwellTime": 107,
+    "flightTime": 105,
+    "mouseSpeed": 483
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723334712,
+    "dwellTime": 60,
+    "flightTime": 120,
+    "mouseSpeed": 475
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723334892,
+    "dwellTime": 69,
+    "flightTime": 218,
+    "mouseSpeed": 441
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723335179,
+    "dwellTime": 119,
+    "flightTime": 224,
+    "mouseSpeed": 422
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723335522,
+    "dwellTime": 140,
+    "flightTime": 116,
+    "mouseSpeed": 263
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723335778,
+    "dwellTime": 88,
+    "flightTime": 223,
+    "mouseSpeed": 298
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723336089,
+    "dwellTime": 128,
+    "flightTime": 245,
+    "mouseSpeed": 679
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723336462,
+    "dwellTime": 142,
+    "flightTime": 72,
+    "mouseSpeed": 630
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723336676,
+    "dwellTime": 127,
+    "flightTime": 124,
+    "mouseSpeed": 252
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723336927,
+    "dwellTime": 76,
+    "flightTime": 221,
+    "mouseSpeed": 601
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723337224,
+    "dwellTime": 145,
+    "flightTime": 134,
+    "mouseSpeed": 314
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723337503,
+    "dwellTime": 137,
+    "flightTime": 100,
+    "mouseSpeed": 506
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723337740,
+    "dwellTime": 141,
+    "flightTime": 118,
+    "mouseSpeed": 353
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723337999,
+    "dwellTime": 130,
+    "flightTime": 167,
+    "mouseSpeed": 327
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723338296,
+    "dwellTime": 142,
+    "flightTime": 245,
+    "mouseSpeed": 489
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723338683,
+    "dwellTime": 145,
+    "flightTime": 68,
+    "mouseSpeed": 572
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723338896,
+    "dwellTime": 98,
+    "flightTime": 235,
+    "mouseSpeed": 689
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723339229,
+    "dwellTime": 71,
+    "flightTime": 153,
+    "mouseSpeed": 648
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723339453,
+    "dwellTime": 119,
+    "flightTime": 181,
+    "mouseSpeed": 418
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723339753,
+    "dwellTime": 109,
+    "flightTime": 161,
+    "mouseSpeed": 355
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723340023,
+    "dwellTime": 73,
+    "flightTime": 158,
+    "mouseSpeed": 578
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723340254,
+    "dwellTime": 115,
+    "flightTime": 219,
+    "mouseSpeed": 484
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723340588,
+    "dwellTime": 98,
+    "flightTime": 100,
+    "mouseSpeed": 302
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723340786,
+    "dwellTime": 142,
+    "flightTime": 165,
+    "mouseSpeed": 562
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723341093,
+    "dwellTime": 102,
+    "flightTime": 194,
+    "mouseSpeed": 484
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723341389,
+    "dwellTime": 72,
+    "flightTime": 82,
+    "mouseSpeed": 539
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723341543,
+    "dwellTime": 110,
+    "flightTime": 158,
+    "mouseSpeed": 290
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723341811,
+    "dwellTime": 91,
+    "flightTime": 71,
+    "mouseSpeed": 411
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723341973,
+    "dwellTime": 103,
+    "flightTime": 66,
+    "mouseSpeed": 286
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723342142,
+    "dwellTime": 62,
+    "flightTime": 102,
+    "mouseSpeed": 352
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723342306,
+    "dwellTime": 98,
+    "flightTime": 62,
+    "mouseSpeed": 636
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723342466,
+    "dwellTime": 144,
+    "flightTime": 194,
+    "mouseSpeed": 674
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723342804,
+    "dwellTime": 52,
+    "flightTime": 86,
+    "mouseSpeed": 462
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723342942,
+    "dwellTime": 70,
+    "flightTime": 107,
+    "mouseSpeed": 464
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723343119,
+    "dwellTime": 83,
+    "flightTime": 140,
+    "mouseSpeed": 573
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723343342,
+    "dwellTime": 81,
+    "flightTime": 110,
+    "mouseSpeed": 246
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723343533,
+    "dwellTime": 127,
+    "flightTime": 54,
+    "mouseSpeed": 514
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723343714,
+    "dwellTime": 94,
+    "flightTime": 243,
+    "mouseSpeed": 663
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723344051,
+    "dwellTime": 67,
+    "flightTime": 116,
+    "mouseSpeed": 560
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723344234,
+    "dwellTime": 76,
+    "flightTime": 71,
+    "mouseSpeed": 267
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723344381,
+    "dwellTime": 120,
+    "flightTime": 222,
+    "mouseSpeed": 465
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723344723,
+    "dwellTime": 92,
+    "flightTime": 96,
+    "mouseSpeed": 693
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723344911,
+    "dwellTime": 78,
+    "flightTime": 241,
+    "mouseSpeed": 335
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723345230,
+    "dwellTime": 79,
+    "flightTime": 223,
+    "mouseSpeed": 450
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723345532,
+    "dwellTime": 93,
+    "flightTime": 109,
+    "mouseSpeed": 399
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723345734,
+    "dwellTime": 74,
+    "flightTime": 135,
+    "mouseSpeed": 596
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723345943,
+    "dwellTime": 131,
+    "flightTime": 96,
+    "mouseSpeed": 688
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723346170,
+    "dwellTime": 61,
+    "flightTime": 111,
+    "mouseSpeed": 676
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723346342,
+    "dwellTime": 98,
+    "flightTime": 236,
+    "mouseSpeed": 687
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723346676,
+    "dwellTime": 125,
+    "flightTime": 230,
+    "mouseSpeed": 343
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723347031,
+    "dwellTime": 118,
+    "flightTime": 148,
+    "mouseSpeed": 399
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723347297,
+    "dwellTime": 81,
+    "flightTime": 177,
+    "mouseSpeed": 503
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723347555,
+    "dwellTime": 90,
+    "flightTime": 206,
+    "mouseSpeed": 375
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723347851,
+    "dwellTime": 98,
+    "flightTime": 231,
+    "mouseSpeed": 207
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723348180,
+    "dwellTime": 91,
+    "flightTime": 195,
+    "mouseSpeed": 295
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723348466,
+    "dwellTime": 56,
+    "flightTime": 162,
+    "mouseSpeed": 419
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723348684,
+    "dwellTime": 105,
+    "flightTime": 191,
+    "mouseSpeed": 642
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723348980,
+    "dwellTime": 55,
+    "flightTime": 56,
+    "mouseSpeed": 477
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723349091,
+    "dwellTime": 123,
+    "flightTime": 156,
+    "mouseSpeed": 583
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723349370,
+    "dwellTime": 102,
+    "flightTime": 103,
+    "mouseSpeed": 489
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723349575,
+    "dwellTime": 129,
+    "flightTime": 125,
+    "mouseSpeed": 552
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723349829,
+    "dwellTime": 96,
+    "flightTime": 79,
+    "mouseSpeed": 355
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723350004,
+    "dwellTime": 54,
+    "flightTime": 148,
+    "mouseSpeed": 528
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723350206,
+    "dwellTime": 145,
+    "flightTime": 224,
+    "mouseSpeed": 532
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723350575,
+    "dwellTime": 90,
+    "flightTime": 186,
+    "mouseSpeed": 564
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723350851,
+    "dwellTime": 94,
+    "flightTime": 201,
+    "mouseSpeed": 483
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723351146,
+    "dwellTime": 147,
+    "flightTime": 148,
+    "mouseSpeed": 693
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723351441,
+    "dwellTime": 91,
+    "flightTime": 172,
+    "mouseSpeed": 307
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723351704,
+    "dwellTime": 103,
+    "flightTime": 84,
+    "mouseSpeed": 314
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723351891,
+    "dwellTime": 55,
+    "flightTime": 97,
+    "mouseSpeed": 655
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723352043,
+    "dwellTime": 122,
+    "flightTime": 171,
+    "mouseSpeed": 603
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723352336,
+    "dwellTime": 111,
+    "flightTime": 140,
+    "mouseSpeed": 389
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723352587,
+    "dwellTime": 119,
+    "flightTime": 117,
+    "mouseSpeed": 405
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723352823,
+    "dwellTime": 57,
+    "flightTime": 231,
+    "mouseSpeed": 630
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723353111,
+    "dwellTime": 129,
+    "flightTime": 212,
+    "mouseSpeed": 423
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723353452,
+    "dwellTime": 95,
+    "flightTime": 169,
+    "mouseSpeed": 626
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723353716,
+    "dwellTime": 77,
+    "flightTime": 109,
+    "mouseSpeed": 458
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723353902,
+    "dwellTime": 50,
+    "flightTime": 239,
+    "mouseSpeed": 674
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723354191,
+    "dwellTime": 102,
+    "flightTime": 50,
+    "mouseSpeed": 444
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723354343,
+    "dwellTime": 64,
+    "flightTime": 131,
+    "mouseSpeed": 397
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723354538,
+    "dwellTime": 55,
+    "flightTime": 214,
+    "mouseSpeed": 613
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723354807,
+    "dwellTime": 65,
+    "flightTime": 127,
+    "mouseSpeed": 338
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723354999,
+    "dwellTime": 128,
+    "flightTime": 145,
+    "mouseSpeed": 603
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723355272,
+    "dwellTime": 126,
+    "flightTime": 174,
+    "mouseSpeed": 643
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723355572,
+    "dwellTime": 61,
+    "flightTime": 102,
+    "mouseSpeed": 477
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723355735,
+    "dwellTime": 119,
+    "flightTime": 193,
+    "mouseSpeed": 366
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723356047,
+    "dwellTime": 86,
+    "flightTime": 177,
+    "mouseSpeed": 233
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723356310,
+    "dwellTime": 90,
+    "flightTime": 247,
+    "mouseSpeed": 619
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723356647,
+    "dwellTime": 108,
+    "flightTime": 136,
+    "mouseSpeed": 560
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723356891,
+    "dwellTime": 144,
+    "flightTime": 124,
+    "mouseSpeed": 288
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723357159,
+    "dwellTime": 51,
+    "flightTime": 115,
+    "mouseSpeed": 487
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723357325,
+    "dwellTime": 96,
+    "flightTime": 154,
+    "mouseSpeed": 200
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723357575,
+    "dwellTime": 135,
+    "flightTime": 69,
+    "mouseSpeed": 374
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723357779,
+    "dwellTime": 86,
+    "flightTime": 150,
+    "mouseSpeed": 499
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723358015,
+    "dwellTime": 59,
+    "flightTime": 114,
+    "mouseSpeed": 609
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723358188,
+    "dwellTime": 79,
+    "flightTime": 124,
+    "mouseSpeed": 603
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723358391,
+    "dwellTime": 120,
+    "flightTime": 167,
+    "mouseSpeed": 532
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723358678,
+    "dwellTime": 128,
+    "flightTime": 142,
+    "mouseSpeed": 565
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723358948,
+    "dwellTime": 139,
+    "flightTime": 91,
+    "mouseSpeed": 417
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723359178,
+    "dwellTime": 93,
+    "flightTime": 62,
+    "mouseSpeed": 348
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723359333,
+    "dwellTime": 128,
+    "flightTime": 100,
+    "mouseSpeed": 481
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723359561,
+    "dwellTime": 75,
+    "flightTime": 127,
+    "mouseSpeed": 298
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723359763,
+    "dwellTime": 87,
+    "flightTime": 173,
+    "mouseSpeed": 494
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723360023,
+    "dwellTime": 96,
+    "flightTime": 91,
+    "mouseSpeed": 236
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723360210,
+    "dwellTime": 67,
+    "flightTime": 176,
+    "mouseSpeed": 562
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723360453,
+    "dwellTime": 74,
+    "flightTime": 61,
+    "mouseSpeed": 398
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723360588,
+    "dwellTime": 105,
+    "flightTime": 181,
+    "mouseSpeed": 234
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723360874,
+    "dwellTime": 74,
+    "flightTime": 160,
+    "mouseSpeed": 338
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723361108,
+    "dwellTime": 136,
+    "flightTime": 185,
+    "mouseSpeed": 551
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723361429,
+    "dwellTime": 106,
+    "flightTime": 166,
+    "mouseSpeed": 697
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723361701,
+    "dwellTime": 126,
+    "flightTime": 117,
+    "mouseSpeed": 490
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723361944,
+    "dwellTime": 110,
+    "flightTime": 170,
+    "mouseSpeed": 236
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723362224,
+    "dwellTime": 134,
+    "flightTime": 152,
+    "mouseSpeed": 327
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723362510,
+    "dwellTime": 72,
+    "flightTime": 232,
+    "mouseSpeed": 223
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723362814,
+    "dwellTime": 106,
+    "flightTime": 87,
+    "mouseSpeed": 670
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723363007,
+    "dwellTime": 124,
+    "flightTime": 64,
+    "mouseSpeed": 616
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723363195,
+    "dwellTime": 123,
+    "flightTime": 91,
+    "mouseSpeed": 648
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723363409,
+    "dwellTime": 71,
+    "flightTime": 243,
+    "mouseSpeed": 208
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723363723,
+    "dwellTime": 117,
+    "flightTime": 148,
+    "mouseSpeed": 234
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723363988,
+    "dwellTime": 68,
+    "flightTime": 126,
+    "mouseSpeed": 682
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723364182,
+    "dwellTime": 53,
+    "flightTime": 198,
+    "mouseSpeed": 637
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723364433,
+    "dwellTime": 64,
+    "flightTime": 98,
+    "mouseSpeed": 636
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723364595,
+    "dwellTime": 126,
+    "flightTime": 219,
+    "mouseSpeed": 607
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723364940,
+    "dwellTime": 62,
+    "flightTime": 98,
+    "mouseSpeed": 313
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723365100,
+    "dwellTime": 97,
+    "flightTime": 80,
+    "mouseSpeed": 304
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723365277,
+    "dwellTime": 85,
+    "flightTime": 178,
+    "mouseSpeed": 617
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723365540,
+    "dwellTime": 110,
+    "flightTime": 165,
+    "mouseSpeed": 692
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723365815,
+    "dwellTime": 137,
+    "flightTime": 238,
+    "mouseSpeed": 444
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723366190,
+    "dwellTime": 63,
+    "flightTime": 107,
+    "mouseSpeed": 643
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723366360,
+    "dwellTime": 138,
+    "flightTime": 232,
+    "mouseSpeed": 645
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723366730,
+    "dwellTime": 57,
+    "flightTime": 198,
+    "mouseSpeed": 378
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723366985,
+    "dwellTime": 147,
+    "flightTime": 192,
+    "mouseSpeed": 589
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723367324,
+    "dwellTime": 128,
+    "flightTime": 212,
+    "mouseSpeed": 370
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723367664,
+    "dwellTime": 138,
+    "flightTime": 239,
+    "mouseSpeed": 386
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723368041,
+    "dwellTime": 87,
+    "flightTime": 113,
+    "mouseSpeed": 411
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723368241,
+    "dwellTime": 83,
+    "flightTime": 128,
+    "mouseSpeed": 555
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723368452,
+    "dwellTime": 124,
+    "flightTime": 107,
+    "mouseSpeed": 434
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723368683,
+    "dwellTime": 144,
+    "flightTime": 168,
+    "mouseSpeed": 410
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723368995,
+    "dwellTime": 112,
+    "flightTime": 55,
+    "mouseSpeed": 289
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723369162,
+    "dwellTime": 97,
+    "flightTime": 139,
+    "mouseSpeed": 409
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723369398,
+    "dwellTime": 81,
+    "flightTime": 114,
+    "mouseSpeed": 201
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723369593,
+    "dwellTime": 78,
+    "flightTime": 196,
+    "mouseSpeed": 537
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723369867,
+    "dwellTime": 97,
+    "flightTime": 91,
+    "mouseSpeed": 631
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723370055,
+    "dwellTime": 59,
+    "flightTime": 131,
+    "mouseSpeed": 356
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723370245,
+    "dwellTime": 54,
+    "flightTime": 108,
+    "mouseSpeed": 387
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723370407,
+    "dwellTime": 50,
+    "flightTime": 56,
+    "mouseSpeed": 333
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723370513,
+    "dwellTime": 116,
+    "flightTime": 218,
+    "mouseSpeed": 342
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723370847,
+    "dwellTime": 134,
+    "flightTime": 160,
+    "mouseSpeed": 213
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723371141,
+    "dwellTime": 63,
+    "flightTime": 228,
+    "mouseSpeed": 681
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723371432,
+    "dwellTime": 58,
+    "flightTime": 114,
+    "mouseSpeed": 691
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723371604,
+    "dwellTime": 55,
+    "flightTime": 185,
+    "mouseSpeed": 331
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723371844,
+    "dwellTime": 105,
+    "flightTime": 174,
+    "mouseSpeed": 505
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723372123,
+    "dwellTime": 88,
+    "flightTime": 147,
+    "mouseSpeed": 470
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723372358,
+    "dwellTime": 91,
+    "flightTime": 67,
+    "mouseSpeed": 472
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723372516,
+    "dwellTime": 75,
+    "flightTime": 58,
+    "mouseSpeed": 291
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723372649,
+    "dwellTime": 89,
+    "flightTime": 111,
+    "mouseSpeed": 632
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723372849,
+    "dwellTime": 65,
+    "flightTime": 94,
+    "mouseSpeed": 433
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723373008,
+    "dwellTime": 69,
+    "flightTime": 88,
+    "mouseSpeed": 416
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723373165,
+    "dwellTime": 100,
+    "flightTime": 149,
+    "mouseSpeed": 526
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723373414,
+    "dwellTime": 105,
+    "flightTime": 79,
+    "mouseSpeed": 662
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723373598,
+    "dwellTime": 65,
+    "flightTime": 124,
+    "mouseSpeed": 470
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723373787,
+    "dwellTime": 140,
+    "flightTime": 227,
+    "mouseSpeed": 545
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723374154,
+    "dwellTime": 71,
+    "flightTime": 109,
+    "mouseSpeed": 238
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723374334,
+    "dwellTime": 78,
+    "flightTime": 91,
+    "mouseSpeed": 631
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723374503,
+    "dwellTime": 60,
+    "flightTime": 56,
+    "mouseSpeed": 274
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723374619,
+    "dwellTime": 101,
+    "flightTime": 240,
+    "mouseSpeed": 303
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723374960,
+    "dwellTime": 122,
+    "flightTime": 163,
+    "mouseSpeed": 489
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723375245,
+    "dwellTime": 100,
+    "flightTime": 97,
+    "mouseSpeed": 339
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723375442,
+    "dwellTime": 139,
+    "flightTime": 106,
+    "mouseSpeed": 322
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723375687,
+    "dwellTime": 128,
+    "flightTime": 72,
+    "mouseSpeed": 226
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723375887,
+    "dwellTime": 98,
+    "flightTime": 80,
+    "mouseSpeed": 404
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723376065,
+    "dwellTime": 123,
+    "flightTime": 237,
+    "mouseSpeed": 238
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723376425,
+    "dwellTime": 52,
+    "flightTime": 238,
+    "mouseSpeed": 513
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723376715,
+    "dwellTime": 59,
+    "flightTime": 192,
+    "mouseSpeed": 605
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723376966,
+    "dwellTime": 78,
+    "flightTime": 238,
+    "mouseSpeed": 515
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723377282,
+    "dwellTime": 73,
+    "flightTime": 193,
+    "mouseSpeed": 339
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723377548,
+    "dwellTime": 53,
+    "flightTime": 243,
+    "mouseSpeed": 418
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723377844,
+    "dwellTime": 138,
+    "flightTime": 153,
+    "mouseSpeed": 670
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723378135,
+    "dwellTime": 59,
+    "flightTime": 122,
+    "mouseSpeed": 560
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723378316,
+    "dwellTime": 126,
+    "flightTime": 84,
+    "mouseSpeed": 699
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723378526,
+    "dwellTime": 70,
+    "flightTime": 143,
+    "mouseSpeed": 256
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723378739,
+    "dwellTime": 74,
+    "flightTime": 188,
+    "mouseSpeed": 455
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723379001,
+    "dwellTime": 109,
+    "flightTime": 98,
+    "mouseSpeed": 467
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723379208,
+    "dwellTime": 59,
+    "flightTime": 74,
+    "mouseSpeed": 611
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723379341,
+    "dwellTime": 61,
+    "flightTime": 160,
+    "mouseSpeed": 677
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723379562,
+    "dwellTime": 73,
+    "flightTime": 214,
+    "mouseSpeed": 263
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723379849,
+    "dwellTime": 95,
+    "flightTime": 222,
+    "mouseSpeed": 465
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723380166,
+    "dwellTime": 102,
+    "flightTime": 125,
+    "mouseSpeed": 506
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723380393,
+    "dwellTime": 100,
+    "flightTime": 145,
+    "mouseSpeed": 631
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723380638,
+    "dwellTime": 100,
+    "flightTime": 109,
+    "mouseSpeed": 347
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723380847,
+    "dwellTime": 115,
+    "flightTime": 130,
+    "mouseSpeed": 563
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723381092,
+    "dwellTime": 55,
+    "flightTime": 229,
+    "mouseSpeed": 468
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723381376,
+    "dwellTime": 149,
+    "flightTime": 226,
+    "mouseSpeed": 620
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723381751,
+    "dwellTime": 118,
+    "flightTime": 91,
+    "mouseSpeed": 446
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723381960,
+    "dwellTime": 149,
+    "flightTime": 207,
+    "mouseSpeed": 633
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723382316,
+    "dwellTime": 123,
+    "flightTime": 175,
+    "mouseSpeed": 685
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723382614,
+    "dwellTime": 100,
+    "flightTime": 123,
+    "mouseSpeed": 669
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723382837,
+    "dwellTime": 113,
+    "flightTime": 166,
+    "mouseSpeed": 547
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723383116,
+    "dwellTime": 118,
+    "flightTime": 234,
+    "mouseSpeed": 520
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723383468,
+    "dwellTime": 110,
+    "flightTime": 119,
+    "mouseSpeed": 615
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723383697,
+    "dwellTime": 64,
+    "flightTime": 215,
+    "mouseSpeed": 215
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723383976,
+    "dwellTime": 136,
+    "flightTime": 83,
+    "mouseSpeed": 649
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723384195,
+    "dwellTime": 66,
+    "flightTime": 119,
+    "mouseSpeed": 696
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723384380,
+    "dwellTime": 58,
+    "flightTime": 194,
+    "mouseSpeed": 623
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723384632,
+    "dwellTime": 100,
+    "flightTime": 219,
+    "mouseSpeed": 354
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723384951,
+    "dwellTime": 101,
+    "flightTime": 76,
+    "mouseSpeed": 323
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723385128,
+    "dwellTime": 108,
+    "flightTime": 206,
+    "mouseSpeed": 614
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723385442,
+    "dwellTime": 66,
+    "flightTime": 101,
+    "mouseSpeed": 402
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723385609,
+    "dwellTime": 86,
+    "flightTime": 74,
+    "mouseSpeed": 655
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723385769,
+    "dwellTime": 124,
+    "flightTime": 148,
+    "mouseSpeed": 316
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723386041,
+    "dwellTime": 89,
+    "flightTime": 88,
+    "mouseSpeed": 580
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723386218,
+    "dwellTime": 83,
+    "flightTime": 137,
+    "mouseSpeed": 335
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723386438,
+    "dwellTime": 107,
+    "flightTime": 165,
+    "mouseSpeed": 660
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723386710,
+    "dwellTime": 94,
+    "flightTime": 98,
+    "mouseSpeed": 415
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723386902,
+    "dwellTime": 94,
+    "flightTime": 98,
+    "mouseSpeed": 333
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723387094,
+    "dwellTime": 77,
+    "flightTime": 139,
+    "mouseSpeed": 606
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723387310,
+    "dwellTime": 64,
+    "flightTime": 99,
+    "mouseSpeed": 316
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723387473,
+    "dwellTime": 74,
+    "flightTime": 149,
+    "mouseSpeed": 581
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723387696,
+    "dwellTime": 56,
+    "flightTime": 124,
+    "mouseSpeed": 419
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723387876,
+    "dwellTime": 149,
+    "flightTime": 240,
+    "mouseSpeed": 643
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723388265,
+    "dwellTime": 129,
+    "flightTime": 87,
+    "mouseSpeed": 495
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723388481,
+    "dwellTime": 50,
+    "flightTime": 82,
+    "mouseSpeed": 301
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723388613,
+    "dwellTime": 107,
+    "flightTime": 73,
+    "mouseSpeed": 626
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723388793,
+    "dwellTime": 140,
+    "flightTime": 231,
+    "mouseSpeed": 426
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723389164,
+    "dwellTime": 130,
+    "flightTime": 155,
+    "mouseSpeed": 252
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723389449,
+    "dwellTime": 92,
+    "flightTime": 197,
+    "mouseSpeed": 218
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723389738,
+    "dwellTime": 145,
+    "flightTime": 136,
+    "mouseSpeed": 681
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723390019,
+    "dwellTime": 52,
+    "flightTime": 201,
+    "mouseSpeed": 530
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723390272,
+    "dwellTime": 78,
+    "flightTime": 194,
+    "mouseSpeed": 334
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723390544,
+    "dwellTime": 82,
+    "flightTime": 160,
+    "mouseSpeed": 467
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723390786,
+    "dwellTime": 128,
+    "flightTime": 90,
+    "mouseSpeed": 412
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723391004,
+    "dwellTime": 70,
+    "flightTime": 123,
+    "mouseSpeed": 335
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723391197,
+    "dwellTime": 132,
+    "flightTime": 163,
+    "mouseSpeed": 691
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723391492,
+    "dwellTime": 78,
+    "flightTime": 109,
+    "mouseSpeed": 373
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723391679,
+    "dwellTime": 100,
+    "flightTime": 124,
+    "mouseSpeed": 434
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723391903,
+    "dwellTime": 65,
+    "flightTime": 211,
+    "mouseSpeed": 335
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723392179,
+    "dwellTime": 139,
+    "flightTime": 153,
+    "mouseSpeed": 245
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723392471,
+    "dwellTime": 77,
+    "flightTime": 169,
+    "mouseSpeed": 344
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723392717,
+    "dwellTime": 132,
+    "flightTime": 165,
+    "mouseSpeed": 247
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723393014,
+    "dwellTime": 59,
+    "flightTime": 66,
+    "mouseSpeed": 548
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723393139,
+    "dwellTime": 137,
+    "flightTime": 160,
+    "mouseSpeed": 687
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723393436,
+    "dwellTime": 114,
+    "flightTime": 110,
+    "mouseSpeed": 616
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723393660,
+    "dwellTime": 136,
+    "flightTime": 64,
+    "mouseSpeed": 385
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723393860,
+    "dwellTime": 124,
+    "flightTime": 107,
+    "mouseSpeed": 480
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723394091,
+    "dwellTime": 121,
+    "flightTime": 124,
+    "mouseSpeed": 695
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723394336,
+    "dwellTime": 140,
+    "flightTime": 145,
+    "mouseSpeed": 212
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723394621,
+    "dwellTime": 119,
+    "flightTime": 74,
+    "mouseSpeed": 674
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723394814,
+    "dwellTime": 149,
+    "flightTime": 55,
+    "mouseSpeed": 596
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723395018,
+    "dwellTime": 68,
+    "flightTime": 141,
+    "mouseSpeed": 571
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723395227,
+    "dwellTime": 89,
+    "flightTime": 174,
+    "mouseSpeed": 605
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723395490,
+    "dwellTime": 116,
+    "flightTime": 206,
+    "mouseSpeed": 372
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723395812,
+    "dwellTime": 123,
+    "flightTime": 133,
+    "mouseSpeed": 343
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723396068,
+    "dwellTime": 114,
+    "flightTime": 169,
+    "mouseSpeed": 231
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723396351,
+    "dwellTime": 100,
+    "flightTime": 143,
+    "mouseSpeed": 500
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723396594,
+    "dwellTime": 64,
+    "flightTime": 59,
+    "mouseSpeed": 397
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723396717,
+    "dwellTime": 127,
+    "flightTime": 64,
+    "mouseSpeed": 385
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723396908,
+    "dwellTime": 89,
+    "flightTime": 181,
+    "mouseSpeed": 400
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723397178,
+    "dwellTime": 62,
+    "flightTime": 210,
+    "mouseSpeed": 679
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723397450,
+    "dwellTime": 117,
+    "flightTime": 91,
+    "mouseSpeed": 398
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723397658,
+    "dwellTime": 103,
+    "flightTime": 73,
+    "mouseSpeed": 218
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723397834,
+    "dwellTime": 57,
+    "flightTime": 220,
+    "mouseSpeed": 687
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723398111,
+    "dwellTime": 134,
+    "flightTime": 194,
+    "mouseSpeed": 320
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723398439,
+    "dwellTime": 113,
+    "flightTime": 126,
+    "mouseSpeed": 598
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723398678,
+    "dwellTime": 122,
+    "flightTime": 62,
+    "mouseSpeed": 488
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723398862,
+    "dwellTime": 117,
+    "flightTime": 177,
+    "mouseSpeed": 675
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723399156,
+    "dwellTime": 87,
+    "flightTime": 148,
+    "mouseSpeed": 302
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723399391,
+    "dwellTime": 88,
+    "flightTime": 57,
+    "mouseSpeed": 515
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723399536,
+    "dwellTime": 102,
+    "flightTime": 135,
+    "mouseSpeed": 576
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723399773,
+    "dwellTime": 79,
+    "flightTime": 223,
+    "mouseSpeed": 626
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723400075,
+    "dwellTime": 79,
+    "flightTime": 105,
+    "mouseSpeed": 320
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723400259,
+    "dwellTime": 67,
+    "flightTime": 234,
+    "mouseSpeed": 216
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723400560,
+    "dwellTime": 56,
+    "flightTime": 213,
+    "mouseSpeed": 213
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723400829,
+    "dwellTime": 136,
+    "flightTime": 84,
+    "mouseSpeed": 237
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723401049,
+    "dwellTime": 74,
+    "flightTime": 147,
+    "mouseSpeed": 690
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723401270,
+    "dwellTime": 59,
+    "flightTime": 164,
+    "mouseSpeed": 283
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723401493,
+    "dwellTime": 107,
+    "flightTime": 115,
+    "mouseSpeed": 644
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723401715,
+    "dwellTime": 110,
+    "flightTime": 202,
+    "mouseSpeed": 685
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723402027,
+    "dwellTime": 119,
+    "flightTime": 225,
+    "mouseSpeed": 382
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723402371,
+    "dwellTime": 137,
+    "flightTime": 115,
+    "mouseSpeed": 377
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723402623,
+    "dwellTime": 145,
+    "flightTime": 71,
+    "mouseSpeed": 273
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723402839,
+    "dwellTime": 108,
+    "flightTime": 153,
+    "mouseSpeed": 679
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723403100,
+    "dwellTime": 71,
+    "flightTime": 72,
+    "mouseSpeed": 244
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723403243,
+    "dwellTime": 129,
+    "flightTime": 74,
+    "mouseSpeed": 293
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723403446,
+    "dwellTime": 55,
+    "flightTime": 212,
+    "mouseSpeed": 609
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723403713,
+    "dwellTime": 133,
+    "flightTime": 107,
+    "mouseSpeed": 349
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723403953,
+    "dwellTime": 69,
+    "flightTime": 231,
+    "mouseSpeed": 370
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723404253,
+    "dwellTime": 84,
+    "flightTime": 184,
+    "mouseSpeed": 528
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723404521,
+    "dwellTime": 101,
+    "flightTime": 234,
+    "mouseSpeed": 258
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723404856,
+    "dwellTime": 147,
+    "flightTime": 161,
+    "mouseSpeed": 683
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723405164,
+    "dwellTime": 108,
+    "flightTime": 118,
+    "mouseSpeed": 638
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723405390,
+    "dwellTime": 54,
+    "flightTime": 227,
+    "mouseSpeed": 245
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723405671,
+    "dwellTime": 99,
+    "flightTime": 149,
+    "mouseSpeed": 623
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723405919,
+    "dwellTime": 146,
+    "flightTime": 73,
+    "mouseSpeed": 325
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723406138,
+    "dwellTime": 92,
+    "flightTime": 183,
+    "mouseSpeed": 380
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723406413,
+    "dwellTime": 116,
+    "flightTime": 200,
+    "mouseSpeed": 344
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723406729,
+    "dwellTime": 131,
+    "flightTime": 166,
+    "mouseSpeed": 637
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723407026,
+    "dwellTime": 107,
+    "flightTime": 130,
+    "mouseSpeed": 653
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723407263,
+    "dwellTime": 113,
+    "flightTime": 64,
+    "mouseSpeed": 431
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723407440,
+    "dwellTime": 104,
+    "flightTime": 227,
+    "mouseSpeed": 216
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723407771,
+    "dwellTime": 95,
+    "flightTime": 158,
+    "mouseSpeed": 584
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723408024,
+    "dwellTime": 99,
+    "flightTime": 143,
+    "mouseSpeed": 353
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723408266,
+    "dwellTime": 64,
+    "flightTime": 218,
+    "mouseSpeed": 635
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723408548,
+    "dwellTime": 123,
+    "flightTime": 177,
+    "mouseSpeed": 305
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723408848,
+    "dwellTime": 117,
+    "flightTime": 50,
+    "mouseSpeed": 680
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723409015,
+    "dwellTime": 113,
+    "flightTime": 203,
+    "mouseSpeed": 479
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723409331,
+    "dwellTime": 134,
+    "flightTime": 216,
+    "mouseSpeed": 619
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723409681,
+    "dwellTime": 92,
+    "flightTime": 100,
+    "mouseSpeed": 568
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723409873,
+    "dwellTime": 52,
+    "flightTime": 230,
+    "mouseSpeed": 249
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723410155,
+    "dwellTime": 96,
+    "flightTime": 172,
+    "mouseSpeed": 319
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723410423,
+    "dwellTime": 81,
+    "flightTime": 196,
+    "mouseSpeed": 442
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723410700,
+    "dwellTime": 68,
+    "flightTime": 191,
+    "mouseSpeed": 433
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723410959,
+    "dwellTime": 69,
+    "flightTime": 79,
+    "mouseSpeed": 603
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723411107,
+    "dwellTime": 141,
+    "flightTime": 165,
+    "mouseSpeed": 244
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723411413,
+    "dwellTime": 103,
+    "flightTime": 107,
+    "mouseSpeed": 685
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723411623,
+    "dwellTime": 129,
+    "flightTime": 107,
+    "mouseSpeed": 424
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723411859,
+    "dwellTime": 144,
+    "flightTime": 184,
+    "mouseSpeed": 320
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723412187,
+    "dwellTime": 109,
+    "flightTime": 121,
+    "mouseSpeed": 420
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723412417,
+    "dwellTime": 121,
+    "flightTime": 249,
+    "mouseSpeed": 598
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723412787,
+    "dwellTime": 125,
+    "flightTime": 229,
+    "mouseSpeed": 315
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723413141,
+    "dwellTime": 120,
+    "flightTime": 144,
+    "mouseSpeed": 229
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723413405,
+    "dwellTime": 120,
+    "flightTime": 153,
+    "mouseSpeed": 594
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723413678,
+    "dwellTime": 56,
+    "flightTime": 185,
+    "mouseSpeed": 343
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723413919,
+    "dwellTime": 113,
+    "flightTime": 141,
+    "mouseSpeed": 403
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723414173,
+    "dwellTime": 70,
+    "flightTime": 172,
+    "mouseSpeed": 428
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723414415,
+    "dwellTime": 76,
+    "flightTime": 186,
+    "mouseSpeed": 374
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723414677,
+    "dwellTime": 139,
+    "flightTime": 197,
+    "mouseSpeed": 415
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723415013,
+    "dwellTime": 108,
+    "flightTime": 93,
+    "mouseSpeed": 261
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723415214,
+    "dwellTime": 58,
+    "flightTime": 192,
+    "mouseSpeed": 309
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723415464,
+    "dwellTime": 140,
+    "flightTime": 158,
+    "mouseSpeed": 261
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723415762,
+    "dwellTime": 93,
+    "flightTime": 51,
+    "mouseSpeed": 224
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723415906,
+    "dwellTime": 97,
+    "flightTime": 97,
+    "mouseSpeed": 410
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723416100,
+    "dwellTime": 69,
+    "flightTime": 213,
+    "mouseSpeed": 274
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723416382,
+    "dwellTime": 124,
+    "flightTime": 58,
+    "mouseSpeed": 618
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723416564,
+    "dwellTime": 139,
+    "flightTime": 194,
+    "mouseSpeed": 650
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723416897,
+    "dwellTime": 72,
+    "flightTime": 122,
+    "mouseSpeed": 229
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723417091,
+    "dwellTime": 107,
+    "flightTime": 159,
+    "mouseSpeed": 563
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723417357,
+    "dwellTime": 149,
+    "flightTime": 201,
+    "mouseSpeed": 565
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723417707,
+    "dwellTime": 119,
+    "flightTime": 156,
+    "mouseSpeed": 301
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723417982,
+    "dwellTime": 84,
+    "flightTime": 179,
+    "mouseSpeed": 386
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723418245,
+    "dwellTime": 67,
+    "flightTime": 110,
+    "mouseSpeed": 643
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723418422,
+    "dwellTime": 138,
+    "flightTime": 128,
+    "mouseSpeed": 233
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723418688,
+    "dwellTime": 140,
+    "flightTime": 216,
+    "mouseSpeed": 487
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723419044,
+    "dwellTime": 55,
+    "flightTime": 102,
+    "mouseSpeed": 479
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723419201,
+    "dwellTime": 118,
+    "flightTime": 238,
+    "mouseSpeed": 442
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723419557,
+    "dwellTime": 59,
+    "flightTime": 82,
+    "mouseSpeed": 403
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723419698,
+    "dwellTime": 100,
+    "flightTime": 75,
+    "mouseSpeed": 687
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723419873,
+    "dwellTime": 79,
+    "flightTime": 83,
+    "mouseSpeed": 697
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723420035,
+    "dwellTime": 52,
+    "flightTime": 159,
+    "mouseSpeed": 204
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723420246,
+    "dwellTime": 65,
+    "flightTime": 51,
+    "mouseSpeed": 645
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723420362,
+    "dwellTime": 74,
+    "flightTime": 103,
+    "mouseSpeed": 334
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723420539,
+    "dwellTime": 76,
+    "flightTime": 73,
+    "mouseSpeed": 204
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723420688,
+    "dwellTime": 83,
+    "flightTime": 116,
+    "mouseSpeed": 301
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723420887,
+    "dwellTime": 60,
+    "flightTime": 154,
+    "mouseSpeed": 298
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723421101,
+    "dwellTime": 92,
+    "flightTime": 73,
+    "mouseSpeed": 643
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723421266,
+    "dwellTime": 96,
+    "flightTime": 197,
+    "mouseSpeed": 308
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723421559,
+    "dwellTime": 103,
+    "flightTime": 227,
+    "mouseSpeed": 580
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723421889,
+    "dwellTime": 126,
+    "flightTime": 204,
+    "mouseSpeed": 486
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723422219,
+    "dwellTime": 144,
+    "flightTime": 141,
+    "mouseSpeed": 463
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723422504,
+    "dwellTime": 128,
+    "flightTime": 157,
+    "mouseSpeed": 526
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723422789,
+    "dwellTime": 64,
+    "flightTime": 117,
+    "mouseSpeed": 382
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723422970,
+    "dwellTime": 76,
+    "flightTime": 89,
+    "mouseSpeed": 433
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723423135,
+    "dwellTime": 147,
+    "flightTime": 153,
+    "mouseSpeed": 648
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723423435,
+    "dwellTime": 56,
+    "flightTime": 154,
+    "mouseSpeed": 242
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723423645,
+    "dwellTime": 141,
+    "flightTime": 116,
+    "mouseSpeed": 658
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723423902,
+    "dwellTime": 75,
+    "flightTime": 68,
+    "mouseSpeed": 217
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723424045,
+    "dwellTime": 65,
+    "flightTime": 63,
+    "mouseSpeed": 551
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723424173,
+    "dwellTime": 112,
+    "flightTime": 74,
+    "mouseSpeed": 684
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723424359,
+    "dwellTime": 51,
+    "flightTime": 229,
+    "mouseSpeed": 200
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723424639,
+    "dwellTime": 87,
+    "flightTime": 185,
+    "mouseSpeed": 645
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723424911,
+    "dwellTime": 99,
+    "flightTime": 220,
+    "mouseSpeed": 253
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723425230,
+    "dwellTime": 101,
+    "flightTime": 231,
+    "mouseSpeed": 245
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723425562,
+    "dwellTime": 141,
+    "flightTime": 227,
+    "mouseSpeed": 570
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723425930,
+    "dwellTime": 80,
+    "flightTime": 114,
+    "mouseSpeed": 655
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723426124,
+    "dwellTime": 61,
+    "flightTime": 221,
+    "mouseSpeed": 670
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723426406,
+    "dwellTime": 57,
+    "flightTime": 87,
+    "mouseSpeed": 581
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723426550,
+    "dwellTime": 116,
+    "flightTime": 149,
+    "mouseSpeed": 360
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723426815,
+    "dwellTime": 82,
+    "flightTime": 119,
+    "mouseSpeed": 259
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723427016,
+    "dwellTime": 55,
+    "flightTime": 223,
+    "mouseSpeed": 347
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723427294,
+    "dwellTime": 125,
+    "flightTime": 229,
+    "mouseSpeed": 546
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723427648,
+    "dwellTime": 116,
+    "flightTime": 123,
+    "mouseSpeed": 521
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723427887,
+    "dwellTime": 125,
+    "flightTime": 187,
+    "mouseSpeed": 500
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723428199,
+    "dwellTime": 104,
+    "flightTime": 185,
+    "mouseSpeed": 620
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723428488,
+    "dwellTime": 123,
+    "flightTime": 71,
+    "mouseSpeed": 668
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723428682,
+    "dwellTime": 53,
+    "flightTime": 175,
+    "mouseSpeed": 495
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723428910,
+    "dwellTime": 143,
+    "flightTime": 130,
+    "mouseSpeed": 469
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723429183,
+    "dwellTime": 145,
+    "flightTime": 239,
+    "mouseSpeed": 585
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723429567,
+    "dwellTime": 101,
+    "flightTime": 218,
+    "mouseSpeed": 629
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723429886,
+    "dwellTime": 51,
+    "flightTime": 127,
+    "mouseSpeed": 219
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723430064,
+    "dwellTime": 149,
+    "flightTime": 95,
+    "mouseSpeed": 277
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723430308,
+    "dwellTime": 138,
+    "flightTime": 125,
+    "mouseSpeed": 565
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723430571,
+    "dwellTime": 146,
+    "flightTime": 67,
+    "mouseSpeed": 694
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723430784,
+    "dwellTime": 126,
+    "flightTime": 245,
+    "mouseSpeed": 300
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723431155,
+    "dwellTime": 143,
+    "flightTime": 193,
+    "mouseSpeed": 434
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723431491,
+    "dwellTime": 133,
+    "flightTime": 232,
+    "mouseSpeed": 449
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723431856,
+    "dwellTime": 130,
+    "flightTime": 206,
+    "mouseSpeed": 284
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723432192,
+    "dwellTime": 56,
+    "flightTime": 103,
+    "mouseSpeed": 251
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723432351,
+    "dwellTime": 117,
+    "flightTime": 220,
+    "mouseSpeed": 685
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723432688,
+    "dwellTime": 147,
+    "flightTime": 156,
+    "mouseSpeed": 277
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723432991,
+    "dwellTime": 84,
+    "flightTime": 124,
+    "mouseSpeed": 261
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723433199,
+    "dwellTime": 70,
+    "flightTime": 104,
+    "mouseSpeed": 683
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723433373,
+    "dwellTime": 59,
+    "flightTime": 79,
+    "mouseSpeed": 559
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723433511,
+    "dwellTime": 149,
+    "flightTime": 190,
+    "mouseSpeed": 423
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723433850,
+    "dwellTime": 80,
+    "flightTime": 153,
+    "mouseSpeed": 339
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723434083,
+    "dwellTime": 137,
+    "flightTime": 204,
+    "mouseSpeed": 455
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723434424,
+    "dwellTime": 73,
+    "flightTime": 81,
+    "mouseSpeed": 372
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723434578,
+    "dwellTime": 147,
+    "flightTime": 174,
+    "mouseSpeed": 413
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723434899,
+    "dwellTime": 124,
+    "flightTime": 159,
+    "mouseSpeed": 530
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723435182,
+    "dwellTime": 63,
+    "flightTime": 56,
+    "mouseSpeed": 556
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723435301,
+    "dwellTime": 101,
+    "flightTime": 107,
+    "mouseSpeed": 426
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723435509,
+    "dwellTime": 74,
+    "flightTime": 83,
+    "mouseSpeed": 213
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723435666,
+    "dwellTime": 94,
+    "flightTime": 104,
+    "mouseSpeed": 339
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723435864,
+    "dwellTime": 102,
+    "flightTime": 215,
+    "mouseSpeed": 679
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723436181,
+    "dwellTime": 68,
+    "flightTime": 102,
+    "mouseSpeed": 526
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723436351,
+    "dwellTime": 107,
+    "flightTime": 151,
+    "mouseSpeed": 601
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723436609,
+    "dwellTime": 122,
+    "flightTime": 101,
+    "mouseSpeed": 216
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723436832,
+    "dwellTime": 146,
+    "flightTime": 119,
+    "mouseSpeed": 467
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723437097,
+    "dwellTime": 106,
+    "flightTime": 135,
+    "mouseSpeed": 438
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723437338,
+    "dwellTime": 104,
+    "flightTime": 160,
+    "mouseSpeed": 617
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723437602,
+    "dwellTime": 87,
+    "flightTime": 147,
+    "mouseSpeed": 497
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723437836,
+    "dwellTime": 95,
+    "flightTime": 187,
+    "mouseSpeed": 629
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723438118,
+    "dwellTime": 116,
+    "flightTime": 220,
+    "mouseSpeed": 257
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723438454,
+    "dwellTime": 142,
+    "flightTime": 59,
+    "mouseSpeed": 501
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723438655,
+    "dwellTime": 121,
+    "flightTime": 97,
+    "mouseSpeed": 575
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723438873,
+    "dwellTime": 92,
+    "flightTime": 163,
+    "mouseSpeed": 686
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723439128,
+    "dwellTime": 107,
+    "flightTime": 220,
+    "mouseSpeed": 449
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723439455,
+    "dwellTime": 99,
+    "flightTime": 128,
+    "mouseSpeed": 360
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723439682,
+    "dwellTime": 101,
+    "flightTime": 209,
+    "mouseSpeed": 220
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723439992,
+    "dwellTime": 145,
+    "flightTime": 82,
+    "mouseSpeed": 310
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723440219,
+    "dwellTime": 106,
+    "flightTime": 123,
+    "mouseSpeed": 630
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723440448,
+    "dwellTime": 113,
+    "flightTime": 112,
+    "mouseSpeed": 311
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723440673,
+    "dwellTime": 94,
+    "flightTime": 72,
+    "mouseSpeed": 320
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723440839,
+    "dwellTime": 142,
+    "flightTime": 141,
+    "mouseSpeed": 339
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723441122,
+    "dwellTime": 144,
+    "flightTime": 223,
+    "mouseSpeed": 310
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723441489,
+    "dwellTime": 111,
+    "flightTime": 171,
+    "mouseSpeed": 262
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723441771,
+    "dwellTime": 142,
+    "flightTime": 110,
+    "mouseSpeed": 418
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723442023,
+    "dwellTime": 101,
+    "flightTime": 203,
+    "mouseSpeed": 409
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723442327,
+    "dwellTime": 129,
+    "flightTime": 125,
+    "mouseSpeed": 506
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723442581,
+    "dwellTime": 125,
+    "flightTime": 212,
+    "mouseSpeed": 575
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723442918,
+    "dwellTime": 88,
+    "flightTime": 51,
+    "mouseSpeed": 299
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723443057,
+    "dwellTime": 133,
+    "flightTime": 58,
+    "mouseSpeed": 571
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723443248,
+    "dwellTime": 74,
+    "flightTime": 80,
+    "mouseSpeed": 464
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723443402,
+    "dwellTime": 141,
+    "flightTime": 64,
+    "mouseSpeed": 395
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723443607,
+    "dwellTime": 147,
+    "flightTime": 126,
+    "mouseSpeed": 688
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723443880,
+    "dwellTime": 141,
+    "flightTime": 59,
+    "mouseSpeed": 298
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723444080,
+    "dwellTime": 84,
+    "flightTime": 94,
+    "mouseSpeed": 451
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723444258,
+    "dwellTime": 74,
+    "flightTime": 222,
+    "mouseSpeed": 484
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723444554,
+    "dwellTime": 98,
+    "flightTime": 75,
+    "mouseSpeed": 489
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723444727,
+    "dwellTime": 143,
+    "flightTime": 123,
+    "mouseSpeed": 224
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723444993,
+    "dwellTime": 53,
+    "flightTime": 73,
+    "mouseSpeed": 660
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723445119,
+    "dwellTime": 50,
+    "flightTime": 135,
+    "mouseSpeed": 629
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723445304,
+    "dwellTime": 130,
+    "flightTime": 68,
+    "mouseSpeed": 239
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723445502,
+    "dwellTime": 85,
+    "flightTime": 80,
+    "mouseSpeed": 602
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723445667,
+    "dwellTime": 60,
+    "flightTime": 174,
+    "mouseSpeed": 673
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723445901,
+    "dwellTime": 75,
+    "flightTime": 150,
+    "mouseSpeed": 366
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723446126,
+    "dwellTime": 135,
+    "flightTime": 55,
+    "mouseSpeed": 424
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723446316,
+    "dwellTime": 98,
+    "flightTime": 93,
+    "mouseSpeed": 590
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723446507,
+    "dwellTime": 94,
+    "flightTime": 68,
+    "mouseSpeed": 458
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723446669,
+    "dwellTime": 145,
+    "flightTime": 167,
+    "mouseSpeed": 356
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723446981,
+    "dwellTime": 118,
+    "flightTime": 217,
+    "mouseSpeed": 473
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723447316,
+    "dwellTime": 76,
+    "flightTime": 195,
+    "mouseSpeed": 579
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723447587,
+    "dwellTime": 118,
+    "flightTime": 113,
+    "mouseSpeed": 350
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723447818,
+    "dwellTime": 80,
+    "flightTime": 133,
+    "mouseSpeed": 681
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723448031,
+    "dwellTime": 72,
+    "flightTime": 124,
+    "mouseSpeed": 245
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723199823,
+    "dwellTime": 312,
+    "flightTime": 1147,
+    "mouseSpeed": 13
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723201282,
+    "dwellTime": 222,
+    "flightTime": 943,
+    "mouseSpeed": 22
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723202447,
+    "dwellTime": 427,
+    "flightTime": 1003,
+    "mouseSpeed": 43
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723203877,
+    "dwellTime": 378,
+    "flightTime": 1130,
+    "mouseSpeed": 38
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723205385,
+    "dwellTime": 344,
+    "flightTime": 411,
+    "mouseSpeed": 59
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723206140,
+    "dwellTime": 360,
+    "flightTime": 884,
+    "mouseSpeed": 86
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723207384,
+    "dwellTime": 348,
+    "flightTime": 602,
+    "mouseSpeed": 109
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723208334,
+    "dwellTime": 361,
+    "flightTime": 454,
+    "mouseSpeed": 103
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723209149,
+    "dwellTime": 259,
+    "flightTime": 663,
+    "mouseSpeed": 22
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723210071,
+    "dwellTime": 285,
+    "flightTime": 421,
+    "mouseSpeed": 28
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723210777,
+    "dwellTime": 215,
+    "flightTime": 520,
+    "mouseSpeed": 42
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723211512,
+    "dwellTime": 460,
+    "flightTime": 765,
+    "mouseSpeed": 101
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723212737,
+    "dwellTime": 420,
+    "flightTime": 911,
+    "mouseSpeed": 42
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723214068,
+    "dwellTime": 255,
+    "flightTime": 990,
+    "mouseSpeed": 98
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723215313,
+    "dwellTime": 493,
+    "flightTime": 1020,
+    "mouseSpeed": 101
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723216826,
+    "dwellTime": 267,
+    "flightTime": 443,
+    "mouseSpeed": 40
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723217536,
+    "dwellTime": 476,
+    "flightTime": 589,
+    "mouseSpeed": 60
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723218601,
+    "dwellTime": 434,
+    "flightTime": 484,
+    "mouseSpeed": 24
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723219519,
+    "dwellTime": 459,
+    "flightTime": 800,
+    "mouseSpeed": 25
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723220778,
+    "dwellTime": 291,
+    "flightTime": 702,
+    "mouseSpeed": 21
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723221771,
+    "dwellTime": 321,
+    "flightTime": 781,
+    "mouseSpeed": 89
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723222873,
+    "dwellTime": 404,
+    "flightTime": 1029,
+    "mouseSpeed": 93
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723224306,
+    "dwellTime": 230,
+    "flightTime": 748,
+    "mouseSpeed": 98
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723225284,
+    "dwellTime": 370,
+    "flightTime": 1123,
+    "mouseSpeed": 25
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723226777,
+    "dwellTime": 261,
+    "flightTime": 552,
+    "mouseSpeed": 57
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723227590,
+    "dwellTime": 330,
+    "flightTime": 584,
+    "mouseSpeed": 61
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723228504,
+    "dwellTime": 413,
+    "flightTime": 835,
+    "mouseSpeed": 60
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723229752,
+    "dwellTime": 249,
+    "flightTime": 503,
+    "mouseSpeed": 83
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723230504,
+    "dwellTime": 367,
+    "flightTime": 522,
+    "mouseSpeed": 42
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723231393,
+    "dwellTime": 426,
+    "flightTime": 646,
+    "mouseSpeed": 77
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723232465,
+    "dwellTime": 499,
+    "flightTime": 1025,
+    "mouseSpeed": 30
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723233989,
+    "dwellTime": 308,
+    "flightTime": 937,
+    "mouseSpeed": 82
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723235234,
+    "dwellTime": 234,
+    "flightTime": 611,
+    "mouseSpeed": 90
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723236079,
+    "dwellTime": 222,
+    "flightTime": 640,
+    "mouseSpeed": 49
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723236941,
+    "dwellTime": 202,
+    "flightTime": 787,
+    "mouseSpeed": 29
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723237930,
+    "dwellTime": 483,
+    "flightTime": 567,
+    "mouseSpeed": 23
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723238980,
+    "dwellTime": 420,
+    "flightTime": 547,
+    "mouseSpeed": 21
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723239947,
+    "dwellTime": 450,
+    "flightTime": 1065,
+    "mouseSpeed": 108
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723241462,
+    "dwellTime": 335,
+    "flightTime": 807,
+    "mouseSpeed": 94
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723242604,
+    "dwellTime": 459,
+    "flightTime": 416,
+    "mouseSpeed": 78
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723243479,
+    "dwellTime": 374,
+    "flightTime": 934,
+    "mouseSpeed": 97
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723244787,
+    "dwellTime": 455,
+    "flightTime": 530,
+    "mouseSpeed": 74
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723245772,
+    "dwellTime": 299,
+    "flightTime": 766,
+    "mouseSpeed": 18
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723246837,
+    "dwellTime": 278,
+    "flightTime": 962,
+    "mouseSpeed": 84
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723248077,
+    "dwellTime": 233,
+    "flightTime": 436,
+    "mouseSpeed": 93
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723248746,
+    "dwellTime": 265,
+    "flightTime": 487,
+    "mouseSpeed": 91
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723249498,
+    "dwellTime": 362,
+    "flightTime": 754,
+    "mouseSpeed": 98
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723250614,
+    "dwellTime": 246,
+    "flightTime": 543,
+    "mouseSpeed": 77
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723251403,
+    "dwellTime": 314,
+    "flightTime": 439,
+    "mouseSpeed": 22
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723252156,
+    "dwellTime": 359,
+    "flightTime": 1186,
+    "mouseSpeed": 39
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723253701,
+    "dwellTime": 374,
+    "flightTime": 1013,
+    "mouseSpeed": 17
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723255088,
+    "dwellTime": 469,
+    "flightTime": 717,
+    "mouseSpeed": 24
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723256274,
+    "dwellTime": 220,
+    "flightTime": 1147,
+    "mouseSpeed": 16
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723257641,
+    "dwellTime": 270,
+    "flightTime": 895,
+    "mouseSpeed": 20
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723258806,
+    "dwellTime": 483,
+    "flightTime": 417,
+    "mouseSpeed": 93
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723259706,
+    "dwellTime": 324,
+    "flightTime": 761,
+    "mouseSpeed": 54
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723260791,
+    "dwellTime": 296,
+    "flightTime": 852,
+    "mouseSpeed": 40
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723261939,
+    "dwellTime": 419,
+    "flightTime": 1168,
+    "mouseSpeed": 10
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723263526,
+    "dwellTime": 291,
+    "flightTime": 461,
+    "mouseSpeed": 50
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723264278,
+    "dwellTime": 350,
+    "flightTime": 722,
+    "mouseSpeed": 85
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723265350,
+    "dwellTime": 485,
+    "flightTime": 864,
+    "mouseSpeed": 50
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723266699,
+    "dwellTime": 470,
+    "flightTime": 1052,
+    "mouseSpeed": 22
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723268221,
+    "dwellTime": 293,
+    "flightTime": 531,
+    "mouseSpeed": 63
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723269045,
+    "dwellTime": 394,
+    "flightTime": 422,
+    "mouseSpeed": 15
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723269861,
+    "dwellTime": 461,
+    "flightTime": 1093,
+    "mouseSpeed": 73
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723271415,
+    "dwellTime": 373,
+    "flightTime": 565,
+    "mouseSpeed": 102
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723272353,
+    "dwellTime": 280,
+    "flightTime": 1040,
+    "mouseSpeed": 90
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723273673,
+    "dwellTime": 458,
+    "flightTime": 814,
+    "mouseSpeed": 107
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723274945,
+    "dwellTime": 298,
+    "flightTime": 886,
+    "mouseSpeed": 54
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723276129,
+    "dwellTime": 426,
+    "flightTime": 858,
+    "mouseSpeed": 63
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723277413,
+    "dwellTime": 246,
+    "flightTime": 884,
+    "mouseSpeed": 73
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723278543,
+    "dwellTime": 255,
+    "flightTime": 986,
+    "mouseSpeed": 33
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723279784,
+    "dwellTime": 421,
+    "flightTime": 523,
+    "mouseSpeed": 29
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723280728,
+    "dwellTime": 208,
+    "flightTime": 1057,
+    "mouseSpeed": 97
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723281993,
+    "dwellTime": 488,
+    "flightTime": 857,
+    "mouseSpeed": 86
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723283338,
+    "dwellTime": 233,
+    "flightTime": 777,
+    "mouseSpeed": 30
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723284348,
+    "dwellTime": 267,
+    "flightTime": 1190,
+    "mouseSpeed": 89
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723285805,
+    "dwellTime": 468,
+    "flightTime": 698,
+    "mouseSpeed": 61
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723286971,
+    "dwellTime": 417,
+    "flightTime": 1154,
+    "mouseSpeed": 108
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723288542,
+    "dwellTime": 381,
+    "flightTime": 725,
+    "mouseSpeed": 103
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723289648,
+    "dwellTime": 339,
+    "flightTime": 945,
+    "mouseSpeed": 11
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723290932,
+    "dwellTime": 215,
+    "flightTime": 853,
+    "mouseSpeed": 25
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723292000,
+    "dwellTime": 392,
+    "flightTime": 806,
+    "mouseSpeed": 68
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723293198,
+    "dwellTime": 384,
+    "flightTime": 510,
+    "mouseSpeed": 33
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723294092,
+    "dwellTime": 323,
+    "flightTime": 997,
+    "mouseSpeed": 61
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723295412,
+    "dwellTime": 312,
+    "flightTime": 771,
+    "mouseSpeed": 33
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723296495,
+    "dwellTime": 404,
+    "flightTime": 645,
+    "mouseSpeed": 96
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723297544,
+    "dwellTime": 482,
+    "flightTime": 559,
+    "mouseSpeed": 82
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723298585,
+    "dwellTime": 429,
+    "flightTime": 1070,
+    "mouseSpeed": 83
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723300084,
+    "dwellTime": 285,
+    "flightTime": 758,
+    "mouseSpeed": 89
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723301127,
+    "dwellTime": 470,
+    "flightTime": 910,
+    "mouseSpeed": 45
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723302507,
+    "dwellTime": 235,
+    "flightTime": 466,
+    "mouseSpeed": 83
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723303208,
+    "dwellTime": 475,
+    "flightTime": 1183,
+    "mouseSpeed": 104
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723304866,
+    "dwellTime": 430,
+    "flightTime": 906,
+    "mouseSpeed": 90
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723306202,
+    "dwellTime": 454,
+    "flightTime": 479,
+    "mouseSpeed": 61
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723307135,
+    "dwellTime": 480,
+    "flightTime": 1099,
+    "mouseSpeed": 108
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723308714,
+    "dwellTime": 446,
+    "flightTime": 899,
+    "mouseSpeed": 83
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723310059,
+    "dwellTime": 299,
+    "flightTime": 462,
+    "mouseSpeed": 82
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723310820,
+    "dwellTime": 459,
+    "flightTime": 892,
+    "mouseSpeed": 98
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723312171,
+    "dwellTime": 437,
+    "flightTime": 421,
+    "mouseSpeed": 42
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723313029,
+    "dwellTime": 311,
+    "flightTime": 1122,
+    "mouseSpeed": 74
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723314462,
+    "dwellTime": 329,
+    "flightTime": 515,
+    "mouseSpeed": 39
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723315306,
+    "dwellTime": 237,
+    "flightTime": 1092,
+    "mouseSpeed": 78
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723316635,
+    "dwellTime": 372,
+    "flightTime": 729,
+    "mouseSpeed": 50
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723317736,
+    "dwellTime": 245,
+    "flightTime": 1013,
+    "mouseSpeed": 71
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723318994,
+    "dwellTime": 334,
+    "flightTime": 941,
+    "mouseSpeed": 66
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723320269,
+    "dwellTime": 473,
+    "flightTime": 956,
+    "mouseSpeed": 82
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723321698,
+    "dwellTime": 389,
+    "flightTime": 690,
+    "mouseSpeed": 44
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723322777,
+    "dwellTime": 385,
+    "flightTime": 725,
+    "mouseSpeed": 29
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723323887,
+    "dwellTime": 467,
+    "flightTime": 542,
+    "mouseSpeed": 58
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723324896,
+    "dwellTime": 395,
+    "flightTime": 493,
+    "mouseSpeed": 107
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723325784,
+    "dwellTime": 262,
+    "flightTime": 1123,
+    "mouseSpeed": 77
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723327169,
+    "dwellTime": 251,
+    "flightTime": 1009,
+    "mouseSpeed": 103
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723328429,
+    "dwellTime": 427,
+    "flightTime": 726,
+    "mouseSpeed": 64
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723329582,
+    "dwellTime": 348,
+    "flightTime": 649,
+    "mouseSpeed": 55
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723330579,
+    "dwellTime": 317,
+    "flightTime": 692,
+    "mouseSpeed": 57
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723331588,
+    "dwellTime": 492,
+    "flightTime": 1078,
+    "mouseSpeed": 16
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723333158,
+    "dwellTime": 415,
+    "flightTime": 673,
+    "mouseSpeed": 92
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723334246,
+    "dwellTime": 212,
+    "flightTime": 705,
+    "mouseSpeed": 105
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723335163,
+    "dwellTime": 392,
+    "flightTime": 1124,
+    "mouseSpeed": 32
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723336679,
+    "dwellTime": 478,
+    "flightTime": 1037,
+    "mouseSpeed": 105
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723338194,
+    "dwellTime": 355,
+    "flightTime": 605,
+    "mouseSpeed": 95
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723339154,
+    "dwellTime": 469,
+    "flightTime": 866,
+    "mouseSpeed": 16
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723340489,
+    "dwellTime": 254,
+    "flightTime": 1016,
+    "mouseSpeed": 67
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723341759,
+    "dwellTime": 249,
+    "flightTime": 1158,
+    "mouseSpeed": 104
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723343166,
+    "dwellTime": 299,
+    "flightTime": 1001,
+    "mouseSpeed": 68
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723344466,
+    "dwellTime": 450,
+    "flightTime": 802,
+    "mouseSpeed": 47
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723345718,
+    "dwellTime": 380,
+    "flightTime": 644,
+    "mouseSpeed": 58
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723346742,
+    "dwellTime": 358,
+    "flightTime": 594,
+    "mouseSpeed": 57
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723347694,
+    "dwellTime": 264,
+    "flightTime": 684,
+    "mouseSpeed": 39
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723348642,
+    "dwellTime": 442,
+    "flightTime": 728,
+    "mouseSpeed": 18
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723349812,
+    "dwellTime": 402,
+    "flightTime": 641,
+    "mouseSpeed": 40
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723350855,
+    "dwellTime": 378,
+    "flightTime": 599,
+    "mouseSpeed": 82
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723351832,
+    "dwellTime": 303,
+    "flightTime": 1095,
+    "mouseSpeed": 24
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723353230,
+    "dwellTime": 242,
+    "flightTime": 803,
+    "mouseSpeed": 28
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723354275,
+    "dwellTime": 297,
+    "flightTime": 604,
+    "mouseSpeed": 28
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723355176,
+    "dwellTime": 470,
+    "flightTime": 950,
+    "mouseSpeed": 32
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723356596,
+    "dwellTime": 449,
+    "flightTime": 527,
+    "mouseSpeed": 16
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723357572,
+    "dwellTime": 279,
+    "flightTime": 400,
+    "mouseSpeed": 31
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723358251,
+    "dwellTime": 285,
+    "flightTime": 786,
+    "mouseSpeed": 17
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723359322,
+    "dwellTime": 446,
+    "flightTime": 811,
+    "mouseSpeed": 39
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723360579,
+    "dwellTime": 238,
+    "flightTime": 516,
+    "mouseSpeed": 46
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723361333,
+    "dwellTime": 328,
+    "flightTime": 884,
+    "mouseSpeed": 45
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723362545,
+    "dwellTime": 280,
+    "flightTime": 695,
+    "mouseSpeed": 14
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723363520,
+    "dwellTime": 354,
+    "flightTime": 926,
+    "mouseSpeed": 16
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723364800,
+    "dwellTime": 332,
+    "flightTime": 523,
+    "mouseSpeed": 38
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723365655,
+    "dwellTime": 311,
+    "flightTime": 570,
+    "mouseSpeed": 52
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723366536,
+    "dwellTime": 214,
+    "flightTime": 1014,
+    "mouseSpeed": 88
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723367764,
+    "dwellTime": 346,
+    "flightTime": 1186,
+    "mouseSpeed": 28
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723369296,
+    "dwellTime": 313,
+    "flightTime": 535,
+    "mouseSpeed": 15
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723370144,
+    "dwellTime": 205,
+    "flightTime": 825,
+    "mouseSpeed": 88
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723371174,
+    "dwellTime": 215,
+    "flightTime": 702,
+    "mouseSpeed": 18
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723372091,
+    "dwellTime": 320,
+    "flightTime": 455,
+    "mouseSpeed": 50
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723372866,
+    "dwellTime": 290,
+    "flightTime": 893,
+    "mouseSpeed": 36
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723374049,
+    "dwellTime": 457,
+    "flightTime": 974,
+    "mouseSpeed": 61
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723375480,
+    "dwellTime": 316,
+    "flightTime": 798,
+    "mouseSpeed": 43
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723376594,
+    "dwellTime": 363,
+    "flightTime": 457,
+    "mouseSpeed": 106
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723377414,
+    "dwellTime": 239,
+    "flightTime": 938,
+    "mouseSpeed": 35
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723378591,
+    "dwellTime": 327,
+    "flightTime": 621,
+    "mouseSpeed": 83
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723379539,
+    "dwellTime": 293,
+    "flightTime": 822,
+    "mouseSpeed": 51
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723380654,
+    "dwellTime": 243,
+    "flightTime": 814,
+    "mouseSpeed": 99
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723381711,
+    "dwellTime": 234,
+    "flightTime": 733,
+    "mouseSpeed": 18
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723382678,
+    "dwellTime": 412,
+    "flightTime": 841,
+    "mouseSpeed": 97
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723383931,
+    "dwellTime": 410,
+    "flightTime": 1080,
+    "mouseSpeed": 52
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723385421,
+    "dwellTime": 252,
+    "flightTime": 512,
+    "mouseSpeed": 54
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723386185,
+    "dwellTime": 345,
+    "flightTime": 467,
+    "mouseSpeed": 94
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723386997,
+    "dwellTime": 332,
+    "flightTime": 913,
+    "mouseSpeed": 60
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723388242,
+    "dwellTime": 252,
+    "flightTime": 889,
+    "mouseSpeed": 35
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723389383,
+    "dwellTime": 390,
+    "flightTime": 707,
+    "mouseSpeed": 71
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723390480,
+    "dwellTime": 243,
+    "flightTime": 870,
+    "mouseSpeed": 43
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723391593,
+    "dwellTime": 419,
+    "flightTime": 1094,
+    "mouseSpeed": 53
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723393106,
+    "dwellTime": 254,
+    "flightTime": 619,
+    "mouseSpeed": 62
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723393979,
+    "dwellTime": 489,
+    "flightTime": 835,
+    "mouseSpeed": 20
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723395303,
+    "dwellTime": 210,
+    "flightTime": 1158,
+    "mouseSpeed": 34
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723396671,
+    "dwellTime": 312,
+    "flightTime": 447,
+    "mouseSpeed": 96
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723397430,
+    "dwellTime": 420,
+    "flightTime": 620,
+    "mouseSpeed": 16
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723398470,
+    "dwellTime": 429,
+    "flightTime": 844,
+    "mouseSpeed": 47
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723399743,
+    "dwellTime": 285,
+    "flightTime": 1055,
+    "mouseSpeed": 11
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723401083,
+    "dwellTime": 399,
+    "flightTime": 639,
+    "mouseSpeed": 65
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723402121,
+    "dwellTime": 385,
+    "flightTime": 850,
+    "mouseSpeed": 33
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723403356,
+    "dwellTime": 445,
+    "flightTime": 735,
+    "mouseSpeed": 14
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723404536,
+    "dwellTime": 218,
+    "flightTime": 949,
+    "mouseSpeed": 23
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723405703,
+    "dwellTime": 499,
+    "flightTime": 872,
+    "mouseSpeed": 40
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723407074,
+    "dwellTime": 447,
+    "flightTime": 731,
+    "mouseSpeed": 61
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723408252,
+    "dwellTime": 219,
+    "flightTime": 877,
+    "mouseSpeed": 79
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723409348,
+    "dwellTime": 426,
+    "flightTime": 515,
+    "mouseSpeed": 32
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723410289,
+    "dwellTime": 404,
+    "flightTime": 1198,
+    "mouseSpeed": 32
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723411891,
+    "dwellTime": 312,
+    "flightTime": 529,
+    "mouseSpeed": 76
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723412732,
+    "dwellTime": 295,
+    "flightTime": 479,
+    "mouseSpeed": 98
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723413506,
+    "dwellTime": 440,
+    "flightTime": 515,
+    "mouseSpeed": 19
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723414461,
+    "dwellTime": 269,
+    "flightTime": 1180,
+    "mouseSpeed": 36
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723415910,
+    "dwellTime": 453,
+    "flightTime": 1009,
+    "mouseSpeed": 70
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723417372,
+    "dwellTime": 231,
+    "flightTime": 924,
+    "mouseSpeed": 73
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723418527,
+    "dwellTime": 280,
+    "flightTime": 924,
+    "mouseSpeed": 18
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723419731,
+    "dwellTime": 254,
+    "flightTime": 1194,
+    "mouseSpeed": 45
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723421179,
+    "dwellTime": 261,
+    "flightTime": 1103,
+    "mouseSpeed": 23
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723422543,
+    "dwellTime": 354,
+    "flightTime": 675,
+    "mouseSpeed": 27
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723423572,
+    "dwellTime": 327,
+    "flightTime": 976,
+    "mouseSpeed": 69
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723424875,
+    "dwellTime": 313,
+    "flightTime": 795,
+    "mouseSpeed": 63
+  },
+  {
+    "userId": "a2a0159acf6ac55f05c0c4d4bdc54004",
+    "timestamp": 1790723425983,
+    "dwellTime": 369,
+    "flightTime": 923,
+    "mouseSpeed": 24
+  }
+]
