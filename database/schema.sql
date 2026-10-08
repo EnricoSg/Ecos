@@ -92,7 +92,7 @@ CREATE TABLE anomalia (
     baseline_id INTEGER NOT NULL,
 
     nivel VARCHAR(20) NOT NULL,
-    pontuacao_desvio NUMERIC(10,2),
+    pontuacao_desvio NUMERIC(10,6),
 
     data_deteccao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
