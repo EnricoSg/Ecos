@@ -10,7 +10,7 @@ const pool = new Pool({
 });
 
 pool.on('error', (erro) => {
-    console.error('🔴 [BANCO] Erro inesperado numa ligação inativa do pool:', erro.message);
+    console.error('🔴 [BANCO] Erro inesperado em uma conexão inativa do pool:', erro.message);
 });
 
 module.exports = pool;
