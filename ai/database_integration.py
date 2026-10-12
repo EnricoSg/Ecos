@@ -3,8 +3,7 @@ import os
 import psycopg
 
 from anomaly_detector import (
-    ARQUIVO_TELEMETRIA,
-    carregar_telemetria,
+    carregar_telemetria_banco,
     validar_dados,
     detectar_anomalias,
     calcular_baseline,
@@ -172,10 +171,8 @@ def main():
 
     print("=== ECOS - Integração IA + PostgreSQL ===")
 
-    # 1. Carrega o JSON
-    dataframe = carregar_telemetria(
-        ARQUIVO_TELEMETRIA
-    )
+   # 1. Carrega as telemetrias do PostgreSQL
+    dataframe = carregar_telemetria_banco()
 
     # 2. Valida estrutura
     validar_dados(dataframe)
