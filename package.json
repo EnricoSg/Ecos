@@ -27,7 +27,11 @@
   },
   "homepage": "https://github.com/EnricoSg/Ecos#readme",
   "jest": {
-    "testPathIgnorePatterns": ["/node_modules/", "/frontend/"]
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/frontend/",
+      "/api/"
+    ]
   },
   "devDependencies": {
     "jest": "^30.5.2"

@@ -18,7 +18,7 @@ CREATE TABLE colaborador (
     setor VARCHAR(100),
     data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     ativo BOOLEAN DEFAULT TRUE
-);
+); 
 
 
 -- =====================================================
@@ -41,6 +41,9 @@ CREATE TABLE telemetria (
     mouse_speed INTEGER NOT NULL,
 
     data_coleta TIMESTAMPTZ NOT NULL,
+
+    -- Momento em que o motor de IA analisou o registro (NULL = pendente)
+    analisada_em TIMESTAMPTZ,
 
     CONSTRAINT chk_telemetria_valores_positivos
         CHECK (
@@ -153,6 +156,11 @@ CREATE INDEX idx_telemetria_colaborador_data
 
 CREATE INDEX idx_anomalia_colaborador_data
     ON anomalia (colaborador_id, data_deteccao);
+
+-- Só as telemetrias ainda não analisadas pela IA
+CREATE INDEX idx_telemetria_pendente
+    ON telemetria (colaborador_id, data_coleta)
+    WHERE analisada_em IS NULL;
 
 CREATE INDEX idx_alerta_status
     ON alerta (status);
