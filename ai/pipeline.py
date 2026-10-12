@@ -1,38 +1,22 @@
-import subprocess
+"""
+ECOS - Pipeline da IA
+
+Executa o motor de anomalias sobre a telemetria pendente no PostgreSQL.
+Um único passo faz tudo em uma transação: detecção, anomalias, alertas e
+renovação dos baselines. Pode ser agendado (ex.: Agendador de Tarefas do
+Windows ou cron) para rodar a cada 15 minutos, o mesmo tamanho da janela.
+
+Uso: python ai/pipeline.py [--simular] [demais opções do anomaly_detector]
+"""
+
 import sys
 
-
-SCRIPTS = [
-    "ai/database_integration.py",
-    "ai/save_anomalies.py",
-    "ai/save_alerts.py",
-]
-
-
-def executar_script(caminho):
-    print(f"\n=== Executando {caminho} ===")
-
-    resultado = subprocess.run(
-        [sys.executable, caminho],
-        check=False,
-    )
-
-    if resultado.returncode != 0:
-        raise RuntimeError(
-            f"Falha ao executar {caminho}"
-        )
-
-
-def main():
-    print("=== ECOS - Pipeline da IA ===")
-
-    for script in SCRIPTS:
-        executar_script(script)
-
-    print(
-        "\n=== Pipeline concluído com sucesso ==="
-    )
+import anomaly_detector
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        anomaly_detector.main(sys.argv[1:])
+    except (RuntimeError, ValueError) as erro:
+        print(f"ERRO: {erro}", file=sys.stderr)
+        sys.exit(1)
