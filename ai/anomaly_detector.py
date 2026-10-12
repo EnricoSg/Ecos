@@ -1,3 +1,5 @@
+import os
+import psycopg
 import json
 from pathlib import Path
 
@@ -10,6 +12,12 @@ from sklearn.ensemble import IsolationForest
 # =====================================================
 
 ARQUIVO_TELEMETRIA = Path("telemetria-mock.json")
+
+DB_HOST = "localhost"
+DB_PORT = 5432
+DB_NAME = os.getenv("ECOS_DB_NAME", "ecos_teste")
+DB_USER = "postgres"
+DB_PASSWORD = os.getenv("ECOS_DB_PASSWORD")
 
 COLUNAS_ANALISE = [
     "dwellTime",
@@ -37,6 +45,54 @@ def carregar_telemetria(caminho: Path) -> pd.DataFrame:
 
     return pd.DataFrame(dados)
 
+def conectar_banco():
+    if not DB_PASSWORD:
+        raise ValueError(
+            "A variável ECOS_DB_PASSWORD não foi configurada."
+        )
+
+    return psycopg.connect(
+        host=DB_HOST,
+        port=DB_PORT,
+        dbname=DB_NAME,
+        user=DB_USER,
+        password=DB_PASSWORD,
+    )
+
+
+def carregar_telemetria_banco() -> pd.DataFrame:
+    """
+    Carrega as telemetrias diretamente do PostgreSQL.
+    """
+
+    consulta = """
+        SELECT
+            c.codigo_anonimo AS "userId",
+            EXTRACT(EPOCH FROM t.data_coleta) * 1000 AS "timestamp",
+            t.dwell_time AS "dwellTime",
+            t.flight_time AS "flightTime",
+            t.mouse_speed AS "mouseSpeed"
+        FROM telemetria t
+        JOIN colaborador c
+            ON c.id = t.colaborador_id
+        ORDER BY t.data_coleta;
+    """
+
+    with conectar_banco() as conexao:
+        with conexao.cursor() as cursor:
+            cursor.execute(consulta)
+
+            colunas = [
+                descricao.name
+                for descricao in cursor.description
+            ]
+
+            registros = cursor.fetchall()
+
+    return pd.DataFrame(
+        registros,
+        columns=colunas
+    )
 
 # =====================================================
 # VALIDAÇÃO
@@ -71,36 +127,73 @@ def validar_dados(dataframe: pd.DataFrame) -> None:
 
 def detectar_anomalias(dataframe: pd.DataFrame) -> pd.DataFrame:
     """
-    Classifica os registros utilizando Isolation Forest.
+    Executa a detecção de anomalias separadamente
+    para cada colaborador.
+
+    Cada userId possui seu próprio modelo comportamental.
     """
 
-    dados_modelo = dataframe[COLUNAS_ANALISE]
+    resultados = []
 
-    modelo = IsolationForest(
-        n_estimators=100,
-        contamination=0.05,
-        random_state=42,
+    for user_id, grupo in dataframe.groupby("userId"):
+
+        grupo = grupo.copy()
+
+        print(
+            f"Analisando colaborador {user_id}: "
+            f"{len(grupo)} registros"
+        )
+
+        # Evita treinar Isolation Forest com poucos dados.
+        if len(grupo) < 10:
+
+            grupo["resultado_modelo"] = 1
+            grupo["classificacao"] = "NORMAL"
+            grupo["pontuacao_anomalia"] = 0.0
+
+            print(
+                "  Poucos registros para treinamento. "
+                "Classificados temporariamente como NORMAL."
+            )
+
+            resultados.append(grupo)
+
+            continue
+
+        dados_modelo = grupo[COLUNAS_ANALISE]
+
+        modelo = IsolationForest(
+            n_estimators=100,
+            contamination=0.05,
+            random_state=42,
+        )
+
+        grupo["resultado_modelo"] = modelo.fit_predict(
+            dados_modelo
+        )
+
+        grupo["classificacao"] = (
+            grupo["resultado_modelo"]
+            .map({
+                1: "NORMAL",
+                -1: "ANOMALIA",
+            })
+        )
+
+        grupo["pontuacao_anomalia"] = (
+            modelo.decision_function(
+                dados_modelo
+            )
+        )
+
+        resultados.append(grupo)
+
+    resultado_final = pd.concat(
+        resultados,
+        ignore_index=True
     )
 
-    dataframe = dataframe.copy()
-
-    dataframe["resultado_modelo"] = modelo.fit_predict(
-        dados_modelo
-    )
-
-    dataframe["classificacao"] = (
-        dataframe["resultado_modelo"]
-        .map({
-            1: "NORMAL",
-            -1: "ANOMALIA",
-        })
-    )
-
-    dataframe["pontuacao_anomalia"] = (
-        modelo.decision_function(dados_modelo)
-    )
-
-    return dataframe
+    return resultado_final
 
 
 # =====================================================
@@ -196,9 +289,7 @@ def main():
         "=== ECOS - Detecção de Anomalias e Baseline ==="
     )
 
-    dataframe = carregar_telemetria(
-        ARQUIVO_TELEMETRIA
-    )
+    dataframe = carregar_telemetria_banco()
 
     validar_dados(dataframe)
 

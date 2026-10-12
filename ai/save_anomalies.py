@@ -4,8 +4,7 @@ from datetime import datetime, timezone
 import psycopg
 
 from anomaly_detector import (
-    ARQUIVO_TELEMETRIA,
-    carregar_telemetria,
+    carregar_telemetria_banco,
     validar_dados,
     detectar_anomalias,
 )
@@ -231,9 +230,7 @@ def inserir_anomalia(
 def main():
     print("=== ECOS - Persistência de Anomalias ===")
 
-    dataframe = carregar_telemetria(
-        ARQUIVO_TELEMETRIA
-    )
+    dataframe = carregar_telemetria_banco()
 
     validar_dados(dataframe)
 
