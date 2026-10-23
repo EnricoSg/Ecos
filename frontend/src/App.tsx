@@ -1,21 +1,33 @@
-// src/App.tsx
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { Login } from './pages/Login'; // Importando a tela que você acabou de criar!
+import type { ReactNode } from 'react';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { Login } from './pages/Login';
 import { Dashboard } from './pages/Dashboard';
+
+const TOKEN_KEY = '@Ecos:token';
+
+function RotaProtegida({ children }: { children: ReactNode }) {
+  const token = localStorage.getItem(TOKEN_KEY);
+
+  return token ? children : <Navigate to="/login" replace />;
+}
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Quando a URL terminar em /login, mostra a tela de Login */}
         <Route path="/login" element={<Login />} />
-        
-        {/* Adcionamos a Rota do Dashboard aqui */}
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route
+          path="/dashboard"
+          element={
+            <RotaProtegida>
+              <Dashboard />
+            </RotaProtegida>
+          }
+        />
         <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
-export default App;''
+export default App;

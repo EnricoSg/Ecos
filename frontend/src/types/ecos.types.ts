@@ -19,8 +19,26 @@ export interface Telemetria{
 //espelho da tabela 'alerta'
 export interface Alerta{
     id: number;
-    anomalia_id: number;
     status: 'PENDENTE' | 'RESOLVIDO';
-    mensagem: string; // - Mensagem sem diagnóstico clinico
-    nivel_anomalia: 'BAIXO' | 'MEDIO' | 'ALTO';
+    mensagem: string;
+    data_criacao: string; // - Mensagem sem diagnóstico clinico
+    data_resolucao: string | null;
+    anomalia: {
+        id: number;
+        nivel: 'BAIXO' | 'MEDIO' | 'ALTO';
+            pontuacao_desvio: number;
+        data_deteccao: string;
+    };
+    colaborador: {
+        codigo_anonimo: string;
+        setor: string | null;
+    };
+
+}
+
+export interface RespostaListaAlertas{
+    total: number;
+    pagina: number;
+    limite: number;
+    alertas: Alerta [];
 }
