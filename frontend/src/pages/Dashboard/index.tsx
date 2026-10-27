@@ -11,6 +11,8 @@ export function Dashboard() {
     const [alertas, setAlertas] = useState<Alerta[]>([]);
     const [carregando, setCarregando] = useState(true);
     const [erro, setErro] = useState('');
+    const [resolvendoId, setResolvendoId] = useState<number | null>(null);
+    const [erroAcao, setErroAcao] = useState('');
 
     useEffect(() => {
         const controller = new AbortController();
@@ -42,6 +44,23 @@ export function Dashboard() {
     function handleSair() {
         localStorage.removeItem(TOKEN_KEY);
         navigate('/login', { replace: true });
+    }
+
+    async function handleResolver(id: number) {
+        setResolvendoId(id);
+        setErroAcao('');
+
+        try {
+            await api.patch(`/alertas/${id}`, {status: 'RESOLVIDO'});
+
+            setAlertas((listaAtual) =>
+                listaAtual.filter((alerta) => alerta.id !== id)
+            );
+        }catch {
+            setErroAcao('Não foi possível resolver este alerta. Tente novamente.');
+        }finally {
+            setResolvendoId(null);
+        }
     }
 
     return (
@@ -79,6 +98,11 @@ export function Dashboard() {
                     </h2>
 
                     <div className="space-y-3" aria-live="polite">
+                        {erroAcao && (
+                            <p role='alert' className = "text-sm text-red-700">
+                                {erroAcao}
+                            </p>
+                        )}
                         {carregando ? (
                             <p className="text-sm text-gray-500">Carregando alertas…</p>
                         ) : erro ? (
@@ -106,6 +130,13 @@ export function Dashboard() {
                                             timeStyle: 'short',
                                         }).format(new Date(alerta.anomalia.data_deteccao))}
                                     </time>
+                                    <button
+                                    type="button"
+                                    onClick={() => void handleResolver(alerta.id)}
+                                    disabled={resolvendoId !== null}
+                                    >
+                                        {resolvendoId === alerta.id ? 'Resolvendo...' : 'Resolver'}
+                                    </button>
                                 </article>
                             ))
                         )}
