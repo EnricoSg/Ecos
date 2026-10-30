@@ -42,3 +42,39 @@ export interface RespostaListaAlertas{
     limite: number;
     alertas: Alerta [];
 }
+
+export interface PontoTendenciaSetor {
+    periodo: string;
+    media_dwell_time: number | null;
+    media_flight_time: number | null;
+    media_mouse_speed: number | null;
+    eventos: number;
+    colaboradores: number;
+    anomalias: number;
+}
+
+export interface BaselineTendenciaSetor{
+    media_dwell_time: number | null;
+    media_flight_time: number | null;
+    media_mouse_speed: number | null;
+}
+
+export interface RespostaTendenciaSetor{
+    setor: string;
+    inicio: string;
+    fim: string;
+    agrupamento: 'hora' | 'dia' | 'semana';
+    colaboradores: number;
+    baseline: BaselineTendenciaSetor;
+    serie: PontoTendenciaSetor[];
+}
+
+export interface SetorResumo {
+    setor: string;
+    colaboradores: number;
+    alertas_pendentes: number;
+}
+
+export interface RespostaListaSetores{
+    setores: SetorResumo[];
+}

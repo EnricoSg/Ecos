@@ -2,7 +2,23 @@ import { useEffect, useState } from 'react';
 import { LogOut } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { api } from '../../services/api';
-import type { Alerta, RespostaListaAlertas } from '../../types/ecos.types';
+import type {
+    Alerta,
+    RespostaListaAlertas,
+    RespostaTendenciaSetor,
+    RespostaListaSetores,
+    SetorResumo,
+} from '../../types/ecos.types';
+import {
+    CartesianGrid,
+    Legend,
+    Line,
+    LineChart,
+    ResponsiveContainer,
+    Tooltip,
+    XAxis,
+    YAxis,
+} from 'recharts';
 
 const TOKEN_KEY = '@Ecos:token';
 
@@ -13,6 +29,41 @@ export function Dashboard() {
     const [erro, setErro] = useState('');
     const [resolvendoId, setResolvendoId] = useState<number | null>(null);
     const [erroAcao, setErroAcao] = useState('');
+    const [tendencia, setTendencia] = useState<RespostaTendenciaSetor | null>(null);
+    const dadosGrafico =
+    tendencia?.serie.map((ponto) => ({
+        ...ponto,
+        baseline: tendencia?.baseline.media_dwell_time ?? null,
+    })) ?? [];
+    const [setores, setSetores] = useState<SetorResumo[]>([]);
+    const [setorSelecionado, setSetorSelecionado] = useState(
+        'Tecnologia da Informação',
+    );
+
+    useEffect(() => {
+        const controller = new AbortController();
+
+        async function buscarSetores(){
+            try{
+                const resposta = await api.get<RespostaListaSetores>('/setores', {
+                    signal: controller.signal,
+                });
+
+                setSetores(resposta.data.setores);
+                setSetorSelecionado((setorAtual) =>
+                    resposta.data.setores.some((item) => item.setor === setorAtual)
+                        ? setorAtual
+                        : resposta.data.setores[0]?.setor ?? '',
+                );
+            } catch(erro){
+                if (!controller.signal.aborted){
+                    console.error('Erro ao carregar setores:', erro);
+                }
+            }
+        }
+        void buscarSetores();
+        return () => controller.abort();
+    }, []);
 
     useEffect(() => {
         const controller = new AbortController();
@@ -40,6 +91,37 @@ export function Dashboard() {
 
         return () => controller.abort();
     }, []);
+
+    useEffect(() => {
+        if(!setorSelecionado) return;
+
+        const controller = new AbortController();
+
+        async function buscarTendencia(){
+            setTendencia(null);
+
+            try{
+                const setor = encodeURIComponent(setorSelecionado);
+                const resposta = await api.get<RespostaTendenciaSetor>(
+                    `/setores/${setor}/tendencia`,
+                    {
+                        params: {agrupamentos: 'dia'},
+                        signal: controller.signal,
+                    },
+                );
+
+                setTendencia(resposta.data);
+            } catch (erro) {
+                if(!controller.signal.aborted){
+                    console.error('Erro ao carregar tendência:', erro);
+                }
+            }
+        }
+
+        void buscarTendencia();
+
+        return () => controller.abort();
+    }, [setorSelecionado]);
 
     function handleSair() {
         localStorage.removeItem(TOKEN_KEY);
@@ -83,9 +165,72 @@ export function Dashboard() {
 
             <section className="grid grid-cols-1 gap-6 md:grid-cols-3">
                 <div className="rounded-xl border border-gray-100 bg-white p-6 shadow-sm md:col-span-2">
-                    <h2 className="mb-4 text-lg font-semibold text-gray-700">Tendências</h2>
+                    <div className="mb-4 flex items-center justify-between gap-4">
+                        <h2 className="text-lg font-semibold text-gray-700">Tendências</h2>
+
+                        <label className="flex items-center gap-2 text-sm text-gray-600">
+                            <span>Setor</span>
+                            <select
+                                value={setorSelecionado}
+                                onChange={(evento) => setSetorSelecionado(evento.target.value)}
+                                disabled={setores.length === 0}
+                                className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700"
+                            >
+                                {setores.map((item) => (
+                                    <option key={item.setor} value={item.setor}>
+                                        {item.setor}
+                                    </option>
+                                ))}
+                            </select>
+                        </label>
+                    </div>
                     <div className="flex h-64 items-center justify-center rounded border border-dashed border-gray-300 bg-gray-50">
-                        <span className="text-gray-400">Gráfico de tendências será exibido aqui</span>
+                        {tendencia ? (
+                            <ResponsiveContainer width="100%" height="100%">
+                                <LineChart
+                                    data={[...dadosGrafico].sort(
+                                        (a,b) => Date.parse(a.periodo) - Date.parse(b.periodo),
+                                    )}
+                                >
+                                    <CartesianGrid strokeDasharray="3 3" />
+                                    <XAxis
+                                        dataKey="periodo"
+                                        tickFormatter={(valor) =>
+                                            new Date(String(valor)).toLocaleDateString('pt-BR', {
+                                                day: '2-digit',
+                                                month: '2-digit',
+                                            })
+                                        }
+                                    />
+                                    <YAxis />
+                                    <Tooltip
+                                        labelFormatter={(valor) =>
+                                            new Date(String(valor)).toLocaleDateString('pt-BR')
+                                        }
+                                    />
+                                    <Legend />
+                                    <Line
+                                        type="monotone"
+                                        dataKey="media_dwell_time"
+                                        name="Dwell time médio"
+                                        stroke="#2563eb"
+                                        connectNulls={false}
+                                    />
+                                    <Line
+                                    type="monotone"
+                                    dataKey="baseline"
+                                    name="Baseline"
+                                    stroke="#f59e0b"
+                                    strokeDasharray="5 5"
+                                    dot={{r: 4}}
+                                    strokeWidth={3}
+                                    />
+                                    </LineChart>
+                                </ResponsiveContainer>
+                        ) : (
+                          <span className="text-gray-400">Carregando tendências...</span>
+                        )}
+                        
                     </div>
                 </div>
 
