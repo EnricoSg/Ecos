@@ -33,6 +33,7 @@ export function Dashboard() {
     const [setores, setSetores] = useState<SetorResumo[]>([]);
     // Começa vazio: a tendência só é buscada depois que /setores confirmar um setor válido
     const [setorSelecionado, setSetorSelecionado] = useState('');
+    const [diasPeriodo, setDiasPeriodo] = useState<30 | 60 | 90>(30);
 
     // Estável entre renderizações: o modal usa esta função como dependência do efeito do Esc
     const fecharDetalhe = useCallback(() => setAlertaAbertoId(null), []);
@@ -103,6 +104,9 @@ export function Dashboard() {
         if(!setorSelecionado) return;
 
         const controller = new AbortController();
+        const fim = new Date();
+        const inicio = new Date(fim);
+        inicio.setDate(inicio.getDate() - diasPeriodo);
 
         async function buscarTendencia(){
             setTendencia(null);
@@ -114,7 +118,10 @@ export function Dashboard() {
                 const resposta = await api.get<RespostaTendenciaSetor>(
                     `/setores/${setor}/tendencia`,
                     {
-                        params: {agrupamento: 'dia'},
+                        params: {
+                            inicio: inicio.toISOString(),
+                            fim: fim.toISOString(),
+                            agrupamento: 'dia',},
                         signal: controller.signal,
                     },
                 );
@@ -136,7 +143,7 @@ export function Dashboard() {
         void buscarTendencia();
 
         return () => controller.abort();
-    }, [setorSelecionado]);
+    }, [setorSelecionado, diasPeriodo]);
 
     function handleSair() {
         localStorage.removeItem(TOKEN_KEY);
@@ -183,7 +190,7 @@ export function Dashboard() {
 
             <section className="grid grid-cols-1 gap-6 md:grid-cols-3">
                 <div className="rounded-xl border border-gray-100 bg-white p-6 shadow-sm md:col-span-2">
-                    <div className="mb-4 flex items-center justify-between gap-4">
+                    <div className="mb-4 flex flex-wrap items-center justify-between gap-4">
                         <h2 className="text-lg font-semibold text-gray-700">Tendências</h2>
 
                         <label className="flex items-center gap-2 text-sm text-gray-600">
@@ -199,6 +206,21 @@ export function Dashboard() {
                                         {item.setor}
                                     </option>
                                 ))}
+                            </select>
+                        </label>
+
+                        <label className="flex items-center gap-2 text-sm text-gray-600">
+                            <span>Período</span>
+                            <select
+                                value={diasPeriodo}
+                                onChange={(evento) =>
+                                    setDiasPeriodo(Number(evento.target.value) as 30 | 60 | 90)
+                                }
+                                className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700"
+                            >
+                                <option value={30}>Últimos 30 dias</option>
+                                <option value={60}>Últimos 60 dias</option>
+                                <option value={90}>Últimos 90 dias</option>
                             </select>
                         </label>
                     </div>
