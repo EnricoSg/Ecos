@@ -8,12 +8,22 @@ const PERIODO_MAXIMO_DIAS = 366;
 // Nomes em português na API, traduzidos para as unidades do date_trunc do PostgreSQL
 const AGRUPAMENTOS = { hora: 'hour', dia: 'day', semana: 'week' };
 
+// AAAA-MM-DD, opcionalmente com hora (e fuso Z ou ±hh:mm). O `new Date()` sozinho aceita lixo
+// como "1" (vira 2001-01-01) e "2026-02-30" (vira 2 de março), por isso o formato é conferido antes.
+const DATA_ISO = /^(\d{4})-(\d{2})-(\d{2})(?:T\d{2}:\d{2}(?::\d{2}(?:\.\d{1,3})?)?(?:Z|[+-]\d{2}:?\d{2})?)?$/;
+
 function lerInteiroPositivo(valor, { padrao, maximo, nome }) {
     if (valor === undefined) {
         return { valor: padrao };
     }
 
-    const numero = Number(valor);
+    // Só dígitos: rejeita "1e3", "0x10", " 5", "1.0" e query params repetidos (?limite=1&limite=2)
+    let numero = NaN;
+    if (typeof valor === 'number') {
+        numero = valor;
+    } else if (typeof valor === 'string' && /^\d{1,10}$/.test(valor)) {
+        numero = Number(valor);
+    }
 
     if (!Number.isInteger(numero) || numero < 1 || (maximo && numero > maximo)) {
         const faixa = maximo ? ` entre 1 e ${maximo}` : ' positivo';
@@ -23,15 +33,21 @@ function lerInteiroPositivo(valor, { padrao, maximo, nome }) {
     return { valor: numero };
 }
 
+function diaExiste(ano, mes, dia) {
+    const data = new Date(Date.UTC(ano, mes - 1, dia));
+    return data.getUTCFullYear() === ano && data.getUTCMonth() === mes - 1 && data.getUTCDate() === dia;
+}
+
 function lerData(valor, nome) {
     if (valor === undefined) {
         return { valor: undefined };
     }
 
-    const data = new Date(valor);
+    const partes = typeof valor === 'string' ? DATA_ISO.exec(valor) : null;
+    const data = partes && diaExiste(Number(partes[1]), Number(partes[2]), Number(partes[3])) ? new Date(valor) : null;
 
-    if (typeof valor !== 'string' || Number.isNaN(data.getTime())) {
-        return { erro: `O parâmetro "${nome}" deve ser uma data ISO 8601 (ex.: 2026-10-01).` };
+    if (!data || Number.isNaN(data.getTime())) {
+        return { erro: `O parâmetro "${nome}" deve ser uma data ISO 8601 (ex.: 2026-10-01 ou 2026-10-01T00:00:00-03:00).` };
     }
 
     return { valor: data };

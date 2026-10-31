@@ -30,7 +30,8 @@
     "testPathIgnorePatterns": [
       "/node_modules/",
       "/frontend/",
-      "/api/"
+      "/api/",
+      "/coletor/"
     ]
   },
   "devDependencies": {

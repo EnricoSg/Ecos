@@ -35,6 +35,15 @@ describe('GET /api/anomalias', () => {
         ]);
     });
 
+    test('aceita data com hora e fuso horário', async () => {
+        const db = criarBancoFalso({ rows: [] });
+
+        const resposta = await get(db, '/api/anomalias?inicio=2026-10-01T00:00:00-03:00&fim=2026-10-02T00:00:00Z');
+
+        expect(resposta.status).toBe(200);
+        expect(resposta.body.inicio).toBe('2026-10-01T03:00:00.000Z');
+    });
+
     test('padrão: últimos 30 dias agrupados por dia, sem filtro de setor', async () => {
         const db = criarBancoFalso({ rows: [] });
 
@@ -54,7 +63,10 @@ describe('GET /api/anomalias', () => {
         ['data inválida', '?inicio=ontem'],
         ['início depois do fim', '?inicio=2026-10-12&fim=2026-10-01'],
         ['período acima de 366 dias', '?inicio=2024-01-01&fim=2026-01-01'],
-        ['agrupamento herdado do prototype', '?agrupamento=toString']
+        ['agrupamento herdado do prototype', '?agrupamento=toString'],
+        ['dia que não existe', '?inicio=2026-02-30'],
+        ['número solto como data', '?inicio=1&fim=2'],
+        ['data sem zero à esquerda', '?inicio=2026-1-5']
     ])('400: %s', async (_, query) => {
         const db = criarBancoFalso();
 

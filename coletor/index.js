@@ -1,17 +1,22 @@
 // =====================================================
-// ECOS - Módulo Coletor (Simulador MVP)
+// ECOS - Módulo Coletor
 //
-// Gera métricas comportamentais realistas (dwellTime, flightTime, mouseSpeed),
-// acumula os eventos em memória e envia em lote para a API do Ecos.
+// Obtém métricas comportamentais (dwellTime, flightTime, mouseSpeed) de uma de
+// duas fontes, acumula os eventos em memória e envia em lote para a API do Ecos:
+//   --modo=simulado (padrão): simulador estatístico, sem acesso ao teclado
+//   --modo=real: captura nativa do teclado e mouse (captura-nativa.js)
 //
-// LGPD por design: este módulo NUNCA captura, recebe ou guarda qual tecla foi
-// pressionada, o texto digitado, a posição do cursor, janelas abertas ou qualquer
-// outro conteúdo. Ele só conhece TEMPOS e VELOCIDADE. Quando o simulador for trocado
-// por uma captura real (ex.: uiohook-napi), o código da tecla deve ser descartado
-// no próprio callback do sistema operacional, antes de chegar a este arquivo.
+// LGPD por design: este arquivo NUNCA recebe ou guarda qual tecla foi pressionada,
+// o texto digitado, a posição do cursor, janelas abertas ou qualquer outro conteúdo.
+// Ele só conhece TEMPOS e VELOCIDADE. Na captura real, o código da tecla é descartado
+// dentro de captura-nativa.js, antes de chegar a este arquivo.
 // =====================================================
 
 const path = require('path');
+const { iniciarCapturaNativa } = require('./captura-nativa');
+
+// Fontes de eventos aceitas em --modo / MODO
+const MODOS = Object.freeze(['simulado', 'real']);
 
 // Únicos campos que podem sair desta máquina (mesma lista branca do validador da API)
 const CAMPOS_PERMITIDOS = Object.freeze(['userId', 'timestamp', 'dwellTime', 'flightTime', 'mouseSpeed']);
@@ -69,6 +74,7 @@ function lerConfig(env = process.env) {
         apiUrl: env.API_URL || 'http://localhost:3000/api/telemetria',
         apiKey: env.API_KEY || '',
         userId: env.USER_ID || '',
+        modo: env.MODO || 'simulado',
         perfil: env.PERFIL || 'normal',
         tamanhoLote: Math.min(lerNumero(env.TAMANHO_LOTE, 20), LOTE_MAXIMO_API),
         intervaloEnvioMs: lerNumero(env.INTERVALO_ENVIO_MS, 5000),
@@ -78,12 +84,13 @@ function lerConfig(env = process.env) {
     };
 }
 
-// Argumentos de linha de comando sobrescrevem o .env: --perfil=fadiga --duracao=30
+// Argumentos de linha de comando sobrescrevem o .env: --modo=real --perfil=fadiga --duracao=30
 function aplicarArgumentos(config, argumentos) {
     const resultado = { ...config };
 
     for (const argumento of argumentos) {
         const [chave, valor] = argumento.replace(/^--/, '').split('=');
+        if (chave === 'modo' && valor) resultado.modo = valor;
         if (chave === 'perfil' && valor) resultado.perfil = valor;
         if (chave === 'duracao') resultado.duracaoSeg = lerNumero(valor, 0);
     }
@@ -96,6 +103,7 @@ function validarConfig(config) {
 
     if (!config.apiKey) erros.push('API_KEY não definida (copie o valor de api/.env).');
     if (!/^[a-f0-9]{32,64}$/i.test(config.userId)) erros.push('USER_ID deve ser o hash anônimo do colaborador (hexadecimal).');
+    if (!MODOS.includes(config.modo)) erros.push(`MODO deve ser um destes: ${MODOS.join(', ')}.`);
     if (!Object.hasOwn(PERFIS, config.perfil)) erros.push(`PERFIL deve ser um destes: ${Object.keys(PERFIS).join(', ')}.`);
 
     try {
@@ -303,12 +311,22 @@ async function main() {
         process.exit(1);
     }
 
-    console.log(`🔵 [COLETOR] Simulador iniciado (perfil "${config.perfil}") → ${config.apiUrl}`);
+    const coletor = criarColetor({ config });
+    let fonte;
+
+    try {
+        fonte = config.modo === 'real'
+            ? iniciarCapturaNativa(coletor.registrarEvento)
+            : iniciarSimulador(PERFIS[config.perfil], coletor.registrarEvento);
+    } catch (erro) {
+        console.error(`🔴 [COLETOR] ${erro.message}`);
+        process.exit(1);
+    }
+
+    const descricaoFonte = config.modo === 'real' ? 'Captura real do teclado e mouse' : `Simulador (perfil "${config.perfil}")`;
+    console.log(`🔵 [COLETOR] ${descricaoFonte} iniciado → ${config.apiUrl}`);
     console.log(`🔵 [COLETOR] Lote a cada ${config.tamanhoLote} eventos ou ${config.intervaloEnvioMs / 1000}s. Nenhuma tecla ou texto é registrado.`);
     if (config.duracaoSeg) console.log(`🔵 [COLETOR] Encerramento automático em ${config.duracaoSeg}s.`);
-
-    const coletor = criarColetor({ config });
-    const simulador = iniciarSimulador(PERFIS[config.perfil], coletor.registrarEvento);
     const temporizador = setInterval(() => {
         if (coletor.chaveFoiRejeitada()) return encerrar(1);
         coletor.descarregar();
@@ -320,7 +338,7 @@ async function main() {
         if (encerrando) return;
         encerrando = true;
 
-        simulador.parar();
+        fonte.parar();
         clearInterval(temporizador);
 
         // Última tentativa de enviar o que ficou na fila
@@ -344,6 +362,7 @@ if (require.main === module) {
 
 module.exports = {
     CAMPOS_PERMITIDOS,
+    MODOS,
     PERFIS,
     lerConfig,
     aplicarArgumentos,

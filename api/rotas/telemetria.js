@@ -34,6 +34,14 @@ function validarLote(pacotes) {
     const colunas = [[], [], [], [], []];
 
     for (const [indice, pacote] of pacotes.entries()) {
+        // Elementos como 1, "texto", null ou [] não chegam ao validador
+        if (pacote === null || typeof pacote !== 'object' || Array.isArray(pacote)) {
+            return {
+                status: 400,
+                corpo: { erro: 'Estrutura inválida', detalhe: 'Cada pacote deve ser um objeto JSON.', indice }
+            };
+        }
+
         const resultado = validarTelemetria(pacote);
 
         if (!resultado.sucesso) {
@@ -165,6 +173,14 @@ function criarRotasTelemetria({ db, config, limites }) {
      *         description: API_KEY não configurada no servidor (rota fechada por segurança)
      */
     rotas.post('/api/telemetria', limites.telemetria, exigirChaveApi(config), async (req, res) => {
+        // No Express 5, sem Content-Type JSON (ou com corpo vazio) o req.body fica undefined
+        if (req.body === undefined || req.body === null || typeof req.body !== 'object') {
+            return res.status(400).json({
+                erro: 'Estrutura inválida',
+                detalhe: 'Envie um objeto JSON ou um array de objetos com Content-Type: application/json.'
+            });
+        }
+
         const ehLote = Array.isArray(req.body);
         const pacotes = ehLote ? req.body : [req.body];
 

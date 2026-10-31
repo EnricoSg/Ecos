@@ -1,7 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { LogOut } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { api } from '../../services/api';
+import { CardsResumo } from '../../components/CardsResumo';
+import { GraficoTendencias } from '../../components/GraficoTendencias';
+import { ModalDetalheAlerta } from '../../components/ModalDetalheAlerta';
 import type {
     Alerta,
     RespostaListaAlertas,
@@ -9,18 +12,10 @@ import type {
     RespostaListaSetores,
     SetorResumo,
 } from '../../types/ecos.types';
-import {
-    CartesianGrid,
-    Legend,
-    Line,
-    LineChart,
-    ResponsiveContainer,
-    Tooltip,
-    XAxis,
-    YAxis,
-} from 'recharts';
 
 const TOKEN_KEY = '@Ecos:token';
+const SETOR_PADRAO = 'Tecnologia da Informação';
+const ERRO_SETORES = 'Não foi possível carregar os setores disponíveis';
 
 export function Dashboard() {
     const navigate = useNavigate();
@@ -29,16 +24,18 @@ export function Dashboard() {
     const [erro, setErro] = useState('');
     const [resolvendoId, setResolvendoId] = useState<number | null>(null);
     const [erroAcao, setErroAcao] = useState('');
+    const [alertaAbertoId, setAlertaAbertoId] = useState<number | null>(null);
+    // Incrementado a cada alerta resolvido, para os cards de resumo se atualizarem
+    const [versaoResumo, setVersaoResumo] = useState(0);
     const [tendencia, setTendencia] = useState<RespostaTendenciaSetor | null>(null);
-    const dadosGrafico =
-    tendencia?.serie.map((ponto) => ({
-        ...ponto,
-        baseline: tendencia?.baseline.media_dwell_time ?? null,
-    })) ?? [];
+    const [carregandoTendencia, setCarregandoTendencia] = useState(true);
+    const [erroTendencia, setErroTendencia] = useState('');
     const [setores, setSetores] = useState<SetorResumo[]>([]);
-    const [setorSelecionado, setSetorSelecionado] = useState(
-        'Tecnologia da Informação',
-    );
+    // Começa vazio: a tendência só é buscada depois que /setores confirmar um setor válido
+    const [setorSelecionado, setSetorSelecionado] = useState('');
+
+    // Estável entre renderizações: o modal usa esta função como dependência do efeito do Esc
+    const fecharDetalhe = useCallback(() => setAlertaAbertoId(null), []);
 
     useEffect(() => {
         const controller = new AbortController();
@@ -49,15 +46,25 @@ export function Dashboard() {
                     signal: controller.signal,
                 });
 
-                setSetores(resposta.data.setores);
-                setSetorSelecionado((setorAtual) =>
-                    resposta.data.setores.some((item) => item.setor === setorAtual)
-                        ? setorAtual
-                        : resposta.data.setores[0]?.setor ?? '',
+                const lista = resposta.data.setores;
+
+                if (lista.length === 0) {
+                    setErroTendencia(ERRO_SETORES);
+                    setCarregandoTendencia(false);
+                    return;
+                }
+
+                setSetores(lista);
+                setSetorSelecionado(
+                    lista.some((item) => item.setor === SETOR_PADRAO)
+                        ? SETOR_PADRAO
+                        : lista[0].setor,
                 );
             } catch(erro){
                 if (!controller.signal.aborted){
                     console.error('Erro ao carregar setores:', erro);
+                    setErroTendencia(ERRO_SETORES);
+                    setCarregandoTendencia(false);
                 }
             }
         }
@@ -99,21 +106,29 @@ export function Dashboard() {
 
         async function buscarTendencia(){
             setTendencia(null);
+            setErroTendencia('');
+            setCarregandoTendencia(true);
 
             try{
                 const setor = encodeURIComponent(setorSelecionado);
                 const resposta = await api.get<RespostaTendenciaSetor>(
                     `/setores/${setor}/tendencia`,
                     {
-                        params: {agrupamentos: 'dia'},
+                        params: {agrupamento: 'dia'},
                         signal: controller.signal,
                     },
                 );
 
                 setTendencia(resposta.data);
             } catch (erro) {
+                // Inclui o 403 de privacidade (setor com poucos colaboradores)
                 if(!controller.signal.aborted){
                     console.error('Erro ao carregar tendência:', erro);
+                    setErroTendencia('Não foi possível carregar as tendências');
+                }
+            } finally {
+                if (!controller.signal.aborted) {
+                    setCarregandoTendencia(false);
                 }
             }
         }
@@ -138,6 +153,7 @@ export function Dashboard() {
             setAlertas((listaAtual) =>
                 listaAtual.filter((alerta) => alerta.id !== id)
             );
+            setVersaoResumo((versao) => versao + 1);
         }catch {
             setErroAcao('Não foi possível resolver este alerta. Tente novamente.');
         }finally {
@@ -163,6 +179,8 @@ export function Dashboard() {
                 </button>
             </header>
 
+            <CardsResumo versao={versaoResumo} />
+
             <section className="grid grid-cols-1 gap-6 md:grid-cols-3">
                 <div className="rounded-xl border border-gray-100 bg-white p-6 shadow-sm md:col-span-2">
                     <div className="mb-4 flex items-center justify-between gap-4">
@@ -184,53 +202,16 @@ export function Dashboard() {
                             </select>
                         </label>
                     </div>
-                    <div className="flex h-64 items-center justify-center rounded border border-dashed border-gray-300 bg-gray-50">
+                    <div className="flex h-80 items-center justify-center rounded border border-dashed border-gray-300 bg-gray-50 p-3">
                         {tendencia ? (
-                            <ResponsiveContainer width="100%" height="100%">
-                                <LineChart
-                                    data={[...dadosGrafico].sort(
-                                        (a,b) => Date.parse(a.periodo) - Date.parse(b.periodo),
-                                    )}
-                                >
-                                    <CartesianGrid strokeDasharray="3 3" />
-                                    <XAxis
-                                        dataKey="periodo"
-                                        tickFormatter={(valor) =>
-                                            new Date(String(valor)).toLocaleDateString('pt-BR', {
-                                                day: '2-digit',
-                                                month: '2-digit',
-                                            })
-                                        }
-                                    />
-                                    <YAxis />
-                                    <Tooltip
-                                        labelFormatter={(valor) =>
-                                            new Date(String(valor)).toLocaleDateString('pt-BR')
-                                        }
-                                    />
-                                    <Legend />
-                                    <Line
-                                        type="monotone"
-                                        dataKey="media_dwell_time"
-                                        name="Dwell time médio"
-                                        stroke="#2563eb"
-                                        connectNulls={false}
-                                    />
-                                    <Line
-                                    type="monotone"
-                                    dataKey="baseline"
-                                    name="Baseline"
-                                    stroke="#f59e0b"
-                                    strokeDasharray="5 5"
-                                    dot={{r: 4}}
-                                    strokeWidth={3}
-                                    />
-                                    </LineChart>
-                                </ResponsiveContainer>
-                        ) : (
+                            <GraficoTendencias tendencia={tendencia} />
+                        ) : carregandoTendencia ? (
                           <span className="text-gray-400">Carregando tendências...</span>
+                        ) : (
+                          <p role="alert" className="text-sm text-red-700">
+                            {erroTendencia || 'Não foi possível carregar as tendências'}
+                          </p>
                         )}
-                        
                     </div>
                 </div>
 
@@ -256,7 +237,11 @@ export function Dashboard() {
                             <p className="text-sm text-gray-500">Nenhum alerta pendente.</p>
                         ) : (
                             alertas.map((alerta) => (
-                                <article key={alerta.id} className="rounded-lg border border-gray-200 p-4">
+                                <article
+                                    key={alerta.id}
+                                    className="cursor-pointer rounded-lg border border-gray-200 p-4 transition hover:border-blue-300 hover:bg-blue-50/40"
+                                    onClick={() => setAlertaAbertoId(alerta.id)}
+                                >
                                     <div className="mb-2 flex items-center justify-between gap-2">
                                         <strong className="text-sm text-gray-800">
                                             Nível {alerta.anomalia.nivel}
@@ -275,19 +260,39 @@ export function Dashboard() {
                                             timeStyle: 'short',
                                         }).format(new Date(alerta.anomalia.data_deteccao))}
                                     </time>
-                                    <button
-                                    type="button"
-                                    onClick={() => void handleResolver(alerta.id)}
-                                    disabled={resolvendoId !== null}
-                                    >
-                                        {resolvendoId === alerta.id ? 'Resolvendo...' : 'Resolver'}
-                                    </button>
+                                    <div className="mt-3 flex gap-2">
+                                        <button
+                                            type="button"
+                                            onClick={(evento) => {
+                                                evento.stopPropagation();
+                                                setAlertaAbertoId(alerta.id);
+                                            }}
+                                            className="rounded-lg border border-gray-200 bg-white px-3 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-50"
+                                        >
+                                            Ver detalhes
+                                        </button>
+                                        <button
+                                            type="button"
+                                            onClick={(evento) => {
+                                                evento.stopPropagation();
+                                                void handleResolver(alerta.id);
+                                            }}
+                                            disabled={resolvendoId !== null}
+                                            className="rounded-lg bg-blue-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-blue-700 disabled:cursor-wait disabled:opacity-60"
+                                        >
+                                            {resolvendoId === alerta.id ? 'Resolvendo...' : 'Resolver'}
+                                        </button>
+                                    </div>
                                 </article>
                             ))
                         )}
                     </div>
                 </section>
             </section>
+
+            {alertaAbertoId !== null && (
+                <ModalDetalheAlerta alertaId={alertaAbertoId} aoFechar={fecharDetalhe} />
+            )}
         </main>
     );
 }

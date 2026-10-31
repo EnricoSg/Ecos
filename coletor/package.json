@@ -1,7 +1,7 @@
 {
   "name": "ecos-coletor",
   "version": "1.0.0",
-  "description": "Coletor do Ecos (simulador MVP): gera métricas comportamentais sem registrar teclas nem conteúdo e envia em lote para a API.",
+  "description": "Coletor do Ecos: captura (ou simula) métricas comportamentais sem registrar teclas nem conteúdo e envia em lote para a API.",
   "main": "index.js",
   "private": true,
   "type": "commonjs",
@@ -11,8 +11,12 @@
   "scripts": {
     "start": "node index.js",
     "start:fadiga": "node index.js --perfil=fadiga",
+    "start:real": "node index.js --modo=real",
     "teste-integracao": "node index.js --duracao=15",
     "test": "node --test \"tests/**/*.test.js\""
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "uiohook-napi": "^1.5.5"
+  }
 }

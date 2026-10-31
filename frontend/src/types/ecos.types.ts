@@ -78,3 +78,33 @@ export interface SetorResumo {
 export interface RespostaListaSetores{
     setores: SetorResumo[];
 }
+
+// GET /api/alertas/resumo - números dos cards do topo
+export interface RespostaResumoAlertas {
+    setor: string | null;
+    pendentes: number;
+    resolvidos: number;
+    pendentes_alto: number;
+    pendentes_medio: number;
+    horas_medias_ate_resolver: number | null;
+}
+
+export interface MetricasComportamentais {
+    dwell_time: number | null;
+    flight_time: number | null;
+    mouse_speed: number | null;
+}
+
+// GET /api/alertas/:id - alerta + janela avaliada pela IA comparada ao baseline
+export interface DetalheAlerta extends Alerta {
+    comparacao: {
+        baseline: MetricasComportamentais & { data_calculo: string };
+        observado: MetricasComportamentais & {
+            eventos: number;
+            janela_inicio: string;
+            janela_fim: string;
+        };
+        variacao_percentual: MetricasComportamentais;
+    };
+    aviso: string;
+}

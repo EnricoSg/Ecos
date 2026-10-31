@@ -103,6 +103,19 @@ function responderParametroInvalido(res, detalhe) {
     return res.status(400).json({ erro: 'Parâmetro inválido', detalhe });
 }
 
+// Privacidade: setor com poucos colaboradores ativos não pode ter dados agregados exibidos
+function grupoPequenoDemais(config, colaboradores) {
+    const minimo = config.minColaboradoresSetor ?? 1;
+    return minimo > 1 && colaboradores < minimo;
+}
+
+function responderGrupoPequeno(res, config) {
+    return res.status(403).json({
+        erro: 'Grupo pequeno demais',
+        detalhe: `Para proteger a privacidade, dados agregados só são exibidos para setores com pelo menos ${config.minColaboradoresSetor} colaboradores ativos.`
+    });
+}
+
 function criarRotasAnalises({ db, config, limites }) {
     const rotas = express.Router();
     const protecao = [limites.leitura, exigirJwt(config)];
@@ -150,6 +163,13 @@ function criarRotasAnalises({ db, config, limites }) {
 
         const setor = lerTextoOpcional(req.query.setor, 'setor');
         if (setor.erro) return responderParametroInvalido(res, setor.erro);
+
+        if (setor.valor && (config.minColaboradoresSetor ?? 1) > 1) {
+            const resumo = await db.query(SQL_RESUMO_SETOR, [setor.valor]);
+            if (grupoPequenoDemais(config, resumo.rows[0].colaboradores)) {
+                return responderGrupoPequeno(res, config);
+            }
+        }
 
         const { inicio, fim, agrupamento, unidadeSql } = periodo.valor;
         const { rows } = await db.query(SQL_ANOMALIAS_AGREGADAS, [unidadeSql, inicio, fim, setor.valor]);
@@ -247,6 +267,10 @@ function criarRotasAnalises({ db, config, limites }) {
 
         if (colaboradores === 0) {
             return res.status(404).json({ erro: 'Setor não encontrado' });
+        }
+
+        if (grupoPequenoDemais(config, colaboradores)) {
+            return responderGrupoPequeno(res, config);
         }
 
         const serie = await db.query(SQL_TENDENCIA_SETOR, [setor.valor, unidadeSql, inicio, fim]);

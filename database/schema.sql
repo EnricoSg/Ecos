@@ -162,5 +162,25 @@ CREATE INDEX idx_telemetria_pendente
     ON telemetria (colaborador_id, data_coleta)
     WHERE analisada_em IS NULL;
 
+-- Consultas da API (migração 002_indices_api.sql)
+CREATE INDEX idx_alerta_anomalia
+    ON alerta (anomalia_id);
+
+CREATE INDEX idx_alerta_criacao
+    ON alerta (data_criacao DESC, id DESC);
+
+CREATE INDEX idx_anomalia_deteccao
+    ON anomalia (data_deteccao);
+
+CREATE INDEX idx_anomalia_telemetria
+    ON anomalia (telemetria_id);
+
+CREATE INDEX idx_baseline_colaborador_data
+    ON baseline (colaborador_id, data_calculo DESC, id DESC);
+
+CREATE INDEX idx_colaborador_setor_ativo
+    ON colaborador (setor)
+    WHERE ativo;
+
 CREATE INDEX idx_alerta_status
     ON alerta (status);
