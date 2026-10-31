@@ -1,7 +1,7 @@
 const request = require('supertest');
 const jwt = require('jsonwebtoken');
 const { createApp } = require('../app');
-const { SQL_LISTAR_ALERTAS, SQL_RESOLVER_ALERTA, SQL_STATUS_ALERTA } = require('../rotas/alertas');
+const { SQL_LISTAR_ALERTAS, SQL_RESOLVER_ALERTA, SQL_STATUS_ALERTA, SQL_CONTAR_ALERTAS } = require('../rotas/alertas');
 const { USER_ID, JWT_SECRET, configTeste, criarBancoFalso, silenciarConsole } = require('./auxiliares');
 
 silenciarConsole();
@@ -56,13 +56,33 @@ describe('GET /api/alertas', () => {
     });
 
     test('filtra por status e setor e pagina', async () => {
-        const db = criarBancoFalso({ rows: [] });
+        // Página 3 vazia: a listagem não traz linhas e o total vem da contagem separada
+        const db = criarBancoFalso({ rows: [] }, { rows: [{ total: 0 }] });
 
         const resposta = await get(db, '/api/alertas?status=RESOLVIDO&setor=Financeiro&limite=10&pagina=3');
 
         expect(resposta.status).toBe(200);
         expect(resposta.body).toEqual({ total: 0, pagina: 3, limite: 10, alertas: [] });
         expect(db.query).toHaveBeenCalledWith(SQL_LISTAR_ALERTAS, ['RESOLVIDO', 'Financeiro', 10, 20]);
+        expect(db.query).toHaveBeenCalledWith(SQL_CONTAR_ALERTAS, ['RESOLVIDO', 'Financeiro']);
+    });
+
+    test('página além do fim devolve o total real (antes vinha 0)', async () => {
+        const db = criarBancoFalso({ rows: [] }, { rows: [{ total: 37 }] });
+
+        const resposta = await get(db, '/api/alertas?pagina=99');
+
+        expect(resposta.status).toBe(200);
+        expect(resposta.body).toEqual({ total: 37, pagina: 99, limite: 50, alertas: [] });
+    });
+
+    test('página 1 vazia não faz a contagem extra', async () => {
+        const db = criarBancoFalso({ rows: [] });
+
+        const resposta = await get(db, '/api/alertas');
+
+        expect(resposta.body.total).toBe(0);
+        expect(db.query).toHaveBeenCalledTimes(1);
     });
 
     test.each([
@@ -70,7 +90,10 @@ describe('GET /api/alertas', () => {
         ['limite acima de 200', '?limite=500'],
         ['página zero', '?pagina=0'],
         ['limite em texto', '?limite=dez'],
-        ['status repetido', '?status=PENDENTE&status=RESOLVIDO']
+        ['status repetido', '?status=PENDENTE&status=RESOLVIDO'],
+        ['limite decimal', '?limite=1.0'],
+        ['limite em notação científica', '?limite=1e2'],
+        ['limite repetido', '?limite=1&limite=2']
     ])('400: %s', async (_, query) => {
         const db = criarBancoFalso();
 

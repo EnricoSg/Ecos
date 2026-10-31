@@ -41,6 +41,16 @@ const SQL_RESOLVER_ALERTA = `
 
 const SQL_STATUS_ALERTA = 'SELECT status FROM alerta WHERE id = $1;';
 
+// Usada só quando a página pedida está além do fim (a janela COUNT(*) OVER() não devolve linhas nesse caso)
+const SQL_CONTAR_ALERTAS = `
+    SELECT COUNT(*)::int AS total
+    FROM alerta al
+    JOIN anomalia an ON an.id = al.anomalia_id
+    JOIN colaborador c ON c.id = an.colaborador_id
+    WHERE ($1::text IS NULL OR al.status = $1)
+      AND ($2::text IS NULL OR c.setor = $2);
+`;
+
 function formatarAlerta(linha) {
     return {
         id: linha.id,
@@ -133,8 +143,14 @@ function criarRotasAlertas({ db, config, limites }) {
         const deslocamento = (pagina.valor - 1) * limite.valor;
         const { rows } = await db.query(SQL_LISTAR_ALERTAS, [status.valor, setor.valor, limite.valor, deslocamento]);
 
+        let total = rows.length > 0 ? rows[0].total : 0;
+        if (rows.length === 0 && pagina.valor > 1) {
+            const contagem = await db.query(SQL_CONTAR_ALERTAS, [status.valor, setor.valor]);
+            total = contagem.rows[0].total;
+        }
+
         res.json({
-            total: rows.length > 0 ? rows[0].total : 0,
+            total,
             pagina: pagina.valor,
             limite: limite.valor,
             alertas: rows.map(formatarAlerta)
@@ -224,4 +240,4 @@ function criarRotasAlertas({ db, config, limites }) {
     return rotas;
 }
 
-module.exports = { criarRotasAlertas, SQL_LISTAR_ALERTAS, SQL_RESOLVER_ALERTA, SQL_STATUS_ALERTA };
+module.exports = { criarRotasAlertas, SQL_LISTAR_ALERTAS, SQL_RESOLVER_ALERTA, SQL_STATUS_ALERTA, SQL_CONTAR_ALERTAS };

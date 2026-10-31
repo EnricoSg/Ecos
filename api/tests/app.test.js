@@ -88,6 +88,7 @@ describe('Documentação Swagger', () => {
 
         expect(Object.keys(paths).sort()).toEqual([
             '/api/alertas',
+            '/api/alertas/resumo',
             '/api/alertas/{id}',
             '/api/anomalias',
             '/api/health',

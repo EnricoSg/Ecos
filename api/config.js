@@ -5,9 +5,24 @@ function lerNumero(valor, padrao) {
     return Number.isFinite(numero) && numero > 0 ? numero : padrao;
 }
 
+// Quantos proxies reversos (Nginx, Render, Heroku...) ficam na frente da API.
+// Sem isso, o rate limit enxerga o IP do proxy e bloqueia todos os usuários juntos.
+// Aceita um número de saltos (ex.: 1), "loopback" ou uma sub-rede. Vazio/false = sem proxy.
+function lerTrustProxy(valor) {
+    if (valor === undefined || valor === '' || valor === 'false') return false;
+    if (valor === 'true') return 1;
+    if (/^\d+$/.test(valor)) return Number(valor);
+    return valor;
+}
+
 function lerConfig(env = process.env) {
     return {
+        ambiente: env.NODE_ENV || 'development',
         corsOrigem: env.CORS_ORIGIN || 'http://localhost:5173',
+        trustProxy: lerTrustProxy(env.TRUST_PROXY),
+
+        // Swagger UI em /api-docs. Em produção, defina DOCS_HABILITADAS=false se não quiser expô-lo.
+        docsHabilitadas: env.DOCS_HABILITADAS !== 'false',
 
         // Chave do coletor oficial (cabeçalho X-API-Key). Sem ela, a entrada de telemetria fica bloqueada.
         apiKey: env.API_KEY || '',
@@ -17,6 +32,14 @@ function lerConfig(env = process.env) {
         rhSenha: env.RH_SENHA || '',
         jwtSegredo: env.JWT_SECRET || '',
         jwtExpiraEm: env.JWT_EXPIRA_EM || '8h',
+
+        // Privacidade: dados agregados de um setor só são exibidos com pelo menos N colaboradores ativos.
+        // 1 = desligado. Recomendado em produção: 5.
+        minColaboradoresSetor: lerNumero(env.MIN_COLABORADORES_SETOR, 1),
+
+        // Tamanho da janela de análise da IA, em minutos. Usa a MESMA variável do ai/.env:
+        // o detalhe do alerta reconstrói a janela que gerou a anomalia com este valor.
+        janelaAnaliseMin: lerNumero(env.IA_JANELA_MINUTOS, 15),
 
         // Envio em lote: máximo de pacotes por requisição
         loteMaximo: lerNumero(env.LOTE_MAXIMO, 1000),
@@ -45,4 +68,10 @@ function pendenciasDeConfig(config) {
     return pendencias;
 }
 
-module.exports = { lerConfig, pendenciasDeConfig };
+// Em produção, subir com segredo ausente ou fraco é pior do que não subir.
+// Em desenvolvimento as pendências viram apenas avisos.
+function impedeInicio(config, senhaDoBanco) {
+    return config.ambiente === 'production' && (pendenciasDeConfig(config).length > 0 || !senhaDoBanco);
+}
+
+module.exports = { lerConfig, pendenciasDeConfig, impedeInicio };

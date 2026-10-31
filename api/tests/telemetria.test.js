@@ -86,6 +86,30 @@ describe('POST /api/telemetria: pacote único', () => {
         const resposta = await enviar(createApp(criarBancoFalso(), configTeste()));
 
         expect(resposta.status).toBe(400);
+        expect(resposta.body.detalhe).toMatch(/Content-Type: application\/json/);
+    });
+
+    test('400: corpo que não é JSON (text/plain) explica o formato esperado', async () => {
+        const resposta = await request(createApp(criarBancoFalso(), configTeste()))
+            .post('/api/telemetria')
+            .set('X-API-Key', API_KEY)
+            .set('Content-Type', 'text/plain')
+            .send('dwellTime=103');
+
+        expect(resposta.status).toBe(400);
+        expect(resposta.body.erro).toBe('Estrutura inválida');
+    });
+
+    test('415: charset não suportado é erro do cliente, não 500', async () => {
+        const resposta = await request(createApp(criarBancoFalso(), configTeste()))
+            .post('/api/telemetria')
+            .set('X-API-Key', API_KEY)
+            .set('Content-Type', 'application/json; charset=latin9')
+            .send('{}');
+
+        expect(resposta.status).toBe(415);
+        expect(resposta.body).toEqual({ erro: 'Tipo de conteúdo não suportado' });
+        expect(console.error).not.toHaveBeenCalled();
     });
 
     test('413: rejeita payloads acima de 256kb', async () => {
@@ -161,6 +185,21 @@ describe('POST /api/telemetria: lote', () => {
 
         expect(resposta.status).toBe(400);
         expect(resposta.body.indice).toBe(0);
+    });
+
+    test.each([
+        ['número', 1],
+        ['texto', 'pacote'],
+        ['null', null],
+        ['array aninhado', [1]]
+    ])('400: elemento %s no lote é recusado antes do validador, com o índice', async (_, elemento) => {
+        const db = criarBancoFalso();
+
+        const resposta = await enviar(createApp(db, configTeste()), [pacoteBase(), elemento]);
+
+        expect(resposta.status).toBe(400);
+        expect(resposta.body).toEqual({ erro: 'Estrutura inválida', detalhe: 'Cada pacote deve ser um objeto JSON.', indice: 1 });
+        expect(db.query).not.toHaveBeenCalled();
     });
 
     test('400: rejeita lote vazio', async () => {
