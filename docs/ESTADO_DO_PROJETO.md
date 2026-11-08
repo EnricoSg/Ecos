@@ -1,5 +1,7 @@
 # Ecos — Estado Atual do Projeto e Roteiro para Conclusão
 
+> **Documento histórico (levantamento de 12/10/2026).** Ele registra o planejamento feito naquela data. Em 07/11/2026, as fases 1 e 2 do roteiro abaixo estavam concluídas. Da fase 3, a chave de API do coletor, o roteiro da demonstração e o README final também estavam prontos; ainda faltavam o RIPD, o termo de consentimento, a política de retenção, as permissões mínimas no banco e o CI. O estado atual do MVP e as limitações conhecidas estão no [README da raiz](../README.md).
+
 **Data do levantamento:** 12/10/2026
 **Referência:** branch `main` (commit `c84aa89`) + trabalho local ainda não publicado (pasta `api/`)
 **Elaborado por:** Lucas Coussirat (Engenharia de Dados)

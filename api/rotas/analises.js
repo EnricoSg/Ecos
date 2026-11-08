@@ -57,24 +57,44 @@ const SQL_RESUMO_SETOR = `
     FROM baseline_atual;
 `;
 
-// Série temporal do setor: média das métricas e quantidade de anomalias por período
+// Série temporal do setor: média aparada das métricas e quantidade de anomalias por período.
+//
+// Média aparada = média sem os 10% extremos de cada lado, a MESMA régua do baseline da IA
+// (ai/anomaly_detector.py, media_aparada). Com a média simples, as pausas para pensar inflavam o
+// flight time e o setor aparecia sempre bem acima da linha de baseline, mesmo sem nenhum desvio.
 const SQL_TENDENCIA_SETOR = `
     WITH colaboradores_setor AS (
         SELECT id FROM colaborador WHERE setor = $1 AND ativo
     ),
-    metricas AS (
+    eventos AS (
         SELECT
             date_trunc($2::text, t.data_coleta) AS periodo,
-            ROUND(AVG(t.dwell_time), 2)::float8 AS media_dwell_time,
-            ROUND(AVG(t.flight_time), 2)::float8 AS media_flight_time,
-            ROUND(AVG(t.mouse_speed), 2)::float8 AS media_mouse_speed,
-            COUNT(*)::int AS eventos,
-            COUNT(DISTINCT t.colaborador_id)::int AS colaboradores
+            t.colaborador_id, t.dwell_time, t.flight_time, t.mouse_speed
         FROM telemetria t
         WHERE t.colaborador_id IN (SELECT id FROM colaboradores_setor)
           AND t.data_coleta >= $3::timestamptz
           AND t.data_coleta < $4::timestamptz
-        GROUP BY 1
+    ),
+    quantis AS (
+        SELECT
+            periodo,
+            percentile_cont(ARRAY[0.1, 0.9]) WITHIN GROUP (ORDER BY dwell_time) AS q_dwell,
+            percentile_cont(ARRAY[0.1, 0.9]) WITHIN GROUP (ORDER BY flight_time) AS q_flight,
+            percentile_cont(ARRAY[0.1, 0.9]) WITHIN GROUP (ORDER BY mouse_speed) AS q_mouse
+        FROM eventos
+        GROUP BY periodo
+    ),
+    metricas AS (
+        SELECT
+            e.periodo,
+            ROUND(AVG(e.dwell_time) FILTER (WHERE e.dwell_time BETWEEN q.q_dwell[1] AND q.q_dwell[2]), 2)::float8 AS media_dwell_time,
+            ROUND(AVG(e.flight_time) FILTER (WHERE e.flight_time BETWEEN q.q_flight[1] AND q.q_flight[2]), 2)::float8 AS media_flight_time,
+            ROUND(AVG(e.mouse_speed) FILTER (WHERE e.mouse_speed BETWEEN q.q_mouse[1] AND q.q_mouse[2]), 2)::float8 AS media_mouse_speed,
+            COUNT(*)::int AS eventos,
+            COUNT(DISTINCT e.colaborador_id)::int AS colaboradores
+        FROM eventos e
+        JOIN quantis q USING (periodo)
+        GROUP BY e.periodo
     ),
     anomalias AS (
         SELECT

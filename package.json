@@ -5,7 +5,15 @@
   "main": "src/validador.js",
   "private": true,
   "type": "commonjs",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
+    "start": "node scripts/iniciar.js",
+    "start:simulado": "node scripts/iniciar.js --modo=simulado",
+    "start:fadiga": "node scripts/iniciar.js --modo=simulado --perfil=fadiga",
+    "demo:dados": "node scripts/python.js ai/gerar_demo.py --confirmar",
+    "ia": "node scripts/python.js ai/pipeline.py",
     "test": "jest",
     "test:coverage": "jest --coverage"
   },

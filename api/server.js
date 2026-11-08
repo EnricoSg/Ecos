@@ -47,7 +47,19 @@ function encerrar(codigo = 0) {
     servidor.closeIdleConnections?.();
 }
 
-process.on('SIGINT', () => encerrar(0));
+// Iniciada pelo scripts/iniciar.js (canal IPC): o orquestrador desliga o coletor primeiro e só depois a API,
+// para o último lote do coletor ainda ser gravado. Por isso o Ctrl+C do terminal (que chega a todos os
+// processos ao mesmo tempo) é ignorado aqui; se o orquestrador cair, o canal fecha e a API encerra.
+if (process.send) {
+    process.on('message', (mensagem) => {
+        if (mensagem === 'encerrar') encerrar(0);
+    });
+    process.on('disconnect', () => encerrar(0));
+    process.on('SIGINT', () => {});
+} else {
+    process.on('SIGINT', () => encerrar(0));
+}
+
 process.on('SIGTERM', () => encerrar(0));
 
 // Erro não tratado deixa o processo em estado desconhecido: registra, encerra e sai com código 1

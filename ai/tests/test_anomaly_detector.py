@@ -276,3 +276,29 @@ def test_integracao_ponta_a_ponta_no_postgresql():
     finally:
         conexao.rollback()
         conexao.close()
+
+
+def test_colaborador_novo_fica_em_calibracao_e_o_resumo_mostra_o_progresso():
+    conexao = conectar_ou_pular()
+    agora = datetime.now(timezone.utc)
+    hora = agora.replace(minute=0, second=0, microsecond=0)
+
+    try:
+        with conexao.cursor() as cursor:
+            cursor.execute("INSERT INTO colaborador (codigo_anonimo, setor) VALUES (%s, 'Teste IA') RETURNING id", ("cd" * 16,))
+            colaborador_id = cursor.fetchone()[0]
+            inserir_eventos(cursor, colaborador_id, gerar_eventos("normal", 50, semente=6), hora - timedelta(hours=2), analisada=False)
+
+        config = Config(janela_minutos=15)
+        resumo = processar(conexao, config, agora=agora)
+
+        # Sem baseline e com menos de min_historico eventos: nada de alerta, só o progresso da calibração
+        assert resumo.calibrando.get(colaborador_id) == 50
+        with conexao.cursor() as cursor:
+            cursor.execute("SELECT count(*) FROM anomalia WHERE colaborador_id = %s", (colaborador_id,))
+            assert cursor.fetchone()[0] == 0
+            cursor.execute("SELECT count(*) FROM baseline WHERE colaborador_id = %s", (colaborador_id,))
+            assert cursor.fetchone()[0] == 0
+    finally:
+        conexao.rollback()
+        conexao.close()

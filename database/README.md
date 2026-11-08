@@ -203,6 +203,23 @@ schema.sql
 seed.sql
 ```
 
+## Migrações
+
+O `schema.sql` já cria o banco na versão atual. Bancos criados **antes** dessas mudanças precisam das migrações em [`migracoes/`](migracoes/), que podem ser executadas mais de uma vez sem erro:
+
+| Migração | O que faz | Quando aplicar |
+|---|---|---|
+| `001_telemetria_analisada_em.sql` | Coluna `telemetria.analisada_em`, que controla o que a IA já analisou | Obrigatória |
+| `002_indices_api.sql` | Índices das consultas da API (alertas, anomalias, baselines, setores) | Recomendada |
+| `003_datas_fuso.sql` | Datas com fuso horário (`TIMESTAMPTZ`) | Opcional; leia as instruções no arquivo antes |
+
+```bash
+psql -U postgres -d ecos_db -f database/migracoes/001_telemetria_analisada_em.sql
+psql -U postgres -d ecos_db -f database/migracoes/002_indices_api.sql
+```
+
+Para popular o banco com dados de demonstração (colaboradores sintéticos, histórico e alertas), use `npm run demo:dados` na raiz. Os detalhes estão em [`ai/README.md`](../ai/README.md).
+
 ## Validação
 
 Após executar os dois arquivos, o banco deve possuir as seguintes tabelas:

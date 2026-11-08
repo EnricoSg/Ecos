@@ -33,7 +33,7 @@ Uso:
 import argparse
 import os
 import sys
-from dataclasses import dataclass, replace
+from dataclasses import dataclass, field, replace
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
@@ -339,6 +339,8 @@ class Resumo:
     alertas: int = 0
     baselines: int = 0
     adiados: int = 0
+    # colaborador_id -> eventos de histórico, para quem ainda não tem o mínimo (calibração)
+    calibrando: dict = field(default_factory=dict)
 
 
 def calcular_corte(agora: datetime, config: Config, incluir_janela_aberta: bool) -> datetime:
@@ -435,15 +437,16 @@ def processar(conexao, config: Config, agora: datetime, incluir_janela_aberta=Fa
 
         # Renova baselines ausentes ou vencidos com o histórico (já incluindo o que acabou de ser analisado)
         if colaboradores:
-            resumo.baselines = atualizar_baselines(cursor, colaboradores, config, recalcular_baseline)
+            resumo.baselines = atualizar_baselines(cursor, colaboradores, config, recalcular_baseline, resumo.calibrando)
 
     return resumo
 
 
-def atualizar_baselines(cursor, colaboradores: list[int], config: Config, forcar=False) -> int:
+def atualizar_baselines(cursor, colaboradores: list[int], config: Config, forcar=False, calibrando: dict | None = None) -> int:
     """
     Cria uma NOVA linha de baseline (em vez de sobrescrever) para manter o histórico:
     cada anomalia continua apontando para o baseline com que foi comparada.
+    Quem ainda não tem histórico suficiente vai para `calibrando` (colaborador_id -> eventos).
     """
 
     baselines = buscar_baselines(cursor, colaboradores)
@@ -455,6 +458,8 @@ def atualizar_baselines(cursor, colaboradores: list[int], config: Config, forcar
         baseline = baselines.get(colaborador_id)
 
         if historico is None or historico["n"] < config.min_historico:
+            if calibrando is not None:
+                calibrando[colaborador_id] = int(historico["n"]) if historico else 0
             continue
 
         vencido = baseline is None or float(baseline["idade_dias"]) >= config.baseline_validade_dias
@@ -477,7 +482,7 @@ def atualizar_baselines(cursor, colaboradores: list[int], config: Config, forcar
     return criados
 
 
-def exibir_resumo(resumo: Resumo, simulacao: bool) -> None:
+def exibir_resumo(resumo: Resumo, simulacao: bool, minimo_historico: int | None = None) -> None:
     print("\n=== RESUMO ===")
     print(f"Eventos lidos: {resumo.eventos}" + (f" ({resumo.adiados} adiados para a próxima execução)" if resumo.adiados else ""))
     print(f"Janelas: {resumo.janelas} | avaliadas: {resumo.avaliadas} | em calibração: {resumo.calibracao} "
@@ -486,6 +491,11 @@ def exibir_resumo(resumo: Resumo, simulacao: bool) -> None:
           f"(BAIXO {resumo.baixo}, MEDIO {resumo.medio}, ALTO {resumo.alto})")
     print(f"Alertas criados: {resumo.alertas}")
     print(f"Baselines criados: {resumo.baselines}")
+
+    # Mostra quanto falta para o padrão de cada colaborador novo ficar pronto (só depois disso há alertas)
+    for colaborador_id, eventos in sorted(resumo.calibrando.items()):
+        meta = f"/{minimo_historico}" if minimo_historico else ""
+        print(f"Calibração do colaborador {colaborador_id}: {eventos}{meta} eventos de histórico (ainda sem alertas)")
 
     if simulacao:
         print("\nSIMULAÇÃO: nenhuma alteração foi gravada no banco.")
@@ -537,7 +547,7 @@ def main(argv=None):
         else:
             conexao.commit()
 
-    exibir_resumo(resumo, argumentos.simular)
+    exibir_resumo(resumo, argumentos.simular, config.min_historico)
 
 
 if __name__ == "__main__":

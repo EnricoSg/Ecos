@@ -1,10 +1,12 @@
 import { useCallback, useEffect, useState } from 'react';
 import { LogOut } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import { api } from '../../services/api';
 import { CardsResumo } from '../../components/CardsResumo';
 import { GraficoTendencias } from '../../components/GraficoTendencias';
-import { ModalDetalheAlerta } from '../../components/ModalDetalheAlerta';
+import { LimiteDeErro } from '../../components/LimiteDeErro';
+import { FalhaDetalheAlerta, ModalDetalheAlerta } from '../../components/ModalDetalheAlerta';
 import type {
     Alerta,
     RespostaListaAlertas,
@@ -121,10 +123,17 @@ export function Dashboard() {
 
                 setTendencia(resposta.data);
             } catch (erro) {
-                // Inclui o 403 de privacidade (setor com poucos colaboradores)
                 if(!controller.signal.aborted){
                     console.error('Erro ao carregar tendência:', erro);
-                    setErroTendencia('Não foi possível carregar as tendências');
+
+                    // 403 = regra de privacidade da API (setor com menos de MIN_COLABORADORES_SETOR ativos):
+                    // mostra a explicação da própria API em vez de um erro genérico
+                    const detalhePrivacidade =
+                        axios.isAxiosError<{ detalhe?: string }>(erro) && erro.response?.status === 403
+                            ? erro.response.data?.detalhe
+                            : undefined;
+
+                    setErroTendencia(detalhePrivacidade ?? 'Não foi possível carregar as tendências');
                 }
             } finally {
                 if (!controller.signal.aborted) {
@@ -291,7 +300,10 @@ export function Dashboard() {
             </section>
 
             {alertaAbertoId !== null && (
-                <ModalDetalheAlerta alertaId={alertaAbertoId} aoFechar={fecharDetalhe} />
+                // key: cada alerta aberto começa sem o erro do anterior
+                <LimiteDeErro key={alertaAbertoId} fallback={<FalhaDetalheAlerta aoFechar={fecharDetalhe} />}>
+                    <ModalDetalheAlerta alertaId={alertaAbertoId} aoFechar={fecharDetalhe} />
+                </LimiteDeErro>
             )}
         </main>
     );

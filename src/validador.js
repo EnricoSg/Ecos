@@ -9,7 +9,9 @@ function ehMetricaValida(valor) {
     return typeof valor === 'number' && Number.isFinite(valor) && valor >= 0;
 }
 
-function validarTelemetria(payload) {
+// `registrarSucesso: false` silencia só a mensagem de pacote aprovado (a API valida lotes de até
+// 1000 pacotes, um por tecla); as rejeições de segurança continuam sendo registradas sempre.
+function validarTelemetria(payload, { registrarSucesso = true } = {}) {
     if (payload === null || typeof payload !== 'object' || Array.isArray(payload)) {
         console.error('🟡 [ERRO] Pacote inválido: o payload tem de ser um objeto.');
         return { sucesso: false, erro: 'Estrutura inválida' };
@@ -47,7 +49,9 @@ function validarTelemetria(payload) {
         velocidade_rato_px: mouseSpeed
     };
 
-    console.log('🟢 [SUCESSO] Pacote validado e formatado para a base de dados.');
+    if (registrarSucesso) {
+        console.log('🟢 [SUCESSO] Pacote validado e formatado para a base de dados.');
+    }
     return { sucesso: true, dados: dadosLimpos };
 }
 
