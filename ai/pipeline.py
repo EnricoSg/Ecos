@@ -20,3 +20,7 @@ if __name__ == "__main__":
     except (RuntimeError, ValueError) as erro:
         print(f"ERRO: {erro}", file=sys.stderr)
         sys.exit(1)
+    except KeyboardInterrupt:
+        # A transação inteira é desfeita ao sair do `with conectar_banco()`, então nada fica pela metade
+        print("Execução interrompida: nada foi gravado.", file=sys.stderr)
+        sys.exit(130)

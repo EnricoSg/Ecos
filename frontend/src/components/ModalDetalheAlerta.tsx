@@ -45,6 +45,36 @@ function formatarJanela(inicio: string, fim: string) {
     return `${data}, das ${hora.format(new Date(inicio))} às ${hora.format(new Date(fim))}`;
 }
 
+// Exibido pelo LimiteDeErro se o modal quebrar ao renderizar algum dado inesperado
+export function FalhaDetalheAlerta({ aoFechar }: { aoFechar: () => void }) {
+    return (
+        <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-gray-900/50 p-4"
+            onClick={aoFechar}
+        >
+            <section
+                role="alertdialog"
+                aria-modal="true"
+                aria-labelledby="falha-detalhe-titulo"
+                className="w-full max-w-md rounded-xl bg-white p-6 shadow-lg"
+                onClick={(evento) => evento.stopPropagation()}
+            >
+                <h2 id="falha-detalhe-titulo" className="mb-2 text-lg font-bold text-gray-800">
+                    Detalhes indisponíveis
+                </h2>
+                <p className="mb-4 text-sm text-red-700">Não foi possível exibir os detalhes deste alerta.</p>
+                <button
+                    type="button"
+                    onClick={aoFechar}
+                    className="rounded-lg border border-gray-200 bg-white px-3 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-50"
+                >
+                    Fechar
+                </button>
+            </section>
+        </div>
+    );
+}
+
 export function ModalDetalheAlerta({ alertaId, aoFechar }: ModalDetalheAlertaProps) {
     const [detalhe, setDetalhe] = useState<DetalheAlerta | null>(null);
     const [erro, setErro] = useState('');
@@ -143,7 +173,9 @@ export function ModalDetalheAlerta({ alertaId, aoFechar }: ModalDetalheAlertaPro
                             </span>
                             <span className="text-xs text-gray-500">
                                 Pontuação de desvio:{' '}
-                                {detalhe.anomalia.pontuacao_desvio.toLocaleString('pt-BR', { maximumFractionDigits: 2 })}
+                                {detalhe.anomalia.pontuacao_desvio === null
+                                    ? 'não calculada'
+                                    : detalhe.anomalia.pontuacao_desvio.toLocaleString('pt-BR', { maximumFractionDigits: 2 })}
                             </span>
                         </div>
 

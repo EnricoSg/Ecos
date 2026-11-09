@@ -24,6 +24,21 @@ afterEach(() => {
     jest.restoreAllMocks();
 });
 
+describe('Registro em log', () => {
+    test('por padrão registra cada pacote aprovado', () => {
+        validarTelemetria(pacoteBase());
+        expect(console.log).toHaveBeenCalledWith(expect.stringContaining('SUCESSO'));
+    });
+
+    test('registrarSucesso: false silencia só a aprovação; rejeição de segurança continua no log', () => {
+        expect(validarTelemetria(pacoteBase(), { registrarSucesso: false }).sucesso).toBe(true);
+        expect(console.log).not.toHaveBeenCalled();
+
+        validarTelemetria(pacoteBase({ texto: 'senha123' }), { registrarSucesso: false });
+        expect(console.error).toHaveBeenCalledWith(expect.stringContaining('ALERTA DE SEGURANÇA'));
+    });
+});
+
 describe('Telemetria válida (metadados matemáticos)', () => {
     test('aprova ritmo de digitação, pausas e velocidade do rato', () => {
         const resultado = validarTelemetria(pacoteBase());

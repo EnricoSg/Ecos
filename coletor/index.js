@@ -74,6 +74,7 @@ function lerConfig(env = process.env) {
         apiUrl: env.API_URL || 'http://localhost:3000/api/telemetria',
         apiKey: env.API_KEY || '',
         userId: env.USER_ID || '',
+        userIdSimulado: env.USER_ID_SIMULADO || '',
         modo: env.MODO || 'simulado',
         perfil: env.PERFIL || 'normal',
         tamanhoLote: Math.min(lerNumero(env.TAMANHO_LOTE, 20), LOTE_MAXIMO_API),
@@ -98,11 +99,22 @@ function aplicarArgumentos(config, argumentos) {
     return resultado;
 }
 
+// O simulador nunca deve enviar dados em nome do colaborador real: misturaria simulação e digitação
+// real no mesmo baseline da IA. Com USER_ID_SIMULADO definido, o modo simulado usa esse colaborador.
+function colaboradorDoEnvio(config) {
+    return config.modo === 'simulado' && config.userIdSimulado ? config.userIdSimulado : config.userId;
+}
+
+const FORMATO_USER_ID = /^[a-f0-9]{32,64}$/i;
+
 function validarConfig(config) {
     const erros = [];
 
     if (!config.apiKey) erros.push('API_KEY não definida (copie o valor de api/.env).');
-    if (!/^[a-f0-9]{32,64}$/i.test(config.userId)) erros.push('USER_ID deve ser o hash anônimo do colaborador (hexadecimal).');
+    if (!FORMATO_USER_ID.test(config.userId)) erros.push('USER_ID deve ser o hash anônimo do colaborador (hexadecimal).');
+    if (config.userIdSimulado && !FORMATO_USER_ID.test(config.userIdSimulado)) {
+        erros.push('USER_ID_SIMULADO deve ser o hash anônimo de um colaborador de demonstração (hexadecimal).');
+    }
     if (!MODOS.includes(config.modo)) erros.push(`MODO deve ser um destes: ${MODOS.join(', ')}.`);
     if (!Object.hasOwn(PERFIS, config.perfil)) erros.push(`PERFIL deve ser um destes: ${Object.keys(PERFIS).join(', ')}.`);
 
@@ -303,12 +315,18 @@ function criarColetor({ config, enviar = fetch, log = console, agora = Date.now 
 // -----------------------------------------------------
 async function main() {
     carregarEnv();
-    const config = aplicarArgumentos(lerConfig(), process.argv.slice(2));
+    const lida = aplicarArgumentos(lerConfig(), process.argv.slice(2));
+    const config = { ...lida, userId: colaboradorDoEnvio(lida) };
     const erros = validarConfig(config);
 
     if (erros.length > 0) {
         erros.forEach((erro) => console.error(`🔴 [COLETOR] ${erro}`));
         process.exit(1);
+    }
+
+    if (config.modo === 'simulado' && !config.userIdSimulado) {
+        console.warn('🟡 [COLETOR] Simulador enviando em nome do USER_ID. Para não misturar com a captura real, ' +
+            'defina USER_ID_SIMULADO no coletor/.env (o ai/gerar_demo.py mostra qual usar).');
     }
 
     const coletor = criarColetor({ config });
@@ -351,7 +369,19 @@ async function main() {
         process.exit(codigo);
     }
 
-    process.on('SIGINT', () => encerrar(0));
+    // Iniciado pelo scripts/iniciar.js (canal IPC): o orquestrador decide a hora de parar, para o coletor
+    // sair ANTES da API e o último lote ainda chegar. O Ctrl+C do terminal chega a todos os processos ao
+    // mesmo tempo, então aqui ele é ignorado; se o orquestrador cair, o canal fecha e o coletor encerra.
+    if (process.send) {
+        process.on('message', (mensagem) => {
+            if (mensagem === 'encerrar') encerrar(0);
+        });
+        process.on('disconnect', () => encerrar(0));
+        process.on('SIGINT', () => {});
+    } else {
+        process.on('SIGINT', () => encerrar(0));
+    }
+
     process.on('SIGTERM', () => encerrar(0));
     if (config.duracaoSeg) setTimeout(() => encerrar(0), config.duracaoSeg * 1000);
 }
@@ -366,6 +396,7 @@ module.exports = {
     PERFIS,
     lerConfig,
     aplicarArgumentos,
+    colaboradorDoEnvio,
     validarConfig,
     gerarMetricas,
     montarPacote,

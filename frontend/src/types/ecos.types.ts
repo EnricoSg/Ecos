@@ -26,7 +26,8 @@ export interface Alerta{
     anomalia: {
         id: number;
         nivel: 'BAIXO' | 'MEDIO' | 'ALTO';
-            pontuacao_desvio: number;
+        // null em alertas criados direto no banco (ex.: database/seed.sql), sem passar pela IA
+        pontuacao_desvio: number | null;
         data_deteccao: string;
     };
     colaborador: {

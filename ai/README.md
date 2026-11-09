@@ -30,7 +30,7 @@ Cada execução faz tudo em **uma transação**: grava tudo ou não grava nada.
 
 5. **Marca as telemetrias como analisadas** e cria um baseline novo quando o atual tem mais de 7 dias. Cria uma linha nova em vez de sobrescrever, para cada anomalia continuar apontando para o baseline com que foi comparada.
 
-**Calibração:** enquanto um colaborador não tiver baseline e pelo menos 200 eventos de histórico, as janelas dele só são marcadas como analisadas, sem gerar alertas.
+**Calibração:** enquanto um colaborador não tiver baseline e pelo menos 200 eventos de histórico, as janelas dele só são marcadas como analisadas, sem gerar alertas. O resumo de cada execução mostra quanto falta, por exemplo `Calibração do colaborador 1: 143/200 eventos de histórico`.
 
 **Validação com os perfis do simulador do coletor:**
 - **Perfil normal:** 0 alertas em 300 janelas.
@@ -67,7 +67,30 @@ python ai/pipeline.py --janela-minutos 5       # janelas menores
 python -m pytest ai/tests                      # testes (o de integração usa o banco e desfaz tudo)
 ```
 
-Em produção, agende `python ai/pipeline.py` a cada 15 minutos (Agendador de Tarefas do Windows ou cron). Duas execuções simultâneas não processam o mesmo evento, graças ao `FOR UPDATE SKIP LOCKED`.
+Em produção, agende `python ai/pipeline.py` a cada 15 minutos (Agendador de Tarefas do Windows ou cron; exemplos no README da raiz). Duas execuções simultâneas não processam o mesmo evento, graças ao `FOR UPDATE SKIP LOCKED`. No ambiente local, o `npm start` da raiz já roda a IA a cada 5 minutos, e `npm run ia` roda uma vez.
+
+## Dados de demonstração
+
+```bash
+python ai/gerar_demo.py                        # gera tudo numa transação e desfaz no final (nada é gravado)
+python ai/gerar_demo.py --confirmar            # grava (o mesmo que `npm run demo:dados` na raiz)
+python ai/gerar_demo.py --confirmar --resetar  # antes, apaga TODA a telemetria, anomalias, alertas e baselines
+```
+
+Cria **5 colaboradores sintéticos por setor**, o mínimo da regra de privacidade da API. Cada um tem o próprio ritmo de digitação e cerca de 4 semanas de telemetria nos dias úteis, gerada com as mesmas distribuições do simulador do coletor. Depois roda este motor em duas fases:
+
+1. **Semanas anteriores, comportamento normal:** a IA calibra e cria o baseline de cada um.
+2. **Última semana:** o Financeiro desacelera aos poucos ("fechamento do mês"), o que aparece na tendência do setor. Alguns colaboradores passam do limite: os alertas dos últimos 3 dias ficam **pendentes**, e os do início da semana ficam **resolvidos**.
+
+As intensidades de fadiga do roteiro foram medidas com o próprio motor:
+
+| Intensidade | Resultado |
+|---|---|
+| até 0,35 | 98% das janelas sem anomalia (só tendência) |
+| 0,9 | vira alerta em ~92% das janelas (maioria `MEDIO`) |
+| a partir de 1,5 | sempre `ALTO` |
+
+O colaborador da **captura real** nunca recebe dados sintéticos. O primeiro colaborador sintético de TI segue exatamente o perfil do simulador do coletor; use o hash dele em `USER_ID_SIMULADO` no `coletor/.env`. As datas são relativas ao dia da execução: rode de novo antes de apresentar, porque a IA e os gráficos olham os últimos 30 dias.
 
 Os parâmetros (tamanho da janela, limiares, histórico mínimo…) ficam no `ai/.env`. Veja o `ai/.env.example`.
 
@@ -78,5 +101,6 @@ Os parâmetros (tamanho da janela, limiares, histórico mínimo…) ficam no `ai
 | `anomaly_detector.py` | Motor de detecção: leitura, janelas, pontuação, anomalias, alertas e baselines |
 | `banco.py` | Conexão com o PostgreSQL, lendo o `ai/.env` |
 | `pipeline.py` | Ponto de entrada para agendamento |
+| `gerar_demo.py` | Dados **sintéticos** de demonstração (colaboradores, histórico, episódios de fadiga) e execução do motor sobre eles |
 | `import_telemetry.py` | **Legado**: importa o `telemetria-mock.json` direto no banco, **sem passar pelo validador LGPD**. Use só para carga de testes; os dados reais entram pela API |
 | `tests/` | Testes unitários e de integração (pytest) |

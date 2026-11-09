@@ -2,9 +2,9 @@ const { test, describe } = require('node:test');
 const assert = require('node:assert/strict');
 const { EventEmitter } = require('node:events');
 const {
-    FLIGHT_MAXIMO_MS, DWELL_MAXIMO_MS, PAUSA_MOUSE_MS, criarCalculadora, iniciarCapturaNativa
+    FLIGHT_MAXIMO_MS, DWELL_MAXIMO_MS, PAUSA_MOUSE_MS, GESTO_MINIMO_MS, GESTO_MINIMO_PX, criarCalculadora, iniciarCapturaNativa
 } = require('../captura-nativa');
-const { CAMPOS_PERMITIDOS, lerConfig, aplicarArgumentos, validarConfig, montarPacote } = require('../index');
+const { CAMPOS_PERMITIDOS, lerConfig, aplicarArgumentos, colaboradorDoEnvio, validarConfig, montarPacote } = require('../index');
 
 const USER_ID = 'a2a0159acf6ac55f05c0c4d4bdc54004';
 const TECLA_A = 30;
@@ -112,36 +112,69 @@ describe('Captura real: dwell e flight time', () => {
 });
 
 describe('Captura real: velocidade do mouse', () => {
-    test('distância euclidiana dividida pelo tempo, em px/s, e zera após cada evento', () => {
+    // Gesto de 2000 px/s: 100 px em 50 ms, terminando no ponto (60, 80)
+    function gestoRapido(calculadora, avancar) {
+        calculadora.mouseMoveu(0, 0);
+        avancar(25);
+        calculadora.mouseMoveu(30, 40); // 50 px em 25 ms
+        avancar(25);
+        calculadora.mouseMoveu(60, 80); // +50 px em 25 ms
+    }
+
+    test('distância euclidiana dividida pelo tempo, em px/s, e continua valendo enquanto o mouse está parado', () => {
         const { calculadora, eventos, avancar, digitar } = criarCenario();
         digitar(TECLA_A);
 
         calculadora.mouseMoveu(0, 0);
-        avancar(10);
-        calculadora.mouseMoveu(3, 4); // 5 px em 10 ms
-        avancar(10);
-        calculadora.mouseMoveu(6, 8); // +5 px em 10 ms → 10 px / 20 ms = 500 px/s
+        avancar(25);
+        calculadora.mouseMoveu(30, 40); // 50 px em 25 ms
+        avancar(25);
+        calculadora.mouseMoveu(60, 80); // +50 px em 25 ms → 100 px / 50 ms = 2000 px/s
 
         digitar(TECLA_B);
         digitar(TECLA_A);
 
-        assert.deepEqual(eventos.map((e) => e.metricas.mouseSpeed), [500, 0]);
+        // Digitando com o mouse parado: a segunda tecla ainda leva a velocidade do último gesto (antes ia 0)
+        assert.deepEqual(eventos.map((e) => e.metricas.mouseSpeed), [2000, 2000]);
     });
 
-    test(`mouse parado por mais de ${PAUSA_MOUSE_MS}ms não reduz a velocidade`, () => {
+    test(`pausa maior que ${PAUSA_MOUSE_MS}ms começa um gesto novo e o tempo parado não conta`, () => {
         const { calculadora, eventos, avancar, digitar } = criarCenario();
         digitar(TECLA_A);
 
         calculadora.mouseMoveu(0, 0);
-        avancar(10);
-        calculadora.mouseMoveu(10, 0); // 10 px em 10 ms = 1000 px/s
+        avancar(50);
+        calculadora.mouseMoveu(100, 0); // 100 px em 50 ms = 2000 px/s
         avancar(PAUSA_MOUSE_MS + 1);
-        calculadora.mouseMoveu(10, 500); // salto após a pausa: não conta
-        avancar(10);
-        calculadora.mouseMoveu(20, 500); // 10 px em 10 ms
+        calculadora.mouseMoveu(100, 0); // começa outro gesto
+        avancar(50);
+        calculadora.mouseMoveu(130, 40); // 50 px em 50 ms = 1000 px/s
 
         digitar(TECLA_B);
-        assert.equal(eventos[0].metricas.mouseSpeed, 1000);
+        assert.equal(eventos[0].metricas.mouseSpeed, 1000, 'vale o gesto mais recente');
+    });
+
+    test(`tremida menor que ${GESTO_MINIMO_PX}px ou ${GESTO_MINIMO_MS}ms não muda a velocidade registrada`, () => {
+        const { calculadora, eventos, avancar, digitar } = criarCenario();
+        digitar(TECLA_A);
+        gestoRapido(calculadora, avancar);
+
+        avancar(PAUSA_MOUSE_MS + 1);
+        calculadora.mouseMoveu(60, 80);
+        avancar(8);
+        calculadora.mouseMoveu(62, 81); // ~2 px em 8 ms: tremida
+
+        digitar(TECLA_B);
+        assert.equal(eventos[0].metricas.mouseSpeed, 2000);
+    });
+
+    test('sem nenhum gesto de mouse ainda, a velocidade é 0', () => {
+        const { calculadora, eventos, digitar } = criarCenario();
+        calculadora.mouseMoveu(500, 500); // um ponto isolado não é gesto
+
+        digitar(TECLA_A);
+        digitar(TECLA_B);
+        assert.equal(eventos[0].metricas.mouseSpeed, 0);
     });
 });
 
@@ -238,5 +271,28 @@ describe('Configuração do modo', () => {
     test('modo desconhecido é apontado como configuração inválida', () => {
         const config = { ...lerConfig({ API_KEY: 'chave', USER_ID }), modo: 'teclado' };
         assert.deepEqual(validarConfig(config), ['MODO deve ser um destes: simulado, real.']);
+    });
+});
+
+describe('Simulador nunca envia em nome do colaborador real', () => {
+    const USER_ID_SIMULADO = 'd'.repeat(32);
+
+    test('com USER_ID_SIMULADO, o modo simulado usa o colaborador de demonstração', () => {
+        const config = lerConfig({ API_KEY: 'chave', USER_ID, USER_ID_SIMULADO, MODO: 'simulado' });
+        assert.equal(colaboradorDoEnvio(config), USER_ID_SIMULADO);
+    });
+
+    test('o modo real continua usando o USER_ID da máquina', () => {
+        const config = lerConfig({ API_KEY: 'chave', USER_ID, USER_ID_SIMULADO, MODO: 'real' });
+        assert.equal(colaboradorDoEnvio(config), USER_ID);
+    });
+
+    test('sem USER_ID_SIMULADO, o simulador mantém o comportamento antigo (USER_ID)', () => {
+        assert.equal(colaboradorDoEnvio(lerConfig({ API_KEY: 'chave', USER_ID })), USER_ID);
+    });
+
+    test('USER_ID_SIMULADO fora do formato de hash é rejeitado', () => {
+        const config = lerConfig({ API_KEY: 'chave', USER_ID, USER_ID_SIMULADO: 'joao@empresa.com' });
+        assert.equal(validarConfig(config).length, 1);
     });
 });

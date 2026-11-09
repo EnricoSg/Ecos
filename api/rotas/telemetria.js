@@ -42,7 +42,8 @@ function validarLote(pacotes) {
             };
         }
 
-        const resultado = validarTelemetria(pacote);
+        // Sem log por pacote aprovado: seria uma linha por tecla. Rejeições continuam no log.
+        const resultado = validarTelemetria(pacote, { registrarSucesso: false });
 
         if (!resultado.sucesso) {
             return { status: 400, corpo: { erro: resultado.erro, indice } };

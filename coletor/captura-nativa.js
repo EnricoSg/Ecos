@@ -16,9 +16,13 @@ const FLIGHT_MAXIMO_MS = 3000;
 // Tecla segurada por mais tempo que isso (atalho, repetição, jogo) não representa digitação
 const DWELL_MAXIMO_MS = 2000;
 
-// Intervalo maior que isso entre dois movimentos do mouse começa um novo movimento:
+// Intervalo maior que isso entre dois movimentos do mouse encerra o gesto atual e começa outro:
 // o tempo parado não entra no cálculo da velocidade
 const PAUSA_MOUSE_MS = 200;
+
+// Gestos menores que isso (tremida da mão, toque acidental na mesa) não mudam a velocidade registrada
+const GESTO_MINIMO_MS = 50;
+const GESTO_MINIMO_PX = 20;
 
 // -----------------------------------------------------
 // Cálculo das métricas (sem dependência nativa, para poder ser testado)
@@ -32,15 +36,17 @@ function criarCalculadora(aoGerarEvento, { relogio = () => performance.now(), ag
     let ultimoKeyup = null;
 
     let ultimoPonto = null;
-    let distancia = 0;
-    let tempoMovimento = 0;
+    let gesto = { distancia: 0, tempo: 0 };
+    let ultimaVelocidade = 0;
 
-    // Velocidade média do mouse (px/s) desde o último evento gerado. Zera os acumuladores.
-    function consumirVelocidadeMouse() {
-        const velocidade = tempoMovimento > 0 ? (distancia / tempoMovimento) * 1000 : 0;
-        distancia = 0;
-        tempoMovimento = 0;
-        return Math.round(velocidade);
+    // Velocidade média (px/s) do gesto de mouse mais recente. Continua valendo até o próximo gesto:
+    // enquanto a pessoa digita o mouse costuma ficar parado, e zerar a métrica a cada tecla deixava
+    // o baseline do mouse em 0 (aí qualquer movimento virava um desvio enorme na IA).
+    function velocidadeMouse() {
+        if (gesto.tempo >= GESTO_MINIMO_MS && gesto.distancia >= GESTO_MINIMO_PX) {
+            ultimaVelocidade = (gesto.distancia / gesto.tempo) * 1000;
+        }
+        return Math.round(ultimaVelocidade);
     }
 
     function teclaPressionada(codigo) {
@@ -73,19 +79,21 @@ function criarCalculadora(aoGerarEvento, { relogio = () => performance.now(), ag
         aoGerarEvento({
             dwellTime: Math.round(dwellTime),
             flightTime: Math.round(registro.flightTime),
-            mouseSpeed: consumirVelocidadeMouse()
+            mouseSpeed: velocidadeMouse()
         }, agora());
     }
 
     function mouseMoveu(x, y) {
         const tempo = relogio();
+        const intervalo = ultimoPonto ? tempo - ultimoPonto.tempo : null;
 
-        if (ultimoPonto) {
-            const intervalo = tempo - ultimoPonto.tempo;
-            if (intervalo >= 0 && intervalo <= PAUSA_MOUSE_MS) {
-                distancia += Math.hypot(x - ultimoPonto.x, y - ultimoPonto.y);
-                tempoMovimento += intervalo;
-            }
+        if (intervalo !== null && intervalo >= 0 && intervalo <= PAUSA_MOUSE_MS) {
+            gesto.distancia += Math.hypot(x - ultimoPonto.x, y - ultimoPonto.y);
+            gesto.tempo += intervalo;
+        } else {
+            // Depois de uma pausa: fecha o gesto anterior e começa um novo neste ponto
+            velocidadeMouse();
+            gesto = { distancia: 0, tempo: 0 };
         }
 
         ultimoPonto = { x, y, tempo };
@@ -171,6 +179,8 @@ module.exports = {
     FLIGHT_MAXIMO_MS,
     DWELL_MAXIMO_MS,
     PAUSA_MOUSE_MS,
+    GESTO_MINIMO_MS,
+    GESTO_MINIMO_PX,
     criarCalculadora,
     iniciarCapturaNativa
 };
