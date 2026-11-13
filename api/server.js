@@ -1,5 +1,8 @@
 const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '.env'), quiet: true });
+const { carregarConfiguracao } = require('../config/carregar-env');
+
+// Sistema > api/.env > .env da raiz > config/desenvolvimento.env (este último só fora de produção)
+carregarConfiguracao({ envDoModulo: path.join(__dirname, '.env') });
 
 const { createApp } = require('./app');
 const { lerConfig, pendenciasDeConfig, impedeInicio } = require('./config');
@@ -11,11 +14,11 @@ const config = lerConfig();
 const senhaDoBanco = process.env.ECOS_DB_PASSWORD;
 
 if (!senhaDoBanco) {
-    console.warn('🟡 [AVISO] ECOS_DB_PASSWORD não está definida. Copie api/.env.example para api/.env.');
+    console.warn('🟡 [AVISO] ECOS_DB_PASSWORD não está definida.');
 }
 
 for (const pendencia of pendenciasDeConfig(config)) {
-    console.warn(`🟡 [AVISO] Configure no api/.env: ${pendencia}`);
+    console.warn(`🟡 [AVISO] Variável de ambiente pendente: ${pendencia}`);
 }
 
 // Em produção, subir com segredo ausente ou fraco é pior do que não subir

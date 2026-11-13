@@ -1,9 +1,12 @@
 """
 Conexão com o PostgreSQL do Ecos para os scripts de IA.
 
-As credenciais vêm de ai/.env (copie ai/.env.example). Variáveis já definidas
-no sistema têm prioridade sobre o arquivo. Os nomes são os mesmos usados pela API
-(api/.env), então os dois módulos podem apontar para o mesmo banco sem conversão.
+Mesma ordem de configuração dos módulos em Node (config/carregar-env.js);
+a primeira fonte que definir a variável vence:
+  1. variáveis do sistema
+  2. ai/.env, se existir
+  3. .env da raiz do projeto, se existir (ajustes desta máquina)
+  4. config/desenvolvimento.env, só fora de produção (NODE_ENV diferente de "production")
 """
 
 import os
@@ -14,8 +17,19 @@ from dotenv import load_dotenv
 
 
 PASTA_IA = Path(__file__).resolve().parent
+RAIZ = PASTA_IA.parent
 
-load_dotenv(PASTA_IA / ".env")
+
+def carregar_configuracao() -> None:
+    # override=False: nunca sobrescreve o que já foi definido por uma fonte de prioridade maior
+    load_dotenv(PASTA_IA / ".env", override=False)
+    load_dotenv(RAIZ / ".env", override=False)
+
+    if os.getenv("NODE_ENV") != "production":
+        load_dotenv(RAIZ / "config" / "desenvolvimento.env", override=False)
+
+
+carregar_configuracao()
 
 
 def conectar_banco() -> psycopg.Connection:
@@ -24,13 +38,13 @@ def conectar_banco() -> psycopg.Connection:
     if not senha:
         raise ValueError(
             "ECOS_DB_PASSWORD não está configurada. "
-            "Copie ai/.env.example para ai/.env e preencha a senha."
+            "Rode \"npm run configurar\" na raiz do projeto para informar a senha do PostgreSQL."
         )
 
     return psycopg.connect(
         host=os.getenv("ECOS_DB_HOST", "localhost"),
         port=int(os.getenv("ECOS_DB_PORT", "5432")),
-        dbname=os.getenv("ECOS_DB_NAME", "ecos_teste"),
+        dbname=os.getenv("ECOS_DB_NAME", "ecos_db"),
         user=os.getenv("ECOS_DB_USER", "postgres"),
         password=senha,
     )

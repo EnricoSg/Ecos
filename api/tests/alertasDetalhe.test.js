@@ -1,5 +1,8 @@
 const path = require('path');
+// O teste no PostgreSQL real só roda quando a senha foi definida DE VERDADE nesta máquina (api/.env ou .env da raiz).
+// O padrão de config/desenvolvimento.env não conta: em outra máquina (ou no CI) ele faria o teste falhar em vez de pular.
 require('dotenv').config({ path: path.join(__dirname, '..', '.env'), quiet: true });
+require('dotenv').config({ path: path.join(__dirname, '..', '..', '.env'), quiet: true });
 
 const request = require('supertest');
 const jwt = require('jsonwebtoken');

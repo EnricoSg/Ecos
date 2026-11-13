@@ -9,6 +9,7 @@
     "node": ">=22"
   },
   "scripts": {
+    "configurar": "node scripts/configurar.js",
     "start": "node scripts/iniciar.js",
     "start:simulado": "node scripts/iniciar.js --modo=simulado",
     "start:fadiga": "node scripts/iniciar.js --modo=simulado --perfil=fadiga",
