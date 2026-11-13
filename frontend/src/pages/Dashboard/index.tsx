@@ -173,9 +173,12 @@ export function Dashboard() {
     return (
         <main className="min-h-screen bg-gray-100 p-8">
             <header className="mb-8 flex items-center justify-between">
-                <div>
-                    <h1 className="text-3xl font-bold text-gray-800">Visão Geral - Ecos</h1>
-                    <p className="mt-1 text-gray-500">Monitoramento de anomalias comportamentais</p>
+                <div className="flex items-center gap-5">
+                    <img src="/ecos-logo.svg" alt="Ecos" className="h-12 w-auto" />
+                    <div className="border-l border-gray-300 pl-5">
+                        <h1 className="text-2xl font-bold text-gray-800">Visão Geral</h1>
+                        <p className="mt-1 text-gray-500">Monitoramento de anomalias comportamentais</p>
+                    </div>
                 </div>
 
                 <button

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import type { FormEvent } from 'react';
-import { Lock } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { api } from '../../services/api';
@@ -51,11 +50,12 @@ export function Login() {
     return (
         <main className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
             <section className="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
-                <div className="flex justify-center mb-6">
-                    <Lock className="w-12 h-12 text-blue-600" />
+                <div className="flex justify-center mb-4">
+                    {/* Logo animado: a tecla é pressionada e a onda percorre o nome (parado com "reduzir movimento") */}
+                    <img src="/ecos-logo-animado.svg" alt="Ecos" className="h-24 w-auto" />
                 </div>
 
-                <h1 className="text-2xl font-bold text-center mb-6">Acesso Ecos (RH)</h1>
+                <h1 className="text-xl font-semibold text-center text-gray-700 mb-6">Acesso do RH</h1>
                 <form onSubmit={handleEntrar} className="flex flex-col gap-4">
                     <label htmlFor="usuario" className="text-sm font-medium text-gray-700">
                         Usuário do RH
@@ -96,7 +96,7 @@ export function Login() {
                     <button
                         type="submit"
                         disabled={enviando}
-                        className="bg-blue-600 text-white p-2 rounded hover:bg-blue-700 font-bold disabled:cursor-wait disabled:opacity-60"
+                        className="bg-[#0B1F3A] text-white p-2 rounded hover:bg-[#173A63] font-bold disabled:cursor-wait disabled:opacity-60"
                     >
                         {enviando ? 'Entrando…' : 'Entrar'}
                     </button>

@@ -14,6 +14,7 @@
 
 const path = require('path');
 const { iniciarCapturaNativa } = require('./captura-nativa');
+const { carregarConfiguracao } = require('../config/carregar-env');
 
 // Fontes de eventos aceitas em --modo / MODO
 const MODOS = Object.freeze(['simulado', 'real']);
@@ -55,13 +56,9 @@ const PERFIS = Object.freeze({
 // -----------------------------------------------------
 // Configuração
 // -----------------------------------------------------
+// Sistema > coletor/.env > .env da raiz > config/desenvolvimento.env (o mesmo API_KEY da API local)
 function carregarEnv(arquivo = path.join(__dirname, '.env')) {
-    try {
-        process.loadEnvFile(arquivo);
-    } catch (erro) {
-        // Sem .env, valem as variáveis já definidas no sistema
-        if (erro.code !== 'ENOENT') throw erro;
-    }
+    carregarConfiguracao({ envDoModulo: arquivo });
 }
 
 function lerNumero(valor, padrao) {
@@ -110,7 +107,7 @@ const FORMATO_USER_ID = /^[a-f0-9]{32,64}$/i;
 function validarConfig(config) {
     const erros = [];
 
-    if (!config.apiKey) erros.push('API_KEY não definida (copie o valor de api/.env).');
+    if (!config.apiKey) erros.push('API_KEY não definida (precisa ser o mesmo valor usado pela API).');
     if (!FORMATO_USER_ID.test(config.userId)) erros.push('USER_ID deve ser o hash anônimo do colaborador (hexadecimal).');
     if (config.userIdSimulado && !FORMATO_USER_ID.test(config.userIdSimulado)) {
         erros.push('USER_ID_SIMULADO deve ser o hash anônimo de um colaborador de demonstração (hexadecimal).');

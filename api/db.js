@@ -17,7 +17,7 @@ const usarSsl = ['true', '1', 'require'].includes((process.env.ECOS_DB_SSL || ''
 const pool = new Pool({
     host: process.env.ECOS_DB_HOST || 'localhost',
     port: Number(process.env.ECOS_DB_PORT || 5432),
-    database: process.env.ECOS_DB_NAME || 'ecos_teste',
+    database: process.env.ECOS_DB_NAME || 'ecos_db',
     user: process.env.ECOS_DB_USER || 'postgres',
     password: process.env.ECOS_DB_PASSWORD,
 

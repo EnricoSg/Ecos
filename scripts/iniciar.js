@@ -24,7 +24,7 @@ const fs = require('node:fs');
 const net = require('node:net');
 const path = require('node:path');
 const readline = require('node:readline');
-const util = require('node:util');
+const { carregarConfiguracao } = require('../config/carregar-env');
 
 const RAIZ = path.resolve(__dirname, '..');
 const PORTA_FRONT = 5173;
@@ -84,16 +84,11 @@ function verificarPrerequisitos(opcoes, raiz = RAIZ, existe = fs.existsSync) {
         if (!existe(path.join(raiz, relativo))) faltando.push(`${relativo} não encontrado: ${dica}.`);
     };
 
-    exigir('api/.env', 'copie api/.env.example para api/.env e preencha');
-    exigir('api/node_modules', 'rode "npm install" em api/');
-    exigir('ai/.env', 'copie ai/.env.example para ai/.env e preencha');
+    // Nenhum .env é exigido: sem eles, valem os padrões de config/desenvolvimento.env
+    exigir('api/node_modules', 'rode "npm run configurar"');
 
-    if (opcoes.coletor) {
-        exigir('coletor/.env', 'copie coletor/.env.example para coletor/.env e preencha');
-        if (opcoes.modo === 'real') exigir('coletor/node_modules/uiohook-napi', 'rode "npm install" em coletor/');
-    }
-
-    if (opcoes.front) exigir('frontend/node_modules/vite/bin/vite.js', 'rode "npm install" em frontend/');
+    if (opcoes.coletor && opcoes.modo === 'real') exigir('coletor/node_modules/uiohook-napi', 'rode "npm run configurar"');
+    if (opcoes.front) exigir('frontend/node_modules/vite/bin/vite.js', 'rode "npm run configurar"');
 
     return faltando;
 }
@@ -112,13 +107,12 @@ function resumirSaidaIa(linhas) {
     return uteis;
 }
 
-// Lê um .env sem colocá-lo no process.env: cada módulo continua carregando o próprio .env
-function lerEnv(arquivo) {
-    try {
-        return util.parseEnv(fs.readFileSync(arquivo, 'utf8'));
-    } catch {
-        return {};
-    }
+// Configuração que a API vai enxergar (mesma regra dela), sem mexer no process.env deste processo:
+// cada módulo continua carregando a própria configuração ao iniciar
+function configuracaoDaApi(raiz = RAIZ) {
+    const env = { ...process.env };
+    carregarConfiguracao({ envDoModulo: path.join(raiz, 'api', '.env'), env, raiz });
+    return env;
 }
 
 // -----------------------------------------------------
@@ -327,7 +321,7 @@ async function main() {
     process.on('SIGINT', () => encerrar(0));
     process.on('SIGTERM', () => encerrar(0));
 
-    const envApi = lerEnv(path.join(RAIZ, 'api', '.env'));
+    const envApi = configuracaoDaApi();
     const portaApi = Number(envApi.PORT || 3000);
 
     const partes = ['API'];
@@ -388,7 +382,9 @@ async function main() {
     agendador = criarAgendadorIa({ python: caminhoPython(), intervaloMin: opcoes.intervaloIaMin });
     agendador.iniciar();
 
-    escrever('ECOS', `🟢 Dashboard: http://localhost:${PORTA_FRONT} (usuário: ${envApi.RH_USUARIO || 'RH_USUARIO do api/.env'}, senha: RH_SENHA do api/.env)`);
+    // Só fora de produção a senha aparece no terminal (em desenvolvimento ela é a de config/desenvolvimento.env)
+    const senhaRh = envApi.NODE_ENV === 'production' ? '(definida no ambiente)' : envApi.RH_SENHA;
+    escrever('ECOS', `🟢 Dashboard: http://localhost:${PORTA_FRONT} (usuário: ${envApi.RH_USUARIO}, senha: ${senhaRh})`);
     escrever('ECOS', 'Enter = rodar a IA agora (inclui a janela em andamento) · Ctrl+C = encerrar tudo');
 
     leitor = readline.createInterface({ input: process.stdin });
@@ -404,4 +400,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { lerArgumentos, caminhoPython, verificarPrerequisitos, lerEnv, resumirSaidaIa };
+module.exports = { lerArgumentos, caminhoPython, verificarPrerequisitos, configuracaoDaApi, resumirSaidaIa };

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="300" viewBox="0 0 700 300" role="img" aria-label="Ecos">
+  <title>Ecos</title>
+  <!-- Tecla: base (sombra) e face superior, com a letra "e" -->
+  <rect x="24" y="46" width="208" height="208" rx="46" fill="#0B1F3A"/>
+  <rect x="38" y="56" width="180" height="172" rx="36" fill="#173A63"/>
+  <text x="128" y="186" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-weight="700" font-size="150" fill="#FFFFFF">e</text>
+
+  <!-- "cos": as letras sobem e descem como uma onda de ritmo -->
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif" font-weight="700" font-size="172" fill="#0B1F3A" text-anchor="middle">
+    <text x="284" y="204">c</text>
+    <text x="374" y="182">o</text>
+    <text x="460" y="204">s</text>
+  </g>
+
+  <!-- Linha de ritmo: sai da tecla, sobe junto com o "o" e segue até o eco -->
+  <path d="M232 246 C 276 246, 322 214, 374 214 S 478 246, 524 246 L 664 246" fill="none" stroke="#0E9F8E" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Eco: barras de ritmo que vão sumindo depois do nome -->
+  <g fill="#0E9F8E">
+    <rect x="520" y="100" width="16" height="104" rx="8"/>
+    <rect x="550" y="116" width="16" height="72" rx="8" opacity="0.8"/>
+    <rect x="580" y="128" width="16" height="48" rx="8" opacity="0.6"/>
+    <rect x="610" y="137" width="16" height="30" rx="8" opacity="0.42"/>
+    <rect x="640" y="143" width="16" height="18" rx="8" opacity="0.28"/>
+  </g>
+</svg>

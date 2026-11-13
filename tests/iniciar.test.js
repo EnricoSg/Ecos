@@ -95,12 +95,17 @@ describe('Comando único: pré-requisitos', () => {
         expect(verificarPrerequisitos(lerArgumentos([]).opcoes, RAIZ, () => true)).toEqual([]);
     });
 
-    test('lista cada .env e dependência ausente, com a dica de como resolver', () => {
+    test('lista cada dependência ausente, com a dica de como resolver', () => {
         const faltando = verificarPrerequisitos(lerArgumentos([]).opcoes, RAIZ, faltandoTudo);
 
-        expect(faltando).toHaveLength(6);
-        expect(faltando[0]).toMatch(/api\/\.env não encontrado: copie api\/\.env\.example/);
+        expect(faltando).toHaveLength(3);
+        expect(faltando[0]).toMatch(/api\/node_modules não encontrado: rode "npm run configurar"/);
         expect(faltando.some((item) => item.includes('uiohook-napi'))).toBe(true);
+    });
+
+    test('nenhum .env é exigido: sem eles valem os padrões de desenvolvimento', () => {
+        const faltando = verificarPrerequisitos(lerArgumentos([]).opcoes, RAIZ, faltandoTudo);
+        expect(faltando.some((item) => item.includes('.env'))).toBe(false);
     });
 
     test('o simulador não exige o módulo nativo de captura', () => {
@@ -108,8 +113,8 @@ describe('Comando único: pré-requisitos', () => {
         expect(faltando.some((item) => item.includes('uiohook-napi'))).toBe(false);
     });
 
-    test('sem coletor e sem Dashboard, só API e IA são exigidas', () => {
+    test('sem coletor e sem Dashboard, só a API é exigida', () => {
         const faltando = verificarPrerequisitos(lerArgumentos(['--sem-coletor', '--sem-front']).opcoes, RAIZ, faltandoTudo);
-        expect(faltando.map((item) => item.split(' ')[0])).toEqual(['api/.env', 'api/node_modules', 'ai/.env']);
+        expect(faltando.map((item) => item.split(' ')[0])).toEqual(['api/node_modules']);
     });
 });

@@ -49,8 +49,8 @@ O escore em relação ao baseline também é **explicável**. O alerta diz, por 
 .venv\Scripts\activate              # Windows (PowerShell: .venv\Scripts\Activate.ps1)
 pip install -r ai/requirements.txt
 
-# Credenciais do banco (mesmos nomes de variáveis da API)
-copy ai\.env.example ai\.env        # e preencha ECOS_DB_PASSWORD
+# Credenciais do banco: não é preciso criar .env. Valem as de config/desenvolvimento.env
+# (senha "postgres"); se a sua senha for outra, rode "npm run configurar" na raiz.
 
 # Uma única vez por banco: coluna de controle do processamento
 psql -U postgres -d ecos_db -f database/migracoes/001_telemetria_analisada_em.sql
@@ -90,16 +90,16 @@ As intensidades de fadiga do roteiro foram medidas com o próprio motor:
 | 0,9 | vira alerta em ~92% das janelas (maioria `MEDIO`) |
 | a partir de 1,5 | sempre `ALTO` |
 
-O colaborador da **captura real** nunca recebe dados sintéticos. O primeiro colaborador sintético de TI segue exatamente o perfil do simulador do coletor; use o hash dele em `USER_ID_SIMULADO` no `coletor/.env`. As datas são relativas ao dia da execução: rode de novo antes de apresentar, porque a IA e os gráficos olham os últimos 30 dias.
+O colaborador da **captura real** nunca recebe dados sintéticos. O primeiro colaborador sintético de TI segue exatamente o perfil do simulador do coletor; o hash dele já está em `USER_ID_SIMULADO` no `config/desenvolvimento.env`. As datas são relativas ao dia da execução: rode de novo antes de apresentar, porque a IA e os gráficos olham os últimos 30 dias.
 
-Os parâmetros (tamanho da janela, limiares, histórico mínimo…) ficam no `ai/.env`. Veja o `ai/.env.example`.
+Os parâmetros (tamanho da janela, limiares, histórico mínimo…) têm padrões no código; para mudar algum, coloque a variável no `.env` da raiz. Veja a lista no `ai/.env.example`.
 
 ## Arquivos
 
 | Arquivo | Função |
 |---|---|
 | `anomaly_detector.py` | Motor de detecção: leitura, janelas, pontuação, anomalias, alertas e baselines |
-| `banco.py` | Conexão com o PostgreSQL, lendo o `ai/.env` |
+| `banco.py` | Conexão com o PostgreSQL (configuração: sistema > `ai/.env` > `.env` da raiz > `config/desenvolvimento.env`) |
 | `pipeline.py` | Ponto de entrada para agendamento |
 | `gerar_demo.py` | Dados **sintéticos** de demonstração (colaboradores, histórico, episódios de fadiga) e execução do motor sobre eles |
 | `import_telemetry.py` | **Legado**: importa o `telemetria-mock.json` direto no banco, **sem passar pelo validador LGPD**. Use só para carga de testes; os dados reais entram pela API |

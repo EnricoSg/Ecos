@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="300" viewBox="0 0 700 300" role="img" aria-label="Ecos">
+  <title>Ecos</title>
+  <style>
+    /* Ciclo de 3,2 s: a tecla é pressionada, o pulso corre pela onda,
+       as letras reagem quando ele passa e o eco pulsa e se apaga */
+    .tecla, .letra, .barra, .pulso { animation-duration: 3.2s; animation-iteration-count: infinite; animation-timing-function: ease-in-out; }
+    .tecla { animation-name: pressionar; }
+    .letra { animation-name: pular; transform-box: fill-box; transform-origin: center bottom; }
+    .letra.c { animation-delay: 0.30s; }
+    .letra.o { animation-delay: 0.48s; }
+    .letra.s { animation-delay: 0.66s; }
+    .barra { animation-name: ecoar; transform-box: fill-box; transform-origin: center; }
+    .barra.b1 { animation-delay: 0.86s; }
+    .barra.b2 { animation-delay: 0.98s; }
+    .barra.b3 { animation-delay: 1.10s; }
+    .barra.b4 { animation-delay: 1.22s; }
+    .barra.b5 { animation-delay: 1.34s; }
+    .pulso { animation-name: correr; animation-delay: 0.12s; animation-timing-function: linear; stroke-dasharray: 18 300; stroke-dashoffset: 18; }
+
+    @keyframes pressionar {
+      0%, 100% { transform: translateY(0); }
+      3%       { transform: translateY(8px); }
+      8%       { transform: translateY(0); }
+    }
+    @keyframes pular {
+      0%, 100% { transform: translateY(0) scale(1); }
+      5%       { transform: translateY(-16px) scale(1.04, 0.97); }
+      10%      { transform: translateY(2px) scale(0.98, 1.02); }
+      14%      { transform: translateY(0) scale(1); }
+    }
+    @keyframes ecoar {
+      0%, 100% { transform: scaleY(1); }
+      5%       { transform: scaleY(1.5); }
+      13%      { transform: scaleY(1); }
+    }
+    @keyframes correr {
+      0%        { stroke-dashoffset: 18; opacity: 1; }
+      36%       { stroke-dashoffset: -100; opacity: 1; }
+      37%, 100% { stroke-dashoffset: -100; opacity: 0; }
+    }
+    /* Quem pediu menos movimento no sistema vê o logo parado */
+    @media (prefers-reduced-motion: reduce) {
+      .tecla, .letra, .barra, .pulso { animation: none; }
+      .pulso { opacity: 0; }
+    }
+  </style>
+
+  <!-- Tecla: a base fica parada; a face e o "e" afundam quando ela é pressionada -->
+  <rect x="24" y="46" width="208" height="208" rx="46" fill="#0B1F3A"/>
+  <g class="tecla">
+    <rect x="38" y="56" width="180" height="172" rx="36" fill="#173A63"/>
+    <text x="128" y="186" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-weight="700" font-size="150" fill="#FFFFFF">e</text>
+  </g>
+
+  <!-- "cos" em onda -->
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif" font-weight="700" font-size="172" fill="#0B1F3A" text-anchor="middle">
+    <text class="letra c" x="284" y="204">c</text>
+    <text class="letra o" x="374" y="182">o</text>
+    <text class="letra s" x="460" y="204">s</text>
+  </g>
+
+  <!-- Linha de ritmo e o pulso que corre por ela -->
+  <path d="M232 246 C 276 246, 322 214, 374 214 S 478 246, 524 246 L 664 246" fill="none" stroke="#0E9F8E" stroke-width="6" stroke-linecap="round"/>
+  <path class="pulso" pathLength="100" d="M232 246 C 276 246, 322 214, 374 214 S 478 246, 524 246 L 664 246" fill="none" stroke="#0B1F3A" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Eco: barras que pulsam em sequência e vão sumindo -->
+  <g fill="#0E9F8E">
+    <rect class="barra b1" x="520" y="100" width="16" height="104" rx="8"/>
+    <rect class="barra b2" x="550" y="116" width="16" height="72" rx="8" opacity="0.8"/>
+    <rect class="barra b3" x="580" y="128" width="16" height="48" rx="8" opacity="0.6"/>
+    <rect class="barra b4" x="610" y="137" width="16" height="30" rx="8" opacity="0.42"/>
+    <rect class="barra b5" x="640" y="143" width="16" height="18" rx="8" opacity="0.28"/>
+  </g>
+</svg>

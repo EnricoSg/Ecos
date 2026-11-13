@@ -110,6 +110,7 @@ Ecos/
 ├── ai/                    # Motor de IA em Python + gerador de dados de demonstração
 ├── api/                   # API Node.js/Express (rotas, middlewares de segurança, testes)
 ├── coletor/               # Coletor: captura real (uiohook-napi) ou simulador
+├── config/                # Padrões de desenvolvimento (desenvolvimento.env) e o carregador de configuração
 ├── database/
 │   ├── schema.sql         # Estrutura do banco (já inclui as migrações 001 e 002)
 │   ├── seed.sql           # Colaboradores e dados iniciais de teste
@@ -117,6 +118,7 @@ Ecos/
 ├── docs/                  # Tratamento de dados (LGPD) e histórico do projeto
 ├── frontend/              # Dashboard RH em React
 ├── scripts/
+│   ├── configurar.js      # Prepara a máquina: dependências + banco (npm run configurar)
 │   ├── iniciar.js         # Sobe o sistema inteiro com um comando (npm start)
 │   └── python.js          # Roda scripts Python com o .venv do projeto
 ├── src/validador.js       # Filtro LGPD da telemetria (usado pela API)
@@ -129,30 +131,21 @@ Ecos/
 
 **Pré-requisitos:** Node.js 22+, Python 3.10+ e PostgreSQL (testado no 18).
 
-### 1. Primeira vez
+### 1. Primeira vez (um comando)
+
+Com o PostgreSQL instalado e rodando, na raiz do projeto:
 
 ```bash
-# Banco: crie um banco vazio (ex.: ecos_db) e rode, nesta ordem:
-psql -U postgres -d ecos_db -f database/schema.sql
-psql -U postgres -d ecos_db -f database/seed.sql
-# Banco criado antes de out/2026? Rode as migrações 001 e 002 (veja database/README.md)
-
-# Configuração: copie cada .env.example para .env e preencha
-#   api/.env      senha do banco, API_KEY, RH_USUARIO, RH_SENHA, JWT_SECRET
-#   ai/.env       senha do banco
-#   coletor/.env  API_KEY (a mesma da API) e USER_ID (hash do colaborador desta máquina)
-
-# Dependências Node
-npm install
-cd api && npm install && cd ..
-cd coletor && npm install && cd ..
-cd frontend && npm install && cd ..
-
-# Dependências Python (na raiz)
-python -m venv .venv
-.venv\Scripts\activate          # Windows  (Linux/macOS: source .venv/bin/activate)
-pip install -r ai/requirements.txt
+npm run configurar
 ```
+
+Ele instala as dependências do Node (raiz, `api/`, `coletor/`, `frontend/`), cria o `.venv` com as dependências da IA, cria o banco `ecos_db` e aplica o `database/schema.sql` e o `database/seed.sql`. Pode rodar de novo quando quiser: ele só faz o que falta e nunca apaga dados.
+
+**Não é preciso criar nenhum `.env`.** Os valores de desenvolvimento (chave do coletor, login do RH, segredo do JWT, colaborador desta máquina...) estão em [`config/desenvolvimento.env`](config/desenvolvimento.env), que é versionado. A única coisa que muda de máquina para máquina é a **senha do PostgreSQL**: o padrão é `postgres`; se a sua for outra, o `npm run configurar` pergunta uma vez e guarda no `.env` da raiz, que não vai para o GitHub.
+
+Para mudar qualquer valor só na sua máquina, coloque a variável no `.env` da raiz (ex.: `ECOS_DB_PORT=5433`). A ordem de prioridade é: variáveis do sistema > `.env` do módulo (`api/.env`, `ai/.env`, `coletor/.env`) > `.env` da raiz > `config/desenvolvimento.env`. Com `NODE_ENV=production`, o `config/desenvolvimento.env` é ignorado e todos os valores precisam vir do ambiente.
+
+Banco criado antes de out/2026? Rode as migrações 001 e 002 (veja `database/README.md`).
 
 ### 2. Dados de demonstração
 
@@ -163,7 +156,7 @@ npm run demo:dados -- --resetar    # o mesmo, mas antes apaga TODA a telemetria,
 
 O comando cria 5 colaboradores sintéticos por setor, com cerca de 4 semanas de histórico. Na última semana, o Financeiro entra em "fechamento do mês" e desacelera aos poucos, e alguns colaboradores passam do limite. O resultado são **alertas pendentes e já resolvidos**, para o Dashboard ter o que mostrar. As datas são relativas ao dia em que o comando roda; como a IA e os gráficos olham os últimos 30 dias, **rode de novo na véspera da apresentação**.
 
-O colaborador da **captura real** (`USER_ID` do `coletor/.env`) nunca recebe dados sintéticos: o baseline dele vem só da digitação real. O comando mostra também o hash do colaborador do simulador; coloque-o em `USER_ID_SIMULADO` no `coletor/.env`, para o simulador também nunca escrever no colaborador real.
+O colaborador da **captura real** (`USER_ID`) nunca recebe dados sintéticos: o baseline dele vem só da digitação real. O simulador escreve no primeiro colaborador sintético de TI (`USER_ID_SIMULADO`), que já vem definido em `config/desenvolvimento.env`.
 
 ### 3. Rodar o sistema inteiro (um comando)
 
@@ -173,7 +166,7 @@ npm run start:simulado   # o mesmo, com o simulador no lugar da captura real
 npm run start:fadiga     # simulador com perfil de fadiga (gera alertas)
 ```
 
-Abra `http://localhost:5173` e entre com `RH_USUARIO` / `RH_SENHA` do `api/.env`. No terminal:
+Abra `http://localhost:5173` e entre com o usuário **`rh`** e a senha **`ecos123`** (padrão de desenvolvimento; o próprio `npm start` mostra o login no terminal). No terminal:
 - **Enter** roda a IA na hora, incluindo a janela de 15 minutos ainda em andamento.
 - **Ctrl+C** encerra tudo em ordem: o coletor envia o que falta antes de a API sair.
 
@@ -184,7 +177,7 @@ Cada parte também roda sozinha: `npm start` em `api/`, `npm run dev` em `fronte
 ### 4. Testes
 
 ```bash
-npm test                                  # raiz: validador LGPD + comando único (62 testes)
+npm test                                  # raiz: validador LGPD, comando único e configuração (70 testes)
 cd api && npm test                        # API (149 testes)
 cd coletor && npm test                    # coletor e captura real (38 testes)
 .venv\Scripts\python -m pytest ai/tests   # IA e gerador de demonstração (33 testes)
@@ -240,7 +233,7 @@ schtasks /Create /SC MINUTE /MO 15 /TN "Ecos IA" /TR "\"C:\caminho\Ecos\.venv\Sc
 | Sistema inteiro com um comando + dados de demonstração | ✅ `scripts/` e `ai/gerar_demo.py` |
 
 ### Limitações conhecidas
-- **Login do RH:** um único usuário, definido no `api/.env`. Ainda não há tabela de usuários nem perfis de acesso.
+- **Login do RH:** um único usuário (`rh` / `ecos123` em desenvolvimento). Ainda não há tabela de usuários nem perfis de acesso. A senha simples é só para uso local: em um servidor público, defina `RH_SENHA` forte no ambiente.
 - **Coletor:** roda pelo terminal, sem instalador nem serviço do sistema. No Windows, não enxerga janelas abertas como administrador, e antivírus corporativos podem bloquear a captura global do teclado.
 - **Eventos só de mouse:** não geram pacote. A velocidade do mouse acompanha a próxima tecla digitada.
 - **Rate limit:** os contadores ficam em memória, o que só funciona com uma instância da API.
