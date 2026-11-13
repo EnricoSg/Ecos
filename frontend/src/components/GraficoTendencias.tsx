@@ -43,6 +43,10 @@ export function GraficoTendencias({ tendencia }: GraficoTendenciasProps) {
         }))
         .sort((a, b) => Date.parse(a.periodo) - Date.parse(b.periodo));
 
+    const temDadosDaMetrica = dadosGrafico.some(
+            (ponto) => typeof ponto.valor === 'number',
+        );
+
     const formatarValor = (valor: unknown) =>
         typeof valor === 'number'
             ? `${valor.toLocaleString('pt-BR', { maximumFractionDigits: 1 })} ${metrica.unidade}`
@@ -73,7 +77,7 @@ export function GraficoTendencias({ tendencia }: GraficoTendenciasProps) {
                 })}
             </div>
 
-            {dadosGrafico.length === 0 ? (
+            {dadosGrafico.length === 0 || !temDadosDaMetrica ? (
                 <div className="flex flex-1 items-center justify-center text-sm text-gray-400">
                     Sem dados de telemetria no período.
                 </div>
